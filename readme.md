@@ -1,6 +1,6 @@
 # ObjectRadar
 
-ObjectRadar is an iOS application that helps users to detect, identify and locate nearby Bluetooth Low Energy (BLE) devices.
+ObjectRadar is an iOS application that helps users to detect, identify and estimate the proximity of nearby Bluetooth Low Energy (BLE) devices.
 
 ## Features
 
@@ -17,7 +17,7 @@ ObjectRadar is an iOS application that helps users to detect, identify and locat
 
 ## Privacy
 
-ObjectRadar does not use any server to analyse nearby BLE devices.
+ObjectRadar does not use external servers to analyse nearby BLE devices.
 
 All processing is performed locally on the device.
 
@@ -27,7 +27,7 @@ Support: contact.elab@mailo.com
 
 ## Documentation
 
-Documentation is available in the `/docs` directory.
+Documentation is available in the `/Docs` directory.
 
 ## Copyright
 

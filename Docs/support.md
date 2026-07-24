@@ -11,4 +11,4 @@ When contacting support, please include:
 - ObjectRadar version
 - Description of the issue
 
-We will answer as soon as possible.
+We will review your request and provide assistance whenever possible.
