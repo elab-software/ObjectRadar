@@ -12,3 +12,15 @@ When contacting support, please include:
 - Description of the issue
 
 We will review your request and provide assistance whenever possible.
+
+## Contact topics
+
+Please select the category that best matches your request:
+
+- General contact
+- Support
+- Bug report
+- Feature request
+- Translation
+
+Selecting the appropriate topic helps us to process your request more efficiently.
