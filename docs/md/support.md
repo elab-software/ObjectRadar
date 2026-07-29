@@ -24,3 +24,15 @@ Please select the category that best matches your request:
 - Translation
 
 Selecting the appropriate topic helps us to process your request more efficiently.
+
+## Limitations
+
+Bluetooth Low Energy proximity estimation depends on:
+- radio conditions,
+- obstacles,
+- surrounding devices and
+- the orientation of the accessory.
+
+Estimated distance should be considered as guidance rather than an exact measurement.
+
+Final object localization may require visual search within the last few meters.
