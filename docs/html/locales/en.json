@@ -1,0 +1,253 @@
+{
+  "navigation": {
+    "overview": "Overview",
+    "how-it-works": "How it works",
+    "use-cases": "Use cases",
+    "faq": "FAQ",
+    "resources": "Resources"
+  },
+
+  "hero": {
+    "eyebrow": "iOS APPLICATION",
+    "title": "OBJECTRADAR",
+    "lead": "Find nearby Bluetooth objects with intelligent BLE guidance",
+    "buttonCTA": "Explore the app"
+  },
+
+  "problem": {
+    "eyebrow": "THE PROBLEM",
+    "title": "You know it's nearby.<br>But where is it?",
+    "lead": "You can know that a Bluetooth device is nearby without having a practical way to locate it precisely. ObjectRadar explores the Bluetooth information available to iOS to turn that signal into useful proximity guidance."
+  },
+
+  "how-it-works": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Three simple steps",
+    "lead": "From scanning nearby Bluetooth devices, to identifying and tracking an object, ObjectRadar guides you through a simple workflow designed to help you find what you're looking for.",
+    "card1": {
+      "title": "Scan",
+      "lead":"Scan nearby Bluetooth devices and observe their signal strength."
+    },
+
+    "card2": {
+      "title": "Identify",
+      "lead":"Identify the device of interest from the information available during the search."
+    },
+
+    "card3": {
+      "title": "Track",
+      "lead":"Move through your environment and use proximity changes to narrow down the location."
+    }
+  },
+
+  "use-cases":{
+    "eyebrow": "USE CASES",
+    "title": "Designed around real situations",
+    "lead": "Explore how ObjectRadar can help you find different types of nearby Bluetooth devices and understand the steps involved in each search.",
+    "card1": {
+      "title": "Bluetooth trackers",
+      "lead":"Find a nearby tracker when conventional location information is not enough."
+    },
+    "card2": {
+      "title": "Paired devices",
+      "lead":"Search for Bluetooth devices already associated with your iPhone."
+    },
+    "card3": {
+      "title": "Other BLE devices",
+      "lead":"Explore nearby BLE devices beyond dedicated tracking tags."
+    }
+  },
+
+  "features":{
+    "eyebrow": "FEATURES",
+    "subtitle": "What the application provides",
+    "lead": "",
+    "card1": {
+      "title": "BLE scanning",
+      "lead":"Scan nearby Bluetooth advertisements and observe their signal strength."
+    },
+    "card2": {
+      "title": "Device identification",
+      "lead":"Use available Bluetooth information to identify the device you are looking for."
+    },
+    "card3": {
+      "title": "Proximity guidance",
+      "lead":"Use changes in signal strength to determine whether you are getting closer or farther away."
+    },
+    "card4": {
+      "title": "Object association",
+      "lead":"Associate a detected Bluetooth device with the object you want to find."
+    },
+    "card5": {
+      "title": "Local processing",
+      "lead":"Process the information needed for the search directly on the device."
+    },
+    "card6": {
+      "title": "Privacy-focused design",
+      "lead":"Keep the search focused on local Bluetooth information without relying on a remote tracking service."
+    }
+  },
+
+  "limitations": {
+    "eyebrow": "LIMITATIONS",
+    "title": "Bluetooth has physical limits.",
+    "lead": "Bluetooth signal strength can help estimate proximity, but walls, furniture, orientation and other environmental factors can affect the result.",
+    "quote-box": {
+      "title": "Prototype statement",
+      "lead":"Closer / farther is more meaningful than an exact distance."
+    }
+  },
+
+  "privacy": {
+    "eyebrow": "PRIVACY",
+    "title": "Designed to keep processing local.",
+    "lead": "ObjectRadar is designed around local processing so the Bluetooth information used for the search can remain on the user's device."
+  },
+
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered.",
+    "lead": "",
+    "question1": {
+      "question":"What can the application detect?",
+      "answer":"ObjectRadar scans nearby Bluetooth Low Energy advertisements and analyzes the information made available by the devices. Detection depends on the device, its advertising behavior and the information exposed by its Bluetooth protocol."
+    },
+    "question2": {
+      "question":"How does proximity guidance work?",
+      "answer":"The application observes changes in Bluetooth signal strength while you move. These changes can indicate whether you are getting closer to or farther from a device, but they cannot provide a precise distance."
+    },
+    "question3": {
+      "question":"Why can some Bluetooth devices remain invisible?",
+      "answer":"A device may not advertise continuously, may use a protocol that does not expose enough information, or may be affected by Bluetooth and environmental limitations."
+    },
+    "question4": {
+      "question":"What are the limitations of Bluetooth tracking?",
+      "answer":"Bluetooth signal strength is affected by distance, obstacles, reflections, device orientation and the surrounding environment. Proximity guidance should therefore be understood as an indication rather than an exact measurement."
+    }
+  },
+
+  "resources": {
+    "eyebrow": "RESOURCES",
+    "title": "More information",
+    "lead": "",
+    "support": "Support",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-use": "Terms of Use"
+  },
+
+  "finalCTA": {
+    "eyebrow": "OBJECTRADAR",
+    "title": "Ready to find your device?",
+    "lead": "",
+    "buttonCTA":"Download on the App Store"
+  },
+
+  "credits": {
+    "eyebrow": "CREDITS",
+    "title": "Credits & licenses",
+    "toggle": "View image and icon credits",
+
+    "intro": "Visual assets used on this website are listed below with their respective authors and license information.",
+    "source": "Source",
+    "author": "Author",
+    "license": "License",
+
+    "location": {
+      "title":"Location Icon",
+      "author": "Locations icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Nearby location and map-based proximity guidance."
+    },
+    
+    "keyTracker": {
+      "title":"Key Tracker Icon",
+      "author": "Tracker icons created by juicy_fish - Flaticon",
+      "link": "Official source",
+      "description": "Bluetooth tracking tag and nearby device search."
+    },
+    
+    "hearingAid": {
+      "title":"Paired Devices Icon — like hearing aid",
+      "author": "Hearing aid icons created by Arkinasi - Flaticon",
+      "link": "Official source",
+      "description": "Paired Bluetooth devices that can be searched for when they are nearby."
+    },
+    
+    "bleDevices": {
+      "title":"BLE Devices Icon",
+      "author": "Internet of things icons created by Canticons - Flaticon",
+      "link": "Official source",
+      "description": "Nearby Bluetooth Low Energy devices and accessories."
+    },
+
+    "radar": {
+      "title":"BLE Scanning Icon",
+      "author": "Radar icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "BLE scanning for nearby Bluetooth devices and accessories."
+    },
+
+    "identification": {
+      "title":"Identification Icon",
+      "author": "Object icons created by Uniconlabs - Flaticon",
+      "link": "Official source",
+      "description": "Device identification and association within the ObjectRadar workflow."
+    },
+
+    "guidance": {
+      "title":"Guidance Icon",
+      "author": "Dot icons created by Google - Flaticon",
+      "link": "Official source",
+      "description": "Proximity guidance based on Bluetooth signal information."
+    },
+
+    "objectAssociation": {
+      "title":"Object Association Icon",
+      "author": "Linked icons created by Smashicons - Flaticon",
+      "link": "Official source",
+      "description": "Association between a detected device and an identified object."
+    },
+
+    "localProcessing": {
+      "title":"Local Processing Icon",
+      "author": "Automation icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Local processing without requiring a remote backend."
+    },
+
+    "privacy": {
+      "title":"Privacy Icon",
+      "author": "Security icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Privacy protection and secure handling of user data."
+    },
+
+    "bluetooth": {
+      "title":"Bluetooth Icon",
+      "author": "Bluetooth icons created by Katerine Melina - Flaticon",
+      "link": "Official source",
+      "description": "Bluetooth functionality and nearby Bluetooth device detection."
+    },
+
+    "conversation": {
+      "title":"FAQ Icon",
+      "author": "Question icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Answers to common questions about ObjectRadar and its capabilities."
+    },
+
+    "resources": {
+      "title":"Resources Icon",
+      "author": "Open book icons created by Karyative - Flaticon",
+      "link": "Official source",
+      "description": "Documentation and external resources related to the application."
+    },
+
+    "credits": {
+      "title":"Credits and licenses Icon",
+      "author": "Certificate icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Resources, icons and licenses used in the application."
+    }    
+  }
+}

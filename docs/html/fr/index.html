@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Object Radar — Prototype</title>
+    <meta name="description"
+          content="Structural prototype for the Object Radar website.">
+
+    <!-- Prototype keeps the existing project asset path -->
+    <link rel="icon"
+          type="image/png"
+          src="../images/logo/app-icon-Object-Radar-512.png">
+
+    <link rel="stylesheet" href="../css/style_index.css">
+</head>
+
+<body>
+
+<header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top">
+            <img src="../images/logo/app-icon-Object-Radar-512.png"
+                 alt=""
+                 width="38"
+                 height="38">
+            <span>Object Radar</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#overview" data-i18n="navigation.overview">Overview</a>
+            <a href="#how-it-works" data-i18n="navigation.how-it-works">How it works</a>
+            <a href="#use-cases" data-i18n="navigation.use-cases">Use cases</a>
+            <a href="#faq" data-i18n="navigation.faq">FAQ</a>
+            <a href="#resources" data-i18n="navigation.resources">Resources</a>
+            <a href="../en/index.html" aria-label="English">EN</a>
+            <span aria-hidden="true">|</span>
+            <a href="../fr/index.html" class="language-current" aria-label="Français" aria-current="page">FR</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero reveal">
+        <img class="hero-icon"
+             src="../images/logo/app-icon-Object-Radar-512.png"
+             alt="Object Radar"
+             width="140"
+             height="140">
+        
+        <p class="eyebrow" data-i18n="hero.eyebrow">iOS APPLICATION</p>
+        
+        <h1 data-i18n="hero.title">ObjectRadar</h1>
+
+        <p class="hero-subtitle" data-i18n="hero.lead">
+            Find nearby Bluetooth objects with intelligent BLE guidance.
+        </p>
+
+        <a class="primary-button" href="#how-it-works" data-i18n="hero.buttonCTA">
+            Explore the app
+        </a>
+    </section>
+
+<!-- PROBLEM -->
+<section class="section problem-section reveal" id="overview">
+    <div class="section-inner narrow">
+        <div class="section-heading--with-icon">
+            <div class="section-heading-text">
+                <p class="eyebrow" data-i18n="problem.eyebrow">THE PROBLEM</p>
+                <h2 data-i18n="problem.title">
+                    You know it's nearby.<br>
+                    But where is it?
+                </h2>
+            </div>
+
+            <div class="section-title-icon section-title-icon--large">
+                <!-- "images/problem-location.svg" -->
+                <img
+                    src="../images/icons/Location_and_map-blue.png"
+                    alt=""
+                >
+            </div>
+        </div>
+
+        <p class="lead" data-i18n="problem.lead">
+            You can know that a Bluetooth device is nearby without having
+            a practical way to locate it precisely. Object Radar explores
+            the Bluetooth information available to iOS to turn that signal
+            into useful proximity guidance.
+        </p>
+    </div>
+</section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section reveal" id="how-it-works">
+        <div class="section-inner">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="how-it-works.eyebrow">HOW IT WORKS</p>
+                <h2 data-i18n="how-it-works.title">Three simple steps</h2>
+                <p data-i18n="how-it-works.lead">
+                    From the first scan to the final proximity search, Object Radar
+                    guides the user through a simple three-step workflow.
+                </p>
+            </div> 
+
+            <div class="steps">
+                <article class="step-card">
+
+                    <div class="step-card-header">
+                        <span class="step-number-icon">01</span>
+                    </div>
+
+                    <div class="device-screen">
+                        <!--span>SCAN</span-->
+                        <img
+                            src="../images/screenshots/1_Scan_view_empty_stopped-with-top-banner.jpg"
+                            alt="ObjectRadar Bluetooth device scanning screen"
+                        >
+                    </div>
+                    <h3 data-i18n="how-it-works.card1.title">Scan</h3>
+                    <p data-i18n="how-it-works.card1.lead">Placeholder for the scanning explanation.</p>
+                </article>
+
+                <article class="step-card">
+
+                    <div class="identify-switcher">
+
+                        <input
+                            type="radio"
+                            name="identify-view"
+                            id="identify-tags"
+                        >
+
+                        <input
+                            type="radio"
+                            name="identify-view"
+                            id="identify-favorites"
+                            checked
+                        >
+
+                        <div class="step-card-header">
+
+                            <span class="step-number-icon">02</span>
+
+                            <div class="identify-tabs-control">
+                                <label for="identify-tags">Known</label>
+                                <label for="identify-favorites">Tag</label>
+                            </div>
+
+                        </div>
+
+                        <div class="device-screen identify-screen identify-screen--tags">
+                            <img
+                                src="../images/screenshots/2_Scan_view_Known-with-top-banner.jpg"
+                                alt="ObjectRadar knonw view"
+                            >
+                        </div>
+
+                        <div class="device-screen identify-screen identify-screen--favorites">
+                            <img
+                                src="../images/screenshots/3_Scan_view_Tag-with-top-banner.jpg"
+                                alt="ObjectRadar tags (favorites) view"
+                            >
+                        </div>
+
+                    </div>
+                    
+                    <h3 data-i18n="how-it-works.card2.title">Identify</h3>
+                    <p data-i18n="how-it-works.card2.lead">Placeholder for the device identification explanation.</p>
+                </article>
+
+                <article class="step-card">
+
+                    <div class="step-card-header">                    
+                        <span class="step-number-icon">03</span>
+                    </div>
+
+                    <div class="device-screen tracking">
+                        <!--span>TRACK</span-->
+                            <img
+                                src="../images/screenshots/4_Tracking_view_far-with-top-banner.jpg"
+                                alt="ObjectRadar Bluetooth device scanning screen"
+                            >                        
+                    </div>
+                    <h3 data-i18n="how-it-works.card3.title">Track</h3>
+                    <p data-i18n="how-it-works.card3.lead">Placeholder for the proximity/tracking explanation.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="section tinted reveal" id="use-cases">
+        <div class="section-inner">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="use-cases.eyebrow">USE CASES</p>
+                <h2 data-i18n="use-cases.title">Designed around real situations</h2>
+                <p data-i18n="use-cases.lead">
+                    Explore how ObjectRadar can help locate different types of nearby Bluetooth devices.
+                </p>
+            </div>
+
+            <div class="use-cases">
+                
+                <!-- Use case : tag BLE devices -->
+                <a class="use-case-card" href="#">
+                    <div class="use-case-card-header">
+                        <span class="use-case-index-icon">01</span>
+                        <img
+                            class="use-case-device-icon"
+                            src="../images/icons/key_tracker-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <div class="use-case-content">
+                        <h3 data-i18n="use-cases.card1.title">Bluetooth trackers</h3>
+                        <p data-i18n="use-cases.card1.lead">Find a nearby tracker when conventional location information is not enough.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </a>
+
+                <!-- Use case : hearing-aid devices -->
+                 <a class="use-case-card" href="#">
+                    <div class="use-case-card-header">
+                        <span class="use-case-index-icon">02</span>
+                        <img
+                            class="use-case-device-icon"
+                            src="../images/icons/hearing-aid-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <div class="use-case-content">
+                        <h3 data-i18n="use-cases.card2.title">Paired devices</h3>
+                        <p data-i18n="use-cases.card2.lead">Search for Bluetooth devices already associated with your iPhone.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </a>
+
+                <!-- Use case : common devices -->
+                 <a class="use-case-card" href="#">
+                    <div class="use-case-card-header">
+                        <span class="use-case-index-icon">03</span>
+                        <img
+                            class="use-case-device-icon"
+                            src="../images/icons/wireless_devices-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <div class="use-case-content">
+                        <h3 data-i18n="use-cases.card3.title">Other BLE devices</h3>
+                        <p data-i18n="use-cases.card3.lead">Explore nearby BLE devices beyond dedicated tracking tags.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section reveal" id="features">
+        <div class="section-inner">
+            
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="features.eyebrow">FEATURES</p>
+                <h2 data-i18n="features.subtitle">What the application provides</h2>
+            </div>
+
+            <div class="feature-grid">
+                <article>
+                    <div class="feature-card-header">
+                        <span class="feature-index-icon">01</span>
+                        
+                        <img
+                            class="feature-icon"
+                            src="../images/icons/radar-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <h3 data-i18n="features.card1.title">BLE scanning</h3>
+                    <p data-i18n="features.card1.lead">Placeholder feature description.</p>
+                
+                </article>
+
+                <article>
+                    <div class="feature-card-header">
+                        <span class="feature-index-icon">02</span>
+                        
+                        <img
+                            class="feature-icon"
+                            src="../images/icons/identification-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <h3 data-i18n="features.card2.title">Device identification</h3>
+                    <p data-i18n="features.card2.lead">Placeholder feature description.</p>
+                </article>
+
+                <article>
+                    <div class="feature-card-header">
+                        <span class="feature-index-icon">03</span>
+                        
+                        <img
+                            class="feature-icon"
+                            src="../images/icons/circles-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <h3 data-i18n="features.card3.title">Proximity guidance</h3>
+                    <p data-i18n="features.card3.lead">Placeholder feature description.</p>
+                </article>
+
+                <article>
+                    <div class="feature-card-header">
+                        <span class="feature-index-icon">04</span>
+                        
+                        <img
+                            class="feature-icon"
+                            src="../images/icons/link-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <h3 data-i18n="features.card4.title">Object association</h3>
+                    <p data-i18n="features.card4.lead">Placeholder feature description.</p>
+                </article>
+
+                <article>
+                    <div class="feature-card-header">
+                        <span class="feature-index-icon">05</span>
+                        
+                        <img
+                            class="feature-icon"
+                            src="../images/icons/automation-blue.png"
+                            alt=""
+                        >
+                    </div>
+
+                    <h3 data-i18n="features.card5.title">Local processing</h3>
+                    <p data-i18n="features.card5.lead">Placeholder feature description.</p>
+                </article>
+
+                <article>
+                    <div class="feature-card-header">
+                        <span class="feature-index-icon">06</span>
+                        
+                        <img
+                            class="feature-icon"
+                            src="../images/icons/privacy-shield-blue.png"
+                            alt=""
+                        >
+                    </div>
+                    
+                    <h3 data-i18n="features.card6.title">Privacy-focused design</h3>
+                    <p data-i18n="features.card6.lead">Placeholder feature description.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+<!-- LIMITATIONS -->
+<section class="section dark-section reveal" id="limitations">
+    <div class="section-inner narrow">
+
+        <div class="section-heading--with-icon">
+            <div class="section-heading-text">
+                <p class="eyebrow" data-i18n="limitations.eyebrow">LIMITATIONS</p>
+                <h2 data-i18n="limitations.title">Bluetooth has physical limits.</h2>
+            </div>
+
+            <div class="section-title-icon section-title-icon--large section-title-icon--bluetooth">
+                <!-- "images/bluetooth.svg" -->
+                <img
+                    src="../images/icons/bluetooth-blue.png"
+                    alt=""
+                >
+            </div>
+        </div>
+
+        <p class="lead" data-i18n="limitations.lead">
+            Bluetooth signal strength can help estimate proximity, but walls, furniture, orientation and other environmental factors can affect the result.
+        </p>
+
+        <div class="quote-box">
+            <span data-i18n="limitations.quote-box.title">Prototype statement</span>
+            <strong data-i18n="limitations.quote-box.lead">Closer / farther is more meaningful than an exact distance.</strong>
+        </div>
+
+    </div>
+</section>
+
+    <!-- PRIVACY -->
+    <section class="section reveal" id="privacy">
+        <div class="section-inner narrow">
+
+            <div class="section-heading--with-icon">
+                <div class="section-heading-text">
+                    <p class="eyebrow" data-i18n="privacy.eyebrow">PRIVACY</p>
+                    <h2 data-i18n="privacy.title">Designed to keep processing local.</h2>
+                </div>
+
+                <div class="section-title-icon section-title-icon--large">
+                    <!-- "images/problem-location.svg" -->
+                    <img
+                        src="../images/icons/privacy-shield-blue.png"
+                        alt=""
+                    >
+                </div>
+                <div class="section-title-icon section-title-icon--large">
+                    <!-- "images/problem-location.svg" -->
+                    <img
+                        src="../images/icons/automation-blue.png"
+                        alt=""
+                    >
+                </div>                
+            </div>
+
+            <p class="lead" data-i18n="privacy.lead">
+                ObjectRadar is designed around local processing so the Bluetooth information used for the search can remain on the user's device.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section tinted reveal" id="faq">
+        <div class="section-inner narrow">
+
+            <div class="section-heading--with-icon">
+                <div class="section-heading-text">
+                    <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+                    <h2 data-i18n="faq.title">Questions, answered.</h2>
+                </div>
+
+                <div class="section-title-icon section-title-icon--large">
+                    <!-- "images/problem-location.svg" -->
+                    <img
+                        src="../images/icons/conversation-blue.png"
+                        alt=""
+                    >
+                </div>
+            </div>
+            
+            <div class="faq">
+                <details>
+                    <summary data-i18n="faq.question1.question">What can the application detect?</summary>
+                    <p data-i18n="faq.question1.answer">ObjectRadar scans nearby Bluetooth Low Energy advertisements and analyzes the information made available by the devices. Detection depends on the device, its advertising behavior and the information exposed by its Bluetooth protocol.</p>
+                </details>
+
+                <details>
+                    <summary data-i18n="faq.question2.question">How does proximity guidance work?</summary>
+                    <p data-i18n="faq.question2.answer">The application observes changes in Bluetooth signal strength while you move. These changes can indicate whether you are getting closer to or farther from a device, but they cannot provide a precise distance.</p>
+                </details>
+
+                <details>
+                    <summary data-i18n="faq.question3.question">Why can some Bluetooth devices remain invisible?</summary>
+                    <p data-i18n="faq.question3.answer">A device may not advertise continuously, may use a protocol that does not expose enough information, or may be affected by Bluetooth and environmental limitations.</p>
+                </details>
+
+                <details>
+                    <summary data-i18n="faq.question4.question">What are the limitations of Bluetooth tracking?</summary>
+                    <p data-i18n="faq.question4.answer">Bluetooth signal strength is affected by distance, obstacles, reflections, device orientation and the surrounding environment. Proximity guidance should therefore be understood as an indication rather than an exact measurement.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="section reveal" id="resources">
+        <div class="section-inner narrow">
+
+            <div class="section-heading--with-icon">
+                <div class="section-heading-text">
+                    <p class="eyebrow" data-i18n="resources.eyebrow">RESOURCES</p>
+                    <h2 data-i18n="resources.title">More information</h2>
+                </div>
+
+                <div class="section-title-icon section-title-icon--large">
+                    <!-- "images/problem-location.svg" -->
+                    <img
+                        src="../images/icons/book-blue.png"
+                        alt=""
+                    >
+                </div>
+            </div>
+
+            <!--p class="eyebrow">RESOURCES</p>
+            <h2>More information</h2-->
+            
+            <div class="links">
+                <a href="../support.html" data-i18n="resources.support">Support</a>
+                <a href="../privacy.html" data-i18n="resources.privacy-policy">Privacy Policy</a>
+                <a href="../terms.html" data-i18n="resources.terms-of-use">Terms of Use</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta reveal">
+        <div class="section-inner narrow">
+            <p class="eyebrow" data-i18n="finalCTA.eyebrow">OBJECTRADAR</p>
+            <h2 data-i18n="finalCTA.title">Ready to find your device?</h2>
+            <a class="primary-button" href="https://apps.apple.com/app/objectradar/id6796338464" data-i18n="finalCTA.buttonCTA">
+                Download on the App Store
+            </a>
+        </div>
+    </section>
+
+    <!-- CREDITS AND LICENSES -->
+    <section class="section tinted reveal" id="credits">
+        <div class="section-inner narrow">
+
+            <div class="section-heading--with-icon">
+                <div class="section-heading-text">
+                    <p class="eyebrow" data-i18n="credits.eyebrow">CREDITS & LICENCES</p>
+                    <h2 data-i18n="credits.title">Resources and attributions.</h2>
+                </div>
+
+                <div class="section-title-icon section-title-icon--large">
+                    <img
+                        src="../images/icons/credits-blue.png"
+                        alt=""
+                    >
+                </div>
+            </div>
+            
+            <div class="credits">
+                <details>
+                    <summary data-i18n="credits.toggle">View image and icon credit</summary>
+                        <div class="credits-content">
+                        <!-- Credit entries -->
+                        
+                        <div class="credits-content">
+                            
+                            <!-- LOCATION ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/Location_and_map.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.location.title">Location Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.location.author">
+                                            Locations icons created by Magnific - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.location.link"
+                                    href="https://www.flaticon.com/free-icons/locations"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.location.description">
+                                    Nearby location and map-based proximity guidance.
+                                </p>
+                            
+                            </article>
+
+                            <!-- KEY TRACKER ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/key_tracker.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.keyTracker.title">Key Tracker Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.keyTracker.author">
+                                            Tracker icons created by juicy_fish - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.keyTracker.link"
+                                    href="https://www.flaticon.com/free-icons/tracker"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.keyTracker.description">
+                                    Bluetooth tracking tag and nearby device search.
+                                </p>
+                            
+                            </article>
+
+                            <!-- PAIRED DEVICES — HEARING AID ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/hearing-aid.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.hearingAid.title">Paired Devices Icon — like hearing aid</h3>
+                                        <p class="credit-author" data-i18n="credits.hearingAid.author">
+                                            Hearing aid icons created by Arkinasi - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.hearingAid.link"
+                                    href="https://www.flaticon.com/free-icons/hearing-aid"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.hearingAid.description">
+                                    Paired Bluetooth devices that can be searched for when they are nearby.
+                                </p>
+                            
+                            </article>
+
+                            <!-- BLE DEVICES ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/wireless_devices.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.bleDevices.title">BLE Devices Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.bleDevices.author">
+                                            Internet of things icons created by Canticons - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.bleDevices.link"
+                                    href="https://www.flaticon.com/free-icons/internet-of-things"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.bleDevices.description">
+                                    Nearby Bluetooth Low Energy devices and accessories.
+                                </p>
+                            
+                            </article>
+
+                            <!-- BLE SCANNING ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/radar.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.radar.title">BLE Scanning Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.radar.author">
+                                            Radar icons created by Magnific - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.radar.link"
+                                    href="https://www.flaticon.com/free-icons/radar"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.radar.description">
+                                    BLE scanning for nearby Bluetooth devices and accessories.
+                                </p>
+                            
+                            </article>
+
+                            <!-- IDENTIFICATION ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/identification.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.identification.title">Identification Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.identification.author">
+                                            Object icons created by Uniconlabs - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.identification.link"
+                                    href="https://www.flaticon.com/free-icons/object"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.identification.description">
+                                    Device identification and association within the ObjectRadar workflow.
+                                </p>
+                            
+                            </article>
+
+                            <!-- GUIDANDE ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/circles.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.guidance.title">Guidance Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.guidance.author">
+                                            Dot icons created by Google - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.guidance.link"
+                                    href="https://www.flaticon.com/free-icons/dot"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.guidance.description">
+                                    Proximity guidance based on Bluetooth signal information.
+                                </p>
+                            
+                            </article>
+
+                            <!-- ASSOCIATION OBJECT ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/link.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.objectAssociation.title">Association Object Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.objectAssociation.author">
+                                            Linked icons created by Smashicons - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.objectAssociation.link"
+                                    href="https://www.flaticon.com/free-icons/linked"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.objectAssociation.description">
+                                    Association between a detected device and an identified object.
+                                </p>
+                            
+                            </article>
+
+                            <!-- LOCAL PROCESSING ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/automation.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.localProcessing.title">Local Processing Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.localProcessing.author">
+                                            Automation icons created by Magnific - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.localProcessing.link"
+                                    href="https://www.flaticon.com/free-icons/automation"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.localProcessing.description">
+                                    Local processing without requiring a remote backend.
+                                </p>
+                            
+                            </article>
+
+                            <!-- PRIVACY ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/privacy-shield.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.privacy.title">Privacy Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.privacy.author">
+                                            Security icons created by Magnific - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.privacy.link"
+                                    href="https://www.flaticon.com/free-icons/security"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.privacy.description">
+                                    Privacy protection and secure handling of user data.
+                                </p>
+                            
+                            </article>
+
+                            <!-- BLUETOOTH ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/bluetooth.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.bluetooth.title">Bluetooth Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.bluetooth.author">
+                                            Bluetooth icon created by Katerine Melina – Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.bluetooth.link"
+                                    href="https://www.flaticon.com/free-icons/bluetooh"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.bluetooth.description">
+                                    Icon used to represent Bluetooth functionality.
+                                </p>
+                            
+                            </article>
+
+                            <!-- FAQ ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/conversation.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.conversation.title">FAQ Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.conversation.author">
+                                            Question icons created by Magnific - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.conversation.link"
+                                    href="https://www.flaticon.com/free-icons/question"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.conversation.description">
+                                    Answers to common questions about ObjectRadar and its capabilities.
+                                </p>
+                            
+                            </article>
+
+                            <!-- RESOURCES ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/book.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.resources.title">Resources Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.resources.author">
+                                            Open book icons created by Karyative - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.resources.link"
+                                    href="https://www.flaticon.com/free-icons/open-book"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.resources.description">
+                                    Documentation and external resources related to the application.
+                                </p>
+                            
+                            </article>                            
+
+                            <!-- CREDITS AND LICENSES ICON -->
+                            <article class="credit-card">
+
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/credits.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.credits.title">Credits Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.credits.author">
+                                            Certificate icons created by Magnific
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.credits.link"
+                                    href="https://www.flaticon.com/free-icons/certificate"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.credits.description">
+                                    Resources, icons and licenses used in the application.
+                                </p>
+                            
+                            </article>
+                            
+                        </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 eLab Software. All rights reserved.</p>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script>
+
+/* ************************************************************
+ * ObjectRadar website interactions
+ *
+ * This script provides two lightweight UI behaviours:
+ *
+ * 1. Scroll reveal:
+ *    Sections using the "reveal" class become visible when
+ *    they enter the viewport.
+ *
+ * 2. Navigation reveal:
+ *    The main navigation is initially hidden and becomes visible
+ *    after the user has scrolled down the page.
+ *
+ * No framework or external dependency is required.
+ * ************************************************************ */
+
+
+/* ============================================================
+   1. SCROLL REVEAL
+   ============================================================ */
+
+/* ************************************************************
+ * Select all elements that should appear progressively
+ * when they enter the viewport.
+ *
+ * Example:
+ * <section class="section reveal">
+ * ************************************************************ */
+const items = document.querySelectorAll(".reveal");
+
+/* ------------------------------------------------------------
+ * Use IntersectionObserver when supported by the browser.
+ *
+ * IntersectionObserver allows us to detect when an element
+ * enters the visible area without continuously calculating
+ * its position during scrolling.
+ * ------------------------------------------------------------ */
+if ("IntersectionObserver" in window) {
+
+    /* ------------------------------------------------------------
+     * Create an observer responsible for detecting when
+     * a .reveal element becomes visible.
+     * ------------------------------------------------------------ */
+    const observer = new IntersectionObserver((entries) => {
+
+        /* ------------------------------------------------------------
+         * Several elements may enter the viewport at the same time,
+         * so process every observed entry.
+         * ------------------------------------------------------------ */
+        entries.forEach((entry) => {
+
+            /* ------------------------------------------------------------
+             * The element is sufficiently visible in the viewport.
+             * ------------------------------------------------------------ */
+            if (entry.isIntersecting) {
+
+                /* ------------------------------------------------------------
+                 * Add the CSS class that triggers the visible state.
+                 *
+                 * The CSS handles the actual animation:
+                 * opacity + vertical movement.
+                 * ------------------------------------------------------------ */
+                entry.target.classList.add("visible");
+
+                /* ------------------------------------------------------------
+                 * Stop observing this element.
+                 *
+                 * Once revealed, the section does not need to be
+                 * observed again when the user scrolls back.
+                 * ------------------------------------------------------------ */
+                observer.unobserve(entry.target);
+            }
+        });
+
+    /* ------------------------------------------------------------
+     * Trigger the reveal when approximately 12% of the element
+     * enters the viewport.
+     * ------------------------------------------------------------ */
+    }, {
+        threshold: 0.12
+    });
+
+    /* ------------------------------------------------------------
+     * Start observing every element using the .reveal class.
+     * ------------------------------------------------------------ */
+    items.forEach((item) => observer.observe(item));
+
+} else {
+
+    /* ------------------------------------------------------------
+     * Fallback for browsers that do not support IntersectionObserver.
+     *
+     * In that case, all sections are immediately made visible
+     * instead of remaining hidden.
+     * ------------------------------------------------------------ */
+    items.forEach((item) => item.classList.add("visible"));
+}
+
+
+/* ============================================================
+   2. NAVIGATION REVEAL
+   ============================================================ */
+
+/* ------------------------------------------------------------
+ * Select the main site header.
+ *
+ * Expected HTML:
+ * <header class="site-header">
+ * ------------------------------------------------------------ */
+const header = document.querySelector(".site-header");
+
+/* ------------------------------------------------------------
+ * Update the visibility state of the navigation.
+ *
+ * The "is-visible" CSS class is added after the user has
+ * scrolled more than 80 pixels down the page.
+ * ------------------------------------------------------------ */
+const updateHeader = () => {
+
+    header.classList.toggle(
+        "is-visible",
+        window.scrollY > 80
+    );
+};
+
+/* ------------------------------------------------------------
+ * Set the correct initial state when the page loads.
+ *
+ * This is important if the page is refreshed while the browser
+ * is already positioned below the top of the page.
+ * ------------------------------------------------------------ */
+updateHeader();
+
+/* ------------------------------------------------------------
+ * Re-evaluate the navigation visibility whenever the user scrolls.
+ *
+ * "passive: true" tells the browser that this listener will not
+ * cancel the scroll event, allowing scrolling to remain efficient.
+ * ------------------------------------------------------------ */
+window.addEventListener(
+    "scroll",
+    updateHeader,
+    { passive: true }
+);
+
+</script>
+
+</body>
+</html>

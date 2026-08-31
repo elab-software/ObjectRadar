@@ -1,0 +1,251 @@
+{
+  "navigation": {
+    "overview": "Présentation",
+    "how-it-works": "Comment ça marche",
+    "use-cases": "Cas d'utilisations",
+    "faq": "FAQ",
+    "resources": "Ressources"
+  },
+
+  "hero": {
+    "eyebrow": "iOS APPLICATION",
+    "title": "OBJECTRADAR",
+    "lead": "Trouvez les objets Bluetooth à proximité grâce à une assistance BLE intelligente",
+    "buttonCTA": "Découvrir l'application"
+  },
+
+  "problem": {
+    "eyebrow": "LE PROBLÈME",
+    "title": "Vous savez qu'il est à proximité.<br>Mais où est-il ?",
+    "lead": "Vous pouvez savoir qu'un appareil Bluetooth est à proximité sans disposer d'un moyen pratique pour le localiser précisément. ObjectRadar explore les informations Bluetooth accessibles à iOS afin de transformer ce signal en indication de proximité utile."
+  },
+
+  "how-it-works": {
+    "eyebrow": "COMMENT ÇA MARCHE",
+    "title": "Trois étapes simples",
+    "lead": "Du scan des appareils Bluetooth à proximité, à l'identification et au suivi d'un objet, ObjectRadar vous guide à travers un parcours simple conçu pour vous aider à retrouver ce que vous cherchez.",
+    "card1": {
+      "title": "Scanner",
+      "lead": "Analysez les appareils Bluetooth à proximité et observez leur niveau de signal."
+    },
+    "card2": {
+      "title": "Identifier",
+      "lead": "Identifiez l'appareil recherché à partir des informations disponibles pendant la recherche."
+    },
+    "card3": {
+      "title": "Suivre",
+      "lead": "Déplacez-vous dans votre environnement et utilisez les variations de proximité pour affiner sa localisation."
+    }
+  },
+
+  "use-cases": {
+    "eyebrow": "CAS D'UTILISATIONS",
+    "title": "Conçu pour des situations réelles",
+    "lead": "Découvrez comment ObjectRadar peut vous aider à retrouver différents types d'appareils Bluetooth à proximité et à comprendre les étapes de chaque recherche.",
+    "card1": {
+      "title": "Traceurs Bluetooth",
+      "lead": "Retrouvez un traceur à proximité lorsque les informations de localisation classiques ne suffisent pas."
+    },
+    "card2": {
+      "title": "Appareils associés",
+      "lead": "Recherchez des appareils Bluetooth déjà associés à votre iPhone."
+    },
+    "card3": {
+      "title": "Autres appareils BLE",
+      "lead": "Explorez les appareils BLE à proximité au-delà des traceurs dédiés."
+    }
+  },
+
+  "features": {
+    "eyebrow": "FONCTIONNALITÉS",
+    "subtitle": "Ce que l'application propose",
+    "lead": "",
+    "card1": {
+      "title": "Scan BLE",
+      "lead": "Analysez les publicités Bluetooth Low Energy à proximité et observez leur niveau de signal."
+    },
+    "card2": {
+      "title": "Identification des appareils",
+      "lead": "Utilisez les informations Bluetooth disponibles pour identifier l'appareil que vous recherchez."
+    },
+    "card3": {
+      "title": "Guidage de proximité",
+      "lead": "Utilisez les variations du niveau de signal pour déterminer si vous vous rapprochez ou vous éloignez."
+    },
+    "card4": {
+      "title": "Association d'un objet",
+      "lead": "Associez un appareil Bluetooth détecté à l'objet que vous souhaitez retrouver."
+    },
+    "card5": {
+      "title": "Traitement local",
+      "lead": "Traitez directement sur l'appareil les informations nécessaires à la recherche."
+    },
+    "card6": {
+      "title": "Conception axée sur la confidentialité",
+      "lead": "Concentrez la recherche sur les informations Bluetooth locales sans dépendre d'un service de suivi distant."
+    }
+  },
+
+  "limitations": {
+    "eyebrow": "LIMITATIONS",
+    "title": "Le Bluetooth a des limites physiques.",
+    "lead": "La puissance du signal Bluetooth peut aider à estimer la proximité, mais les murs, les meubles, l'orientation de l'appareil et d'autres facteurs environnementaux peuvent influencer le résultat.",
+    "quote-box": {
+      "title": "Principe du prototype",
+      "lead": "Plus près / plus loin est plus significatif qu'une distance exacte."
+    }
+  },
+
+  "privacy": {
+    "eyebrow": "CONFIDENTIALITÉ",
+    "title": "Conçu pour conserver le traitement en local.",
+    "lead": "ObjectRadar est conçu autour du traitement local afin que les informations Bluetooth utilisées pour la recherche puissent rester sur l'appareil de l'utilisateur."
+  },
+
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Vos questions, nos réponses.",
+    "lead": "",
+    "question1": {
+      "question": "Que peut détecter l'application ?",
+      "answer": "ObjectRadar analyse les publicités Bluetooth Low Energy à proximité et les informations rendues disponibles par les appareils. La détection dépend de l'appareil, de son comportement publicitaire et des informations exposées par son protocole Bluetooth."
+    },
+    "question2": {
+      "question": "Comment fonctionne le guidage de proximité ?",
+      "answer": "L'application observe les variations de la puissance du signal Bluetooth lorsque vous vous déplacez. Ces variations peuvent indiquer si vous vous rapprochez ou vous éloignez d'un appareil, mais elles ne permettent pas de déterminer une distance précise."
+    },
+    "question3": {
+      "question": "Pourquoi certains appareils Bluetooth peuvent-ils rester invisibles ?",
+      "answer": "Un appareil peut ne pas émettre en permanence, utiliser un protocole qui n'expose pas suffisamment d'informations ou être soumis aux limitations du Bluetooth et de son environnement."
+    },
+    "question4": {
+      "question": "Quelles sont les limites du suivi Bluetooth ?",
+      "answer": "La puissance du signal Bluetooth dépend notamment de la distance, des obstacles, des réflexions, de l'orientation de l'appareil et de l'environnement. Le guidage de proximité doit donc être considéré comme une indication et non comme une mesure exacte."
+    }
+  },
+
+  "resources": {
+    "eyebrow": "RESSOURCES",
+    "title": "En savoir plus",
+    "lead": "",
+    "support": "Assistance",
+    "privacy-policy": "Politique de confidentialité",
+    "terms-of-use": "Conditions d'utilisation"
+  },
+  "finalCTA": {
+    "eyebrow": "OBJECTRADAR",
+    "title": "Prêt à retrouver votre appareil ?",
+    "lead": "",
+    "buttonCTA": "Télécharger sur l'App Store"
+  },
+  "credits": {
+    "eyebrow": "CRÉDITS",
+    "title": "Crédits et licences",
+    "toggle": "Afficher les crédits des images et des icônes",
+    "intro": "Les éléments graphiques utilisés sur ce site sont listés ci-dessous avec leurs auteurs et les informations relatives à leur licence.",
+    
+    "source": "Source",
+    "author": "Auteur",
+    "license": "Licence",
+
+
+
+    "location": {
+      "title":"Icône Localisation",
+      "author": "Locations icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Localisation à proximité et guidage de proximité basé sur la carte."
+    },
+    
+    "keyTracker": {
+      "title":"Icône tag clé",
+      "author": "Tracker icons created by juicy_fish - Flaticon",
+      "link": "Official source",
+      "description": "Tag Bluetooth et recherche d'appareils à proximité."
+    },
+    
+    "hearingAid": {
+      "title":"Icône prothèses auditives",
+      "author": "Hearing aid icons created by Arkinasi - Flaticon",
+      "link": "Official source",
+      "description": "Paired Bluetooth devices that can be searched for when they are nearby."
+    },
+    
+    "bleDevices": {
+      "title":"Icône Périphériques BLE",
+      "author": "Internet of things icons created by Canticons - Flaticon",
+      "link": "Official source",
+      "description": "Appareils et accessoires Bluetooth Low Energy à proximité."
+    },
+
+    "radar": {
+      "title":"Icône Scanner BLE",
+      "author": "Radar icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "BLE scanning for nearby Bluetooth devices and accessories."
+    },
+
+    "identification": {
+      "title":"Icône Identification",
+      "author": "Object icons created by Uniconlabs - Flaticon",
+      "link": "Official source",
+      "description": "Device identification and association within the ObjectRadar workflow."
+    },
+
+    "guidance": {
+      "title":"Icône Guidage",
+      "author": "Dot icons created by Google - Flaticon",
+      "link": "Official source",
+      "description": "Proximity guidance based on Bluetooth signal information."
+    },
+
+    "objectAssociation": {
+      "title":"Icône Association Objet",
+      "author": "Linked icons created by Smashicons - Flaticon",
+      "link": "Official source",
+      "description": "Association between a detected device and an identified object."
+    },
+
+    "localProcessing": {
+      "title":"Icône Traitement Local",
+      "author": "Automation icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Traitement local sans nécessiter de serveur distant."
+    },
+
+    "privacy": {
+      "title":"Icône Vie Privée",
+      "author": "Security icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Protection de la vie privée et traitement sécurisé des données utilisateur."
+    },
+
+    "bluetooth": {
+      "title":"Icône Bluetooth",
+      "author": "Bluetooth icons created by Katerine Melina - Flaticon",
+      "link": "Official source",
+      "description": "Fonctionnalité Bluetooth et détection des appareils Bluetooth à proximité."
+    },
+
+    "conversation": {
+      "title":"Icône FAQ",
+      "author": "Question icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Réponses aux questions fréquentes sur ObjectRadar et ses fonctionnalités."
+    },
+
+    "resources": {
+      "title":"Icône Ressources",
+      "author": "Open book icons created by Karyative - Flaticon",
+      "link": "Official source",
+      "description": "Documentation et ressources externes liées à l'application."
+    },
+
+    "credits": {
+      "title":"Icône Crédits et licences",
+      "author": "Certificate icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Ressources, icônes et licences utilisées dans l'application."
+    }    
+  }
+}
