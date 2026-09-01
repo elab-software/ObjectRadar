@@ -1,41 +1,31 @@
-console.log("i18n.js loaded");
-
-fetch("../locales/en.json")
-    .then(response => {
-        console.log("JSON status:", response.status);
-        return response.json();
-    })
-    .then(data => {
-        console.log("Translations:", data);
-    })
-    .catch(error => {
-        console.error("i18n error:", error);
-    });
-
 /* =========================================================
    Object Radar — Internationalisation
    ========================================================= */
 
-/* Langue utilisée lorsque rien n'est encore enregistré. */
+/* Language used when nothing has been stored yet. */
 const DEFAULT_LANGUAGE = "en";
 
-/* Langues actuellement disponibles. */
+/* Currently available languages. */
 const SUPPORTED_LANGUAGES = ["fr", "en"];
 
 
 /* ---------------------------------------------------------
-   Récupère la langue demandée dans l'URL.
-   Exemple :
+   Retrieves the language requested in the URL.
+   Example :
    /fr/ → fr
    /en/ → en
    --------------------------------------------------------- */
 function getLanguageFromURL() {
     const parts = window.location.pathname.split("/");
 
-    const language = parts[1];
+    const htmlIndex = parts.indexOf("html");
 
-    if (SUPPORTED_LANGUAGES.includes(language)) {
-        return language;
+    if (htmlIndex !== -1) {
+        const language = parts[htmlIndex + 1];
+
+        if (SUPPORTED_LANGUAGES.includes(language)) {
+            return language;
+        }
     }
 
     return null;
@@ -43,13 +33,13 @@ function getLanguageFromURL() {
 
 
 /* ---------------------------------------------------------
-   Détermine la langue à utiliser.
-
-   Priorité :
-   1. langue présente dans l'URL
-   2. langue mémorisée
-   3. langue du navigateur
-   4. anglais par défaut
+   Determines which language to use.
+   
+   Priority:
+   1. language specified in the URL
+   2. stored language
+   3. browser language
+   4. English by default
    --------------------------------------------------------- */
 function getCurrentLanguage() {
 
@@ -65,8 +55,7 @@ function getCurrentLanguage() {
         return savedLanguage;
     }
 
-    const browserLanguage =
-        navigator.language.toLowerCase().split("-")[0];
+    const browserLanguage = navigator.language.toLowerCase().split("-")[0];
 
     if (SUPPORTED_LANGUAGES.includes(browserLanguage)) {
         return browserLanguage;
@@ -77,12 +66,12 @@ function getCurrentLanguage() {
 
 
 /* ---------------------------------------------------------
-   Récupère une valeur dans l'objet de traduction.
-
-   Exemple :
+   Retrieves a value from the translation object.
+   
+   Example:
    "problem.title"
-
-   devient :
+   
+   becomes:
    translations.problem.title
    --------------------------------------------------------- */
 function getTranslation(translations, key) {
@@ -94,12 +83,11 @@ function getTranslation(translations, key) {
 
 
 /* ---------------------------------------------------------
-   Charge le fichier JSON correspondant à la langue.
+   Loads the JSON file corresponding to the selected language
    --------------------------------------------------------- */
 async function loadTranslations(language) {
 
-    const response =
-        await fetch(`../locales/${language}.json`);
+    const response = await fetch(`../locales/${language}.json`);
 
     if (!response.ok) {
         throw new Error(
@@ -112,9 +100,9 @@ async function loadTranslations(language) {
 
 
 /* ---------------------------------------------------------
-   Applique les traductions aux éléments HTML.
-
-   Chaque élément doit posséder :
+   Applies translations to HTML elements.
+   
+   Each element must have:
    data-i18n="section.key"
    --------------------------------------------------------- */
 function applyTranslations(translations) {
@@ -129,14 +117,14 @@ function applyTranslations(translations) {
             return;
         }
 
-        /* innerHTML permet notamment de conserver <br>. */
+        /* innerHTML allows HTML elements such as <br> to be preserved. */
         element.innerHTML = value;
     });
 }
 
 
 /* ---------------------------------------------------------
-   Initialise le système de traduction.
+   Initializes the translation system.
    --------------------------------------------------------- */
 async function initLanguage() {
 
@@ -145,17 +133,16 @@ async function initLanguage() {
     
     try {
 
-        const translations =
-            await loadTranslations(language);
+        const translations = await loadTranslations(language);
 
         applyTranslations(translations);
 
-        /* Informe également le navigateur de la langue du document. */
+        /* Also informs the browser of the document language. */
         document.documentElement.lang = language;
 
-        /* Mémorise le choix actuel. */
+        /* Stores the current language selection. */
         localStorage.setItem("language", language);
-
+        
     } catch (error) {
 
         console.error("Language initialization failed:", error);
@@ -165,6 +152,6 @@ async function initLanguage() {
 
 
 /* ---------------------------------------------------------
-   Lancement après chargement du HTML.
+   Starts the translation system after the HTML has been loaded.
    --------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", initLanguage);
