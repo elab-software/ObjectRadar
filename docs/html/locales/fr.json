@@ -91,7 +91,7 @@
     "title": "Le Bluetooth a des limites physiques.",
     "lead": "La puissance du signal Bluetooth peut aider à estimer la proximité, mais les murs, les meubles, l'orientation de l'appareil et d'autres facteurs environnementaux peuvent influencer le résultat.",
     "quote-box": {
-      "title": "Principe du prototype",
+      "title": "Principe de l'application",
       "lead": "Plus près / plus loin est plus significatif qu'une distance exacte."
     }
   },

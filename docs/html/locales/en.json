@@ -93,7 +93,7 @@
     "title": "Bluetooth has physical limits.",
     "lead": "Bluetooth signal strength can help estimate proximity, but walls, furniture, orientation and other environmental factors can affect the result.",
     "quote-box": {
-      "title": "Prototype statement",
+      "title": "Application statement",
       "lead":"Closer / farther is more meaningful than an exact distance."
     }
   },
