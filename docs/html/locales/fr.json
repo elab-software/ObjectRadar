@@ -148,103 +148,101 @@
     "author": "Auteur",
     "license": "Licence",
 
-
-
     "location": {
       "title":"Icône Localisation",
       "author": "Locations icons created by Magnific - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Localisation à proximité et guidage de proximité basé sur la carte."
     },
     
     "keyTracker": {
-      "title":"Icône tag clé",
+      "title":"Icône Tag Clé",
       "author": "Tracker icons created by juicy_fish - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Tag Bluetooth et recherche d'appareils à proximité."
     },
     
     "hearingAid": {
-      "title":"Icône prothèses auditives",
+      "title":"Icône Prothèses Auditives",
       "author": "Hearing aid icons created by Arkinasi - Flaticon",
-      "link": "Official source",
-      "description": "Paired Bluetooth devices that can be searched for when they are nearby."
+      "link": "Source officielle",
+      "description": "Appareils Bluetooth associés pouvant être recherchés lorsqu'ils sont à proximité."
     },
     
     "bleDevices": {
       "title":"Icône Périphériques BLE",
       "author": "Internet of things icons created by Canticons - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Appareils et accessoires Bluetooth Low Energy à proximité."
     },
 
     "radar": {
       "title":"Icône Scanner BLE",
       "author": "Radar icons created by Magnific - Flaticon",
-      "link": "Official source",
-      "description": "BLE scanning for nearby Bluetooth devices and accessories."
+      "link": "Source officielle",
+      "description": "Scan BLE des appareils et accessoires Bluetooth à proximité."
     },
 
     "identification": {
       "title":"Icône Identification",
       "author": "Object icons created by Uniconlabs - Flaticon",
-      "link": "Official source",
-      "description": "Device identification and association within the ObjectRadar workflow."
+      "link": "Source officielle",
+      "description": "Identification et association des appareils dans le fonctionnement d'ObjectRadar."
     },
 
     "guidance": {
       "title":"Icône Guidage",
       "author": "Dot icons created by Google - Flaticon",
-      "link": "Official source",
-      "description": "Proximity guidance based on Bluetooth signal information."
+      "link": "Source officielle",
+      "description": "Guidage de proximité basé sur les informations du signal Bluetooth."
     },
 
     "objectAssociation": {
       "title":"Icône Association Objet",
       "author": "Linked icons created by Smashicons - Flaticon",
-      "link": "Official source",
-      "description": "Association between a detected device and an identified object."
+      "link": "Source officielle",
+      "description": "Association entre un appareil détecté et un objet identifié."
     },
 
     "localProcessing": {
       "title":"Icône Traitement Local",
       "author": "Automation icons created by Magnific - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Traitement local sans nécessiter de serveur distant."
     },
 
     "privacy": {
       "title":"Icône Vie Privée",
       "author": "Security icons created by Magnific - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Protection de la vie privée et traitement sécurisé des données utilisateur."
     },
 
     "bluetooth": {
       "title":"Icône Bluetooth",
       "author": "Bluetooth icons created by Katerine Melina - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Fonctionnalité Bluetooth et détection des appareils Bluetooth à proximité."
     },
 
     "conversation": {
       "title":"Icône FAQ",
       "author": "Question icons created by Magnific - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Réponses aux questions fréquentes sur ObjectRadar et ses fonctionnalités."
     },
 
     "resources": {
       "title":"Icône Ressources",
       "author": "Open book icons created by Karyative - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Documentation et ressources externes liées à l'application."
     },
 
     "credits": {
       "title":"Icône Crédits et licences",
       "author": "Certificate icons created by Magnific - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Ressources, icônes et licences utilisées dans l'application."
     }    
   }
