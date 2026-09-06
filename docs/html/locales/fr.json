@@ -142,6 +142,10 @@
     "eyebrow": "CRÉDITS",
     "title": "Crédits et licences",
     "toggle": "Afficher les crédits des images et des icônes",
+    "usecase-page": {
+      "view_on_main": "Voir les crédits des images et icônes sur la page principale",
+      "link_to_main_page":"Aller vers la page principale"
+    },
     "intro": "Les éléments graphiques utilisés sur ce site sont listés ci-dessous avec leurs auteurs et les informations relatives à leur licence.",
     
     "source": "Source",
@@ -244,6 +248,245 @@
       "author": "Certificate icons created by Magnific - Flaticon",
       "link": "Source officielle",
       "description": "Ressources, icônes et licences utilisées dans l'application."
+    },
+
+    "check": {
+      "title":"Icône Validation",
+      "author": "Foursquare check in icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Utilisé pour indiquer un objet complété, validé ou succès."
+    },
+
+    "tip": {
+      "title":"Icône Conseil",
+      "author": "Information icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Utilisé pour fournir un conseil utile, une recommendation ou une information additionnelle."
+    },
+
+    "warning": {
+      "title":"Icône Attention",
+      "author": "Error icons created by Gregor Cresnar - Flaticon",
+      "link": "Source officielle",
+      "description": "Utilisé pour mettre en avant un warning, une limite ou un problème particulier."
     }    
+  },
+
+  "usecase": {
+    "tag": {
+      "navigation": {
+        "home": "Maison"
+      },
+      "eyebrow":"CAS D'UTILISATION",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Prêt pour démarrer une recherche ?",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "buttonCTA":"Télécharger sur l'App Store"
+      }
+    },
+
+    "hearingAid": {
+      "navigation": {
+        "home": "Maison"
+      },
+      "eyebrow":"CAS D'UTILISATION",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Prêt pour démarrer une recherche ?",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "buttonCTA":"Télécharger sur l'App Store"
+      }
+    },
+
+    "otherDevice": {
+      "navigation": {
+        "home": "Maison"
+      },
+      "eyebrow":"CAS D'UTILISATION",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Prêt pour démarrer une recherche ?",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "buttonCTA":"Télécharger sur l'App Store"
+      }
+    },
+
+    "emptyCase": {
+      "navigation": {
+        "home": "Maison"
+      },
+      "eyebrow":"CAS D'UTILISATION",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":"",
+        "check":{
+          "title":"",
+          "content":""
+        },
+        "tip":{
+          "title":"",
+          "content":""
+        },
+        "warning":{
+          "title":"",
+          "content":""
+        }
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Prêt pour démarrer une recherche ?",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "buttonCTA":"Télécharger sur l'App Store"
+      }
+    }
   }
 }

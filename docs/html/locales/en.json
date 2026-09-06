@@ -146,7 +146,10 @@
     "eyebrow": "CREDITS",
     "title": "Credits & licenses",
     "toggle": "View image and icon credits",
-
+    "usecase-page": {
+      "view_on_main": "View image and icon credits on the main page",
+      "link_to_main_page":"Go to main page"
+    },
     "intro": "Visual assets used on this website are listed below with their respective authors and license information.",
     "source": "Source",
     "author": "Author",
@@ -248,6 +251,245 @@
       "author": "Certificate icons created by Magnific - Flaticon",
       "link": "Official source",
       "description": "Resources, icons and licenses used in the application."
-    }    
+    },
+
+    "check": {
+      "title":"Check Icon",
+      "author": "Foursquare check in icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Used to indicate a completed, validated, or successful item."
+    },
+
+    "tip": {
+      "title":"Tip Icon",
+      "author": "Information icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Used to provide a useful tip, recommendation, or additional information."
+    },
+
+    "warning": {
+      "title":"Warning Icon",
+      "author": "Error icons created by Gregor Cresnar - Flaticon",
+      "link": "Official source",
+      "description": "Used to highlight a warning, limitation, or potential issue."
+    }
+  },
+
+  "usecase": {
+    "tag": {
+      "navigation": {
+        "home": "Home"
+      },
+      "eyebrow":"USE CASE",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Ready to start searching?",
+        "lead": "Open ObjectRadar and start your search.",
+        "buttonCTA":"Download on the App Store"
+      }
+    },
+
+    "hearingAid": {
+      "navigation": {
+        "home": "Home"
+      },
+      "eyebrow":"USE CASE",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Ready to start searching?",
+        "lead": "Open ObjectRadar and start your search.",
+        "buttonCTA":"Download on the App Store"
+      }
+    },
+
+    "otherDevice": {
+      "navigation": {
+        "home": "Home"
+      },
+      "eyebrow":"USE CASE",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Ready to start searching?",
+        "lead": "Open ObjectRadar and start your search.",
+        "buttonCTA":"Download on the App Store"
+      }
+    },
+
+    "emptyCase": {
+      "navigation": {
+        "home": "Home"
+      },
+      "eyebrow":"USE CASE",
+      "title":"",
+      "lead":"",
+      "quote-box": {
+        "title": "",
+        "lead":""
+      },
+      "button":{
+        "steps":""
+      },
+      "steps":{
+        "eyebrow":"",
+        "title":""
+      },
+      "step1":{
+        "title":"",
+        "lead":"",
+        "content":"",
+        "check":{
+          "title":"",
+          "content":""
+        },
+        "tip":{
+          "title":"",
+          "content":""
+        },
+        "warning":{
+          "title":"",
+          "content":""
+        }
+      },
+      "step2":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "step3":{
+        "title":"",
+        "lead":"",
+        "content":""
+      },
+      "limitations":{
+        "eyebrow":"LIMITATION(S)",
+        "title":"",
+        "lead":"",
+        "content":"",
+        "quote-box": {
+          "title": "",
+          "lead":""
+        }
+      },
+      "finalCTA": {
+        "eyebrow": "OBJECTRADAR",
+        "title": "Ready to start searching?",
+        "lead": "Open ObjectRadar and start your search.",
+        "buttonCTA":"Download on the App Store"
+      }
+    }
   }
 }
