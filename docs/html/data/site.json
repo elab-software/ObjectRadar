@@ -1,0 +1,13 @@
+{
+    "site": {
+        "name": "ObjectRadar",
+        "version": "2.0",
+        "copyright": "© 2026 eLab Software",
+        "lastUpdated": "2026-09-07"
+    },
+    "donation": {
+        "enabled": false,
+        "platform": "Ko-fi",
+        "url": "https://ko-fi.com/V0F426JRQT"
+    }
+}

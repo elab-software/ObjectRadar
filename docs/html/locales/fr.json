@@ -141,7 +141,8 @@
   "credits": {
     "eyebrow": "CRÉDITS",
     "title": "Crédits et licences",
-    "toggle": "Afficher les crédits des images et des icônes",
+    "toggleShow": "Afficher les crédits des images et des icônes",
+    "toggleHide": "Masquer les crédits des images et des icônes",
     "usecase-page": {
       "view_on_main": "Voir les crédits des images et icônes sur la page principale",
       "link_to_main_page":"Aller vers la page principale"
@@ -269,9 +270,26 @@
       "author": "Error icons created by Gregor Cresnar - Flaticon",
       "link": "Source officielle",
       "description": "Utilisé pour mettre en avant un warning, une limite ou un problème particulier."
-    }    
+    },
+    "donation": {
+      "title":"Icône Dons",
+      "author": "Donate icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Utilisé pour les dons destinés à soutenir le projet."
+    }
+  },
+  
+  "donation": {
+    "eyebrow": "DONS",
+    "title": "Soutenir le projet",
+    "lead": "Pour soutenir ObjectRadar, tout don est grandement apprécié. Merci pour votre soutien.",
+    "button":"Soutenez moi sur Ko-fi"
   },
 
+  "site": {
+    "copyright": "Tous droits réservés"
+  },
+  
   "usecase": {
     "tag": {
       "navigation": {

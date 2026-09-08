@@ -495,7 +495,8 @@
     cursor: pointer;
     list-style: none;
     font-size: 1.08rem;
-    font-weight: 600;
+    /*font-weight: 600;*/
+    color: var(--muted);
 }
 
 .faq summary::-webkit-details-marker,
@@ -515,6 +516,18 @@
 .faq details[open] summary::after,
 .credits details[open] summary::after { 
     content: "−"; 
+}
+
+.hide-label {
+    display: none;
+}
+
+.credits details[open] .show-label {
+    display: none;
+}
+
+.credits details[open] .hide-label {
+    display: inline;
 }
 
 .faq details p,

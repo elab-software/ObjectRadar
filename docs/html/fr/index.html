@@ -524,10 +524,10 @@
             <div class="section-heading--with-icon">
                 <div class="section-heading-text">
                     <p class="eyebrow" data-i18n="credits.eyebrow">CREDITS & LICENCES</p>
-                    <h2 data-i18n="credits.title">Resources and attributions.</h2>
+                    <h3 data-i18n="credits.title">Resources and attributions.</h3>
                 </div>
 
-                <div class="section-title-icon section-title-icon--large">
+                <div class="section-title-icon section-title-icon--small">
                     <img
                         src="../images/icons/credits-blue.png"
                         alt=""
@@ -537,7 +537,10 @@
             
             <div class="credits">
                 <details>
-                    <summary data-i18n="credits.toggle">View image and icon credit</summary>
+                    <summary>
+                        <span class="show-label" data-i18n="credits.toggleShow">View image and icon credit</span>
+                        <span class="hide-label" data-i18n="credits.toggleHide">Hide image and icon credit</span>
+                    </summary>
                         <div class="credits-content">
                         <!-- Credit entries -->
                         
@@ -1154,20 +1157,110 @@
                                 </p>
                             
                             </article>
+                            
+                            <!-- DONATION ICON -->
+                            <article class="credit-card">
 
+                                <div class="credit-card-header">
+
+                                    <img
+                                        class="credit-icon"
+                                        src="../images/icons/donation.png"
+                                        alt=""
+                                    >
+
+                                    <div class="credit-card-heading">
+                                        <h3 data-i18n="credits.donation.title">Donate Icon</h3>
+                                        <p class="credit-author" data-i18n="credits.donation.author">
+                                            Donate icons created by Magnific - Flaticon
+                                        </p>
+                                    </div>
+                                    
+                                    <a
+                                    class="credit-link"
+                                    data-i18n="credits.warning.link"
+                                    href="https://www.flaticon.com/free-icons/donate"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                    Official source
+                                    </a>
+
+                                </div>
+
+                                <p class="credit-description" data-i18n="credits.donation.description">
+                                    Used to donation for supporting the project.
+                                </p>
+                            
+                            </article>
+                            
                         </div>
                 </details>
             </div>
         </div>
     </section>
 
+    <!-- DONATION -->
+    <section class="section reveal" id="donation">
+        <div class="section-inner narrow">
+
+            <div class="section-heading--with-icon">
+                <div class="section-heading-text">
+                    <p class="eyebrow" data-i18n="donation.eyebrow">DONATION</p>
+                    <h3 data-i18n="donation.title">Project support</h3>
+                </div>
+
+                <div class="section-title-icon section-title-icon--small">
+                    <img
+                        src="../images/icons/donation-blue.png"
+                        alt=""
+                    >
+                </div>             
+            </div>
+            
+            <p class="lead" data-i18n="donation.lead">
+                To support ObjectRadar, any donation is greatly appreciated. Thank you for your support.
+            </p>
+
+            <!--a href='https://ko-fi.com/V0F426JRQT' target='_blank'>
+                <img height='36' style='border:0px;height:36px;' 
+                    src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' 
+                    border='0'
+                    alt='Buy Me a Coffee at ko-fi.com' 
+                />
+            </a-->
+
+            <div class="donation-button">
+                <script
+                    type="text/javascript"
+                    src="https://storage.ko-fi.com/cdn/widget/Widget_2.js">
+                </script>
+                <script type="text/javascript">
+                   kofiwidget2.init(
+                        'Soutenir le projet sur Ko-fi',
+                        '#007aff',
+                        'V0F426JRQT'
+                    );
+                    kofiwidget2.draw();
+                </script>
+            </div>
+
+        </div>
+    </section>
+    
 </main>
 
 <footer>
-    <p>© 2026 eLab Software. All rights reserved.</p>
+    <p>
+        <span data-site="site.copyright">© 2026 eLab Software</span>
+        <span> - </span>
+        <span data-i18n="site.copyright">All rights reserved</span>
+    </p>
 </footer>
 
 <script src="../js/i18n.js"></script>
+<script src="../js/site.js"></script>
+<script src="../js/goatcounter.js"></script>
 <script>
 
 /* ************************************************************
