@@ -296,51 +296,250 @@
   "usecase": {
     "tag": {
       "navigation": {
-        "home": "Home"
+        "overview":"Overview",
+        "compatible-trackers":"Trackers",
+        "prerequisites":"Before you start",
+        "associations":"Associations",
+        "steps":"Steps",
+        "faq":"FAQ",
+        "home":"Home"
       },
-      "eyebrow":"USE CASE",
-      "title":"",
-      "lead":"",
+      "eyebrow":"USE CASE INTRODUCTION",
+      "title":"Find your Bluetooth tracker",
+      "lead":"You know your tracker is nearby, but you need help narrowing down where it is.",
       "quote-box": {
-        "title": "",
-        "lead":""
+        "title": "THE LIMIT OF FIND MY PROTOCOL",
+        "lead":"Find My network can show where a tracker was detected, but it cannot tell you exactly where the tracker is inside your search area when precise finding is not supported."
       },
+      "origin":"ObjectRadar was created to help turn this approximate information into a practical local search.",
       "button":{
-        "steps":""
+        "steps":"See the steps"
       },
+
+      "compatibletrackers": {
+        "eyebrow":"COMPATIBLE TRACKERS",
+        "title":"Which trackers can you use?",
+        "lead":"ObjectRadar is designed to detect Bluetooth trackers compatible with the Find My protocol and visible to iOS.",
+        
+        "info-box-title": "ABOUT THE FOLLOWING LIST",
+        "info-box-content":"An untested model does not mean that it is incompatible with ObjectRadar.<br/>This list is not exhaustive and does not imply any partnership with the manufacturers or products listed.<br/>User feedback about product compatibility is greatly appreciated and helps us keep this list up to date.",
+      
+        "toggleShow": "View compatible trackers",
+        "toggleHide": "Hide compatible trackers",
+        "link": "Official source",
+
+        "Apple":{
+          "AirTag":"Not tested with ObjectRadar"
+        },
+        "FnR":{
+          "SmartFinder":"Tested with ObjectRadar"
+        },
+        "MiLi":{
+          "MiTag":"Tested with ObjectRadar",
+          "LiTag":"Not tested with ObjectRadar",
+          "MiCard":"Not tested with ObjectRadar",
+          "MiBell":"Not tested with ObjectRadar",
+          "MiLock":"Not tested with ObjectRadar"
+        },
+        "Chipolo":{
+          "Pop":"Not tested with ObjectRadar",
+          "Loop":"Not tested with ObjectRadar",
+          "Card":"Not tested with ObjectRadar"
+        }
+      },
+
+      "prerequisites": {
+        "eyebrow":"BEFORE YOU START",
+        "title":"Understand what the indicators mean",
+        "lead":"A few simple points will help you understand the search results.",
+        "position":{
+          "title":"POSITION",
+          "content":"The location shown by Find My is the location of the device that detected the tracker. It is not necessarily the tracker's exact location.",
+          "question":"Why can the displayed location be different?",
+          "answer":"A tracker can be detected by a nearby Apple device. The reported location therefore gives you a useful starting area rather than an exact position.",
+          "approximate":{
+            "title":"Approximate location",
+            "content":"The detecting iPhone does not give an exact tag position"
+          },
+          "detections":{
+            "title":"Several detections",
+            "content":"Multiple detections can narrow the search area, but do not prove an exact position"
+          }
+        },
+
+        "rssi":{
+          "title":"SIGNAL STRENGTH (RSSI)",
+          "content":"RSSI indicates the relative strength of the Bluetooth signal. A stronger signal can help you determine whether you are moving in the right direction, but it cannot provide a reliable distance.",
+          "question":"Why can the signal change unexpectedly?",
+          "answer":"Walls, furniture, vehicles and other objects can affect Bluetooth signals. Compare several measurements instead of relying on a single reading.",
+          "move":{
+            "title":"Detect your tracker",
+            "content":"Move slowly — Wait — Compare — Repeat — Take your time"
+          }
+        },
+
+        "timeinterval":{
+          "title":"TIME INTERVAL (FRAMES COMMUNICATION)",
+          "content":"The tracker may not transmit continuously. The interval between two received advertising frames can vary.",
+          "question":"What does the dot and the ring around the target mean?",
+          "answer":"The dot indicates the interval between received advertising frames.<br/>Blue rings represent the search levels, while the two green levels indicate very close proximity. The ring color does not represent distance."
+        },
+        
+        "compatibility":{
+          "title":"COMPATIBILITY",
+          "content":"ObjectRadar is designed to detect Bluetooth trackers compatible with the Find My protocol and visible to iOS.",
+          "question":"Why might a tracker not be detected?",
+          "answer":"ObjectRadar cannot detect or display a device that is not compatible with the Find My protocol, is not authorized for use with it, or is filtered by iOS. ObjectRadar does not bypass Apple's device compatibility or access restrictions."
+        }
+      },
+
+      "association": {
+        "eyebrow":"ASSOCIATION",
+        "title":"Search for an object, not a number",
+        "lead":"ObjectRadar associates a detected tracker with an object you know.",
+        "learnMore":"Learn more about tracker association (link)",
+
+        "objectassociation":{
+          "title":"OBJECTS ASSOCIATION WITH DEVICES",
+          "content":"Instead of searching for an unknown Bluetooth device, you can search for an object such as your keys, bag or other personal item.",
+          "question":"Why is this useful?",
+          "answer":"A detected tracker is not automatically associated with an object. You can associate it with the object you believe it belongs to. If the association is incorrect, you can assign the object to another device at any time — before continuing the search or after discovering that you found the wrong item. ObjectRadar automatically updates the association.",
+          "diagrams":{
+            "show":"Show diagrams: how to create an association ?",
+            "hide":"Hide diagrams: how to create an association ?"
+          },
+          "objects":{
+            "title":"Create your object",
+            "content":"Add your objects in advance so you are ready to find them when needed or create them directly into a device card"
+          },
+          "association":{
+            "title":"Associate an object with a device and vice-versa",
+            "content":"Create an association between an object and a device"
+          },
+          "scan":{
+            "title":"Scan and associate a device with an object",
+            "content":"Add an association and see whether the current association is up to date"
+          }
+        },
+
+        "rotatingidentifiers":{
+          "title":"ROTATING IDENTIFIERS",
+          "content":"Some trackers periodically change the Bluetooth identifier used for advertising.",
+          "question":"Why can a tracker temporarily disappear from the scan?",
+          "answer":"A tracker may change its advertising identifier during a long search. Restarting the scan does not require you to associate the object again. When the same device UUID is detected again, its existing object association is retained."
+        }
+      
+      },
+
       "steps":{
-        "eyebrow":"",
-        "title":""
+        "eyebrow":"STEPS",
+        "title":"How to find a tag",
+        "screenshot":{
+          "show":"Show screenshot",
+          "hide":"Show screenshot"
+        }
       },
       "step1":{
-        "title":"",
-        "lead":"",
+        "title":"START SCAN",
+        "lead":"Press start button to discover devices around you.",
         "content":""
       },
       "step2":{
-        "title":"",
-        "lead":"",
+        "title":"SELECT YOUR DEVICE",
+        "lead":"Select the device you are looking for from its identifier or its associated object.",
         "content":""
       },
       "step3":{
-        "title":"",
-        "lead":"",
+        "title":"START THE TRACKING",
+        "lead":"Move slowly through the area and compare successive detections.",
+        "content":"",
+        "info-box-title":"SOUND DETECTION",
+        "info-box-content":"Activating the sound will help you find the object without constantly looking at your iPhone when you are close to it."
+      },
+      "step4":{
+        "title":"NARROW THE SEARCH AREA",
+        "lead":"Use successive detections and signal changes to progressively narrow the search area.",
         "content":""
       },
-      "limitations":{
-        "eyebrow":"LIMITATION(S)",
-        "title":"",
-        "lead":"",
+      "step5":{
+        "title":"OBJECT FOUND",
+        "lead":"When you are very close to the object the green circle will oscillate.",
         "content":"",
+        "info-box-title":"Congratulations!",
+        "info-box-content":"You found your object.<br/>You can click the « Object found ? » button to stop the search and check how long it took to find the object."
+      },
+      
+      "limitations":{
+        "eyebrow":"LIMITATIONS",
+        "title":"What ObjectRadar cannot tell you",
+        "lead":"Bluetooth performance depends on the environment and can affect the results of a search.",
+        "content":"",
+
+        "bluetooth":{
+          "title":"BLUETOOTH",
+          "content":"Bluetooth signals are affected by the environment. RSSI should therefore be interpreted as an indication of relative signal strength, not as an exact distance.",
+          "question":"",
+          "answer":""
+        },
+
+        "battery":{
+          "title":"BATTERY",
+          "content":"A tracker with a very low battery may stop transmitting. If it no longer sends advertising frames, ObjectRadar cannot detect it.",
+          "question":"",
+          "answer":""
+        },
+
+        "rotating-identifiers":{
+          "title":"ROTATING IDENTIFIERS",
+          "content":"A tracker may temporarily disappear from the scan when its advertising identifier changes.",
+          "question":"",
+          "answer":""
+        },
+
         "quote-box": {
-          "title": "",
-          "lead":""
+          "title": "PRECISIONS",
+          "lead":"ObjectRadar helps narrow the search area. It does not provide an exact GPS position or an exact distance to the tracker."
         }
       },
+
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Frequently asked questions",
+        "lead": "",
+        "question1": {
+          "question":"Can ObjectRadar find any Bluetooth device?",
+          "answer":"ObjectRadar can detect nearby Bluetooth devices that are visible to iOS. Detection and identification depend on the information made available by the device and by iOS."
+        },
+        "question2": {
+          "question":"Can ObjectRadar locate a Find My tracker exactly?",
+          "answer":"No. ObjectRadar helps narrow the search using Bluetooth detections and signal changes. It does not provide the exact physical position of the tracker."
+        },
+        "question3": {
+          "question":"Why does the RSSI change?",
+          "answer":"Bluetooth signals are affected by distance, obstacles, reflections and the surrounding environment. Compare several measurements rather than relying on a single RSSI value."
+        },
+        "question4": {
+          "question":"Why should I move slowly?",
+          "answer":"Moving slowly gives the tracker time to transmit new advertising frames and gives you more measurements to compare."
+        },
+        "question5": {
+          "question":"Why can a tracker disappear during a search?",
+          "answer":"A tracker may temporarily change its identifier or simply not be detected during a scan interval or becoming out of range. Restarting the scan may help find it again."
+        },
+        "question6": {
+          "question":"Can ObjectRadar decrypt Find My data?",
+          "answer":"No. ObjectRadar does not decrypt or access encrypted Find My data. It works with the Bluetooth information available to the application through iOS."
+        },
+        "question7": {
+          "question":"Can I correct an object association?",
+          "answer":"Yes. You can correct an association at any time, including after discovering that the detected device was associated with the wrong object."
+        }
+      },
+      
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Ready to start searching?",
-        "lead": "Open ObjectRadar and start your search.",
+        "lead": "Open ObjectRadar and start your search",
         "buttonCTA":"Download on the App Store"
       }
     },
@@ -391,7 +590,7 @@
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Ready to start searching?",
-        "lead": "Open ObjectRadar and start your search.",
+        "lead": "Open ObjectRadar and start your search",
         "buttonCTA":"Download on the App Store"
       }
     },
@@ -442,7 +641,7 @@
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Ready to start searching?",
-        "lead": "Open ObjectRadar and start your search.",
+        "lead": "Open ObjectRadar and start your search",
         "buttonCTA":"Download on the App Store"
       }
     },
@@ -505,7 +704,7 @@
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Ready to start searching?",
-        "lead": "Open ObjectRadar and start your search.",
+        "lead": "Open ObjectRadar and start your search",
         "buttonCTA":"Download on the App Store"
       }
     }

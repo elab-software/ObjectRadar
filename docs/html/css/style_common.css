@@ -38,6 +38,8 @@
     │   │      ├── check
     │   │      ├── tip
     │   │      └── warning
+    │   │
+    │   ├── highlight-box
     │   ├── dark-section
     │   └── reveal
     │
@@ -315,10 +317,26 @@ h3 {
     column-gap: 16px;
 
     margin-top: 28px;
+
     padding: 18px 20px;
     border-radius: 16px;
 
     background: var(--blue-soft-info-background);
+}
+
+
+.info-box-content span {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.info-box-content p {
+    margin: 0;
 }
 
 .check {
@@ -342,7 +360,7 @@ h3 {
 
     border-left: 2px solid var(--blue);
     border-right: 2px solid var(--blue);
-
+    
     background: var(--blue-soft-background); /* Common background color */
 
     border-radius: 18px;

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Learn how ObjectRadar can help you find a nearby Bluetooth device.">
+
+    <title>Use case — ObjectRadar</title>
+
+    <link rel="stylesheet" href="../css/style_common.css">
+    <link rel="stylesheet" href="../css/style_usecase.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+    <header class="site-header" id="top">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <img src="../images/logo/app-icon-Object-Radar-512.png"
+                    alt=""
+                    width="38"
+                    height="38">
+                <span>ObjectRadar</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" data-i18n="usecase.tag.navigation.home">Home</a>
+                <a href="../en/use-case-ble-coming-soon.html" aria-label="English">EN</a>
+                <span aria-hidden="true">|</span>
+                <a href="../fr/use-case-ble-coming-soon.html" class="language-current" aria-label="Français" aria-current="page">FR</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- =================================================
+             INTRODUCTION
+             ================================================= -->
+
+        <section class="section usecase-intro" id="introduction">
+            <div class="section-inner narrow">
+
+                <div class="usecase-eyebrow">
+                    <p class="eyebrow">PROCHAIN CAS D'UTILISATION</p>
+                    <img
+                        src="../images/icons/book-blue.png"
+                        alt=""
+                        class="usecase-eyebrow-icon"
+                    >
+                </div>
+
+                <h1>
+                    Arrive bientôt ...
+                </h1>
+
+                    <img
+                        src="../images/icons/hearing-aid-blue.png"
+                        alt=""
+                        class="usecase-intro-icon"
+                    >
+                
+                <p class="lead">
+                    Nous travaillons pour créer ce cas d'utilisation. Restez connecté!
+                </p>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             CTA
+             ================================================= -->
+
+        <section class="section usecase-final-cta">
+            <div class="section-inner narrow">
+
+                <p class="eyebrow" data-i18n="usecase.tag.finalCTA.eyebrow">OBJECTRADAR</p>
+
+                <h2 data-i18n="usecase.tag.finalCTA.title">Ready to start searching?</h2>
+
+                <p data-i18n="usecase.tag.finalCTA.lead">Open ObjectRadar and start your search</p>
+
+                <a
+                    class="primary-button"
+                    href="https://apps.apple.com/app/objectradar/id6796338464" data-i18n="usecase.tag.finalCTA.buttonCTA">
+                    Download on the App Store
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CREDITS & LICENCES
+             ================================================= -->        
+        <section class="section usecase-credits tinted" id="credits">
+            <div class="section-inner narrow">
+                
+                <div class="section-heading--with-icon">
+                    <div class="section-heading-text">
+                        <p class="eyebrow" data-i18n="credits.eyebrow">CREDITS & LICENCES</p>
+                        <h3 data-i18n="credits.title">Resources and attributions.</h3>
+                    </div>
+
+                    <div class="section-title-icon section-title-icon--small">
+                        <img
+                            src="../images/icons/credits-blue.png"
+                            alt=""
+                        >
+                    </div>
+                </div>
+
+                <div class="usecase-credits-footer">
+                    <p class="lead">
+                        <span data-i18n="credits.usecase-page.view_on_main">
+                            View image and icon credits on the main page
+                        </span>
+                    </p>
+
+                    <a
+                        href="index.html#credits"
+                        class="official-source"
+                        data-i18n="credits.usecase-page.link_to_main_page"
+                    >
+                        Go to main page
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+        <div class="section-inner">
+            <span data-site="site.copyright">© 2026 eLab Software</span>
+            <span> - </span>
+            <span data-i18n="site.copyright">All rights reserved</span>
+        </div>
+    </footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/site.js"></script>
+<script src="../js/goatcounter.js"></script>
+<script>
+
+/* ************************************************************
+ * ObjectRadar website interactions
+ *
+ * This script provides two lightweight UI behaviours:
+ *
+ * 1. Scroll reveal:
+ *    Sections using the "reveal" class become visible when
+ *    they enter the viewport.
+ *
+ * 2. Navigation reveal:
+ *    The main navigation is initially hidden and becomes visible
+ *    after the user has scrolled down the page.
+ *
+ * No framework or external dependency is required.
+ * ************************************************************ */
+
+
+/* ============================================================
+   1. SCROLL REVEAL
+   ============================================================ */
+
+/* ************************************************************
+ * Select all elements that should appear progressively
+ * when they enter the viewport.
+ *
+ * Example:
+ * <section class="section reveal">
+ * ************************************************************ */
+const items = document.querySelectorAll(".reveal");
+
+/* ------------------------------------------------------------
+ * Use IntersectionObserver when supported by the browser.
+ *
+ * IntersectionObserver allows us to detect when an element
+ * enters the visible area without continuously calculating
+ * its position during scrolling.
+ * ------------------------------------------------------------ */
+if ("IntersectionObserver" in window) {
+
+    /* ------------------------------------------------------------
+     * Create an observer responsible for detecting when
+     * a .reveal element becomes visible.
+     * ------------------------------------------------------------ */
+    const observer = new IntersectionObserver((entries) => {
+
+        /* ------------------------------------------------------------
+         * Several elements may enter the viewport at the same time,
+         * so process every observed entry.
+         * ------------------------------------------------------------ */
+        entries.forEach((entry) => {
+
+            /* ------------------------------------------------------------
+             * The element is sufficiently visible in the viewport.
+             * ------------------------------------------------------------ */
+            if (entry.isIntersecting) {
+
+                /* ------------------------------------------------------------
+                 * Add the CSS class that triggers the visible state.
+                 *
+                 * The CSS handles the actual animation:
+                 * opacity + vertical movement.
+                 * ------------------------------------------------------------ */
+                entry.target.classList.add("visible");
+
+                /* ------------------------------------------------------------
+                 * Stop observing this element.
+                 *
+                 * Once revealed, the section does not need to be
+                 * observed again when the user scrolls back.
+                 * ------------------------------------------------------------ */
+                observer.unobserve(entry.target);
+            }
+        });
+
+    /* ------------------------------------------------------------
+     * Trigger the reveal when approximately 12% of the element
+     * enters the viewport.
+     * ------------------------------------------------------------ */
+    }, {
+        threshold: 0.12
+    });
+
+    /* ------------------------------------------------------------
+     * Start observing every element using the .reveal class.
+     * ------------------------------------------------------------ */
+    items.forEach((item) => observer.observe(item));
+
+} else {
+
+    /* ------------------------------------------------------------
+     * Fallback for browsers that do not support IntersectionObserver.
+     *
+     * In that case, all sections are immediately made visible
+     * instead of remaining hidden.
+     * ------------------------------------------------------------ */
+    items.forEach((item) => item.classList.add("visible"));
+}
+
+
+/* ============================================================
+   2. NAVIGATION REVEAL
+   ============================================================ */
+
+/* ------------------------------------------------------------
+ * Select the main site header.
+ *
+ * Expected HTML:
+ * <header class="site-header">
+ * ------------------------------------------------------------ */
+const header = document.querySelector(".site-header");
+
+/* ------------------------------------------------------------
+ * Update the visibility state of the navigation.
+ *
+ * The "is-visible" CSS class is added after the user has
+ * scrolled more than 80 pixels down the page.
+ * ------------------------------------------------------------ */
+const updateHeader = () => {
+
+    header.classList.toggle(
+        "is-visible",
+        window.scrollY > 80
+    );
+};
+
+/* ------------------------------------------------------------
+ * Set the correct initial state when the page loads.
+ *
+ * This is important if the page is refreshed while the browser
+ * is already positioned below the top of the page.
+ * ------------------------------------------------------------ */
+updateHeader();
+
+/* ------------------------------------------------------------
+ * Re-evaluate the navigation visibility whenever the user scrolls.
+ *
+ * "passive: true" tells the browser that this listener will not
+ * cancel the scroll event, allowing scrolling to remain efficient.
+ * ------------------------------------------------------------ */
+window.addEventListener(
+    "scroll",
+    updateHeader,
+    { passive: true }
+);
+
+</script>
+
+</body>
+</html>

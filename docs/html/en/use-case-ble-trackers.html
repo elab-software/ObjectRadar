@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Learn how ObjectRadar can help you find a nearby Bluetooth device.">
+
+    <title>Use case — ObjectRadar</title>
+
+    <link rel="stylesheet" href="../css/style_common.css">
+    <link rel="stylesheet" href="../css/style_usecase.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+    <header class="site-header" id="top">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <img src="../images/logo/app-icon-Object-Radar-512.png"
+                    alt=""
+                    width="38"
+                    height="38">
+                <span>ObjectRadar</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#introduction" data-i18n="usecase.tag.navigation.overview">Overview</a>
+                <a href="#compatible-trackers" data-i18n="usecase.tag.navigation.compatible-trackers">Trackers</a>
+                <a href="#prerequisites" data-i18n="usecase.tag.navigation.prerequisites">Before starting</a>
+                <a href="#association" data-i18n="usecase.tag.navigation.associations">Associations</a>
+                <a href="#steps" data-i18n="usecase.tag.navigation.steps">Steps</a>
+                <a href="#faq" data-i18n="usecase.tag.navigation.faq">FAQ</a>
+                <a href="index.html" data-i18n="usecase.tag.navigation.home">Home</a>
+                <a href="../en/use-case-ble-trackers.html" class="language-current" aria-label="English" aria-current="page">EN</a>
+                <span aria-hidden="true">|</span>
+                <a href="../fr/use-case-ble-trackers.html" aria-label="Français">FR</a>    
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- =================================================
+             INTRODUCTION
+             ================================================= -->
+
+        <section class="section usecase-intro" id="introduction">
+            <div class="section-inner narrow">
+
+                <div class="usecase-eyebrow">
+                    <p class="eyebrow" data-i18n="usecase.tag.eyebrow">USE CASE INTRODUCTION</p>
+                    <img
+                        src="../images/icons/book-blue.png"
+                        alt=""
+                        class="usecase-eyebrow-icon"
+                    >
+                </div>
+
+                <h1 data-i18n="usecase.tag.title">
+                    Find your Bluetooth tracker
+                </h1>
+
+                    <img
+                        src="../images/icons/key_tracker-blue.png"
+                        alt=""
+                        class="usecase-intro-icon"
+                    >
+                
+                <p class="lead" data-i18n="usecase.tag.lead">
+                    You know your tracker is nearby, but you need help narrowing down where it is.
+                </p>
+
+                <div class="highlight-box">
+                    <span data-i18n="usecase.tag.quote-box.title">THE PROBLEM</span>
+                    <strong data-i18n="usecase.tag.quote-box.lead">
+                        Find My can show where a tracker was detected, but it does not provide a precise direction to the tracker.
+                    </strong>
+                </div>
+
+                <!-- PREREQUISITES: ORIGIN -->
+                <div class="usecase-topic">
+                    <p data-i18n="usecase.tag.origin">
+                        ObjectRadar was created to help turn this approximate information into a practical local search.
+                    </p>
+                </div>
+                
+                <a href="#steps" class="primary-button" data-i18n="usecase.tag.button.steps">
+                    See the steps
+                </a>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             COMPATIBLE TRACKERS
+             ================================================= -->
+
+        <section class="section" id="compatible-trackers">
+            <div class="section-inner narrow">
+
+                <div class="usecase-eyebrow">
+                    <p class="eyebrow" data-i18n="usecase.tag.compatibletrackers.eyebrow">COMPATIBLE TRACKERS</p>
+                    <img
+                        src="../images/icons/automation-blue.png"
+                        alt=""
+                        class="usecase-eyebrow-icon"
+                    >
+                </div>
+                
+                <h3 data-i18n="usecase.tag.compatibletrackers.title">
+                    Which trackers can you use?
+                </h3>
+
+                <p class="lead" data-i18n="usecase.tag.compatibletrackers.lead">
+                    ObjectRadar is designed to detect Bluetooth trackers compatible
+                    with the Find My protocol and visible to iOS.
+                </p>
+
+                <!-- TIP TOPIC WITH INFO-BOX -->
+                <div class="usecase-topic-header">
+                    <img
+                        src="../images/icons/tip-orange.png"
+                        alt=""
+                        class="usecase-topic-icon">
+
+                    <div class="info-box-content">
+                        <span data-i18n="usecase.tag.compatibletrackers.info-box-title">
+                            ABOUT THE FOLLOWING LIST
+                        </span>
+
+                        <p data-i18n="usecase.tag.compatibletrackers.info-box-content">
+                            An untested model does not mean that it is incompatible with ObjectRadar.<br/>
+                            This list is not exhaustive and does not imply any partnership with the manufacturers or products listed.<br/>
+                            User feedback about product compatibility is greatly appreciated and helps us keep this list up to date.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- LIST OF TRACKERS HIDDEN BY DEFAULT -->
+                <details class="usecase-compatible-trackers-details">
+                    <summary>
+                        <span class="show-label" data-i18n="usecase.tag.compatibletrackers.toggleShow">View compatible tracker list</span>
+                        <span class="hide-label" data-i18n="usecase.tag.compatibletrackers.toggleHide">Hide compatible tracker list</span>
+                    </summary>
+
+                        <div class="usecase-compatible-trackers">
+                            <div class="usecase-compatible-trackers">
+
+                            <!-- TRACKER(S) BRAND: APPLE -->
+                            <article class="usecase-compatible-tracker">
+                                <div class="usecase-compatible-tracker-header">
+                                    <strong class="usecase-compatible-tracker-name">Apple</strong>
+                                    <a  class="official-source usecase-compatible-tracker-link"
+                                        data-i18n="usecase.tag.compatibletrackers.link"
+                                        href="https://www.apple.com/shop/airtag/accessories">
+                                        Official website
+                                    </a>
+                                </div>
+
+                                <!-- LIST OF COMPATIBLE DEVICE(S) -->
+                                <div class="usecase-compatible-tracker-models">
+
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>AirTag</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.Apple.AirTag">
+                                            Not tested with ObjectRadar
+                                        </span>
+                                    </div>
+                                
+                                </div>
+                            </article>
+
+                            <!-- TRACKER(S) BRAND: FRESH'N REBEL -->
+                            <article class="usecase-compatible-tracker">
+                                <div class="usecase-compatible-tracker-header">
+                                    <strong class="usecase-compatible-tracker-name">Fresh'n Rebel</strong>
+                                    <a  class="official-source usecase-compatible-tracker-link"
+                                        data-i18n="usecase.tag.compatibletrackers.link"
+                                        href="https://freshnrebel.com/fr/boutique/smart-finders/">
+                                        Official website
+                                    </a>
+                                </div>
+
+                                <!-- LIST OF COMPATIBLE DEVICE(S) -->
+                                <div class="usecase-compatible-tracker-models">
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>Smart Finder</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--tested" data-i18n="usecase.tag.compatibletrackers.FnR.SmartFinder">Tested with ObjectRadar</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- TRACKER(S) BRAND: MILI -->
+                            <article class="usecase-compatible-tracker">
+                                <div class="usecase-compatible-tracker-header">
+                                    <strong class="usecase-compatible-tracker-name">MiLi</strong>
+                                    <a  class="official-source usecase-compatible-tracker-link"
+                                        data-i18n="usecase.tag.compatibletrackers.link"
+                                        href="https://mili-shop.com">
+                                        Official website
+                                    </a>
+                                </div>
+
+                                <!-- LIST OF COMPATIBLE DEVICE(S) -->
+                                <div class="usecase-compatible-tracker-models">
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>MiTag</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--tested" data-i18n="usecase.tag.compatibletrackers.MiLi.MiTag">Tested with ObjectRadar</span>
+                                    </div>
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>LiTag</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.MiLi.LiTag">Not tested with ObjectRadar</span>
+                                    </div>
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>MiCard</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.MiLi.MiCard">Not tested with ObjectRadar</span>
+                                    </div>
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>MiBell</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.MiLi.MiBell">Not tested with ObjectRadar</span>
+                                    </div>
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>MiLock</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.MiLi.MiLock">Not tested with ObjectRadar</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- TRACKER(S) BRAND: CHIPOLO -->
+                            <article class="usecase-compatible-tracker">
+                                <div class="usecase-compatible-tracker-header">
+                                    <strong class="usecase-compatible-tracker-name">Chipolo</strong>
+                                    <a  class="official-source usecase-compatible-tracker-link"
+                                        data-i18n="usecase.tag.compatibletrackers.link"
+                                        href="https://chipolo.net/">
+                                        Official website
+                                    </a>
+                                </div>
+
+                                <!-- LIST OF COMPATIBLE DEVICE(S) -->
+                                <div class="usecase-compatible-tracker-models">
+                                    <div class="usecase-compatible-tracker-model">
+                                        <span>Pop</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.Chipolo.Pop">Not tested with ObjectRadar</span>
+                                    </div>
+                                <div class="usecase-compatible-tracker-model">
+                                        <span>Loop</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.Chipolo.Loop">Not tested with ObjectRadar</span>
+                                    </div>
+                                <div class="usecase-compatible-tracker-model">
+                                        <span>Card</span>
+                                        <span class="usecase-compatible-tracker-status usecase-compatible-tracker-status--not-tested" data-i18n="usecase.tag.compatibletrackers.Chipolo.Card">Not tested with ObjectRadar</span>
+                                    </div>
+                                </div>
+                            </article>
+                                            
+                        </div>
+                    </div>
+                </details>
+            
+            </div>
+        </section>
+
+        <!-- =================================================
+             PREREQUISITE
+             ================================================= -->
+
+        <section class="section tinted" id="prerequisites">
+            <div class="section-inner narrow">
+
+                <div class="usecase-eyebrow">
+                    <p class="eyebrow" data-i18n="usecase.tag.prerequisites.eyebrow">BEFORE YOU START</p>
+                    <img
+                        src="../images/icons/tip-blue.png"
+                        alt=""
+                        class="usecase-eyebrow-icon"
+                    >
+                </div>
+
+                <h3 data-i18n="usecase.tag.prerequisites.title">
+                    Understand what the indicators mean
+                </h3>
+
+                <p class="lead" data-i18n="usecase.tag.prerequisites.lead">
+                    A few simple points will help you understand the search results.
+                </p>
+
+                <!-- PREREQUISITES: POSITION -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/location_and_map-blue.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.prerequisites.position.title">
+                                POSITION
+                            </span>
+
+                            <p data-i18n="usecase.tag.prerequisites.position.content">
+                                The location shown by Find My is the location of the device that detected the tracker. It is not necessarily the tracker's exact location.
+                            </p>
+                        </div>
+
+                    
+                    </div>
+
+                    <!-- Two illisatrations to explain a tag position from one or more iPhones -->
+                    <div class="usecase-topic-illustrations usecase-topic-illustrations--two">
+
+                        <div class="usecase-topic-illustration">
+                            <img
+                                src="../images/diagrams/tag-position-approximate-v2.svg"
+                                alt="">
+                            <div class="usecase-topic-illustration-caption">
+                                <strong data-i18n="usecase.tag.prerequisites.position.approximate.title">
+                                    Approximate location
+                                </strong>
+                                <p data-i18n="usecase.tag.prerequisites.position.approximate.content">
+                                    The detecting iPhone does not give an exact tag position.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="usecase-topic-illustration">
+                            <img
+                                src="../images/diagrams/tag-position-multiple-detections-v2.svg"
+                                alt="">
+                            <div class="usecase-topic-illustration-caption">
+                                <strong data-i18n="usecase.tag.prerequisites.position.detections.title">
+                                    Several detections
+                                </strong>
+                                <p data-i18n="usecase.tag.prerequisites.position.detections.content">
+                                    Multiple detections can narrow the search area, but do not prove an exact position.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.prerequisites.position.question">
+                            Why can the displayed location be different?
+                        </summary>
+
+                        <p data-i18n="usecase.tag.prerequisites.position.answer">
+                            A tracker can be detected by a nearby Apple device. The reported location therefore gives you a useful starting area rather than an exact position.
+                        </p>
+                    </details>
+
+                </div>
+
+                <!-- PREREQUISITES: RSSI -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/bluetooth-blue.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.prerequisites.rssi.title">
+                                SIGNAL STRENGTH (RSSI)
+                            </span>
+
+                            <p data-i18n="usecase.tag.prerequisites.rssi.content">
+                                RSSI indicates the relative strength of the Bluetooth signal. A stronger signal can help you determine whether you are moving in the right direction, but it cannot provide a reliable distance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="usecase-topic-illustrations usecase-topic-illustrations--single">
+
+                        <div class="usecase-topic-illustration">
+                            <img
+                                src="../images/diagrams/tag-rssi-search-v2.svg"
+                                alt="">
+                            <div class="usecase-topic-illustration-caption">
+                                <strong data-i18n="usecase.tag.prerequisites.rssi.move.title">
+                                    Move slowly
+                                </strong>
+                                <p data-i18n="usecase.tag.prerequisites.rssi.move.content">
+                                    Move — wait — compare — repeat — take your time.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.prerequisites.rssi.question">
+                            Why can the signal change unexpectedly?
+                        </summary>
+
+                        <p data-i18n="usecase.tag.prerequisites.rssi.answer">
+                            Walls, furniture, vehicles and other objects can affect Bluetooth signals. Compare several measurements instead of relying on a single reading.
+                        </p>
+                    </details>
+
+                </div>
+
+                <!-- PREREQUISITES: TIME INTERVAL -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/stopwatch-blue.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.prerequisites.timeinterval.title">
+                                TIME INTERVAL (FRAMES COMMUNICATION)
+                            </span>
+
+                            <p data-i18n="usecase.tag.prerequisites.timeinterval.content">
+                                The tracker may not transmit continuously. The interval between received advertising frames can vary.
+                            </p>
+                        </div>
+                    </div>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.prerequisites.timeinterval.question">
+                            What does the dot and the ring around the target mean?
+                        </summary>
+
+                        <p data-i18n="usecase.tag.prerequisites.timeinterval.answer">
+                             The dot indicates the interval between received advertising frames.<br/>
+                             Blue rings represent the search levels, while the two green levels indicate very close proximity. The ring color does not represent distance.
+                        </p>
+                    </details>
+
+                </div>
+
+                <!-- PREREQUISITES: COMPATIBILITY -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/automation-blue.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.prerequisites.compatibility.title">
+                                COMPATIBILITY
+                            </span>
+
+                            <p data-i18n="usecase.tag.prerequisites.compatibility.content">
+                                ObjectRadar is designed to detect Bluetooth trackers compatible with the Find My protocol and visible to iOS.
+                            </p>
+                        </div>
+                    </div>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.prerequisites.compatibility.question">
+                            Why might a tracker not be detected?
+                        </summary>
+
+                        <p data-i18n="usecase.tag.prerequisites.compatibility.answer">
+                             ObjectRadar cannot detect or display a device that is not compatible with the Find My protocol, is not authorized for use with it, or is filtered by iOS. ObjectRadar does not bypass Apple's device compatibility or access restrictions.
+                        </p>
+                    </details>
+                    
+                </div>
+
+            </div>
+        </section>
+
+       <!-- =================================================
+             ASSOCIATION
+             ================================================= -->
+
+        <section class="section" id="association">
+            <div class="section-inner narrow">
+
+                <div class="usecase-eyebrow">
+                    <p class="eyebrow" data-i18n="usecase.tag.association.eyebrow">ASSOCIATION</p>
+                    <img
+                        src="../images/icons/tip-blue.png"
+                        alt=""
+                        class="usecase-eyebrow-icon"
+                    >
+                </div>
+
+                <h3 data-i18n="usecase.tag.association.title">
+                    Search for an object, not a number
+                </h3>
+
+                <p class="lead" data-i18n="usecase.tag.association.lead">
+                    ObjectRadar associates a detected tracker with an object you know.
+                </p>
+
+                <!-- ASSOCIATION: OBJECTS ASSOCIATION -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/link-blue.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.association.objectassociation.title">
+                                OBJECTS ASSOCIATION WITH DEVICES
+                            </span>
+
+                            <p data-i18n="usecase.tag.association.objectassociation.content">
+                                Instead of searching for an unknown Bluetooth device, you can search for an object such as your keys, bag or other personal item.
+                            </p>
+                        </div>
+                    </div>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.association.objectassociation.question">
+                            Why is this useful?
+                        </summary>
+
+                        <p data-i18n="usecase.tag.association.objectassociation.answer">
+                            A detected tracker is initially associated with the object you believe it belongs to. If the association is wrong, you can correct it at any time — before continuing the search or after discovering that you found the wrong item.
+                        </p>
+                    </details>
+
+                    <!--a
+                        href="#association-details"
+                        class="official-source"
+                        data-i18n="usecase.tag.association.objectassociation.learnMore">
+                        Learn more about tracker association (link)
+                    </a-->
+
+                    <!-- OPTIONAL IMAGE (hidden or visible)-->
+                    <details class="usecase-diagrams">
+                        <summary>
+                            <span class="show-label" data-i18n="usecase.tag.association.objectassociation.diagrams.show">Show diagrams: how to create an association ?</span>
+                            <span class="hide-label" data-i18n="usecase.tag.association.objectassociation.diagrams.hide">Hide diagrams: how to create an association ?</span>
+                        </summary>
+
+                        <div class="">
+                            <!-- Three illisatrations to explain objects creation and association with devices -->
+                            <div class="usecase-topic-illustrations usecase-topic-illustrations--three">
+
+                                <div class="usecase-topic-illustration">
+                                    <img
+                                        src="../images/diagrams/objectradar_object_creation-v2.svg"
+                                        alt="">
+                                    <div class="usecase-topic-illustration-caption">
+                                            <strong data-i18n="usecase.tag.association.objectassociation.objects.title">
+                                            Create your object
+                                        </strong>
+                                        <p data-i18n="usecase.tag.association.objectassociation.objects.content">
+                                            Add your objects in advance so you are ready to find them when needed or create them directly into a device card
+                                        </p>
+                                    </div>
+                                </div>
+
+                            <div class="usecase-topic-illustration">
+                                    <img
+                                        src="../images/diagrams/objectradar_association_object_and_device-v3.svg"
+                                        alt="">
+                                    <div class="usecase-topic-illustration-caption">
+                                        <strong data-i18n="usecase.tag.association.objectassociation.association.title">
+                                            Associate an object with a device and vice-versa
+                                        </strong>
+                                        <p data-i18n="usecase.tag.association.objectassociation.association.content">
+                                            Create an association between an object and a device
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="usecase-topic-illustration">
+                                    <img
+                                        src="../images/diagrams/objectradar-scan_association-with-objects-v4.svg"
+                                        alt="">
+                                    <div class="usecase-topic-illustration-caption">
+                                        <strong data-i18n="usecase.tag.association.objectassociation.scan.title">
+                                            Scan and associate a device with an object
+                                        </strong>
+                                        <p data-i18n="usecase.tag.association.objectassociation.scan.content">
+                                            Add an association and see whether the current association is up to date
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
+
+                <!-- ASSOCIATION: ROTATING IDENTIFIERS -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/identification-blue.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.association.rotatingidentifiers.title">
+                                ROTATING IDENTIFIERS
+                            </span>
+
+                            <p data-i18n="usecase.tag.association.rotatingidentifiers.content">
+                                Some trackers periodically change the Bluetooth identifier used for advertising.
+                            </p>
+                        </div>
+                    </div>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.association.rotatingidentifiers.question">
+                            Why can a tracker temporarily disappear from the scan?
+                        </summary>
+
+                        <p data-i18n="usecase.tag.association.rotatingidentifiers.answer">
+                            A tracker may change its advertising identifier during a long search. Restarting the scan does not require you to associate the object again. When the same device UUID is detected again, its existing object association is retained.
+                        </p>
+                    </details>
+                
+                </div>
+
+                
+            </div>
+        </section>
+        
+        <!-- =================================================
+             STEPS
+             ================================================= -->
+        
+        <section class="section tinted" id="steps">
+            <div class="section-inner narrow">
+
+                <div class="section-heading">
+                    <div class="section-heading-text">
+
+                        <p class="eyebrow" data-i18n="usecase.tag.steps.eyebrow">HOW IT WORKS</p>
+
+                        <h2 data-i18n="usecase.tag.steps.title">[Number] simple steps</h2>
+
+                    </div>
+                </div>
+
+
+                <div class="usecase-steps">
+
+                    <!-- =====================================
+                         STEP 01
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">01</span>
+                                <h3 data-i18n="usecase.tag.step1.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
+                                src="../images/icons/radar-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step1.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step1.content">(Describe the step with more informations)</p>
+                        </div>
+
+                        <!--div class="info-box usecase-step-note check">
+                            <img
+                                src="../images/icons/check-green.png"
+                                alt=""
+                                class="usecase-step-note-icon"
+                            >
+
+                            <div class="usecase-step-note-content">
+                                <span data-i18n="usecase.tag.step1.check.title">CHECK</span>
+                                <p data-i18n="usecase.tag.step1.check.content">Description of the check</p>
+                            </div>
+                        </div>
+
+                        <div class="info-box usecase-step-note tip">
+                            <img
+                                src="../images/icons/tip-orange.png"
+                                alt=""
+                                class="usecase-step-note-icon"
+                            >
+
+                            <div class="usecase-step-note-content">
+                                <span data-i18n="usecase.tag.step1.tip.title">TIP</span>
+                                <p data-i18n="usecase.tag.step1.tip.content">Description of the tip</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-box usecase-step-note warning">
+                            <img
+                                src="../images/icons/warning-red.png"
+                                alt=""
+                                class="usecase-step-note-icon"
+                            >
+
+                            <div class="usecase-step-note-content">
+                                <span data-i18n="usecase.tag.step1.warning.title">WARNING</span>
+                                <p data-i18n="usecase.tag.step1.warning.content">Description of the warning</p>
+                            </div>
+                        </div-->
+
+                        <!-- OPTIONAL IMAGE -->
+                        <!--div class="usecase-step-image">
+                            <img src="../images/screenshots/..." alt="...">
+                        </div-->
+
+                        <!-- OPTIONAL IMAGE (hidden or visible)-->
+                        <details class="usecase-step-screenshot">
+                            <summary>
+                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
+                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
+                                <span class="usecase-step-screenshot-icon"></span>
+                            </summary>
+
+                            <div class="usecase-step-image">
+                                <img
+                                    src="../images/screenshots/1_Scan_view_empty_stopped-with-top-banner.jpg"
+                                    alt=""
+                                    data-i18n="..."
+                                >
+                            </div>
+                        </details>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         STEP 02
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">02</span>
+                                <h3 data-i18n="usecase.tag.step2.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
+                                src="../images/icons/identification-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step2.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step2.content">(Describe the step with more informations)</p>
+                        </div>
+
+                        <!-- OPTIONAL IMAGE (hidden or visible)-->
+                        <details class="usecase-step-screenshot">
+                            <summary>
+                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
+                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
+                                <span class="usecase-step-screenshot-icon"></span>
+                            </summary>
+
+                            <div class="usecase-step-image">
+                                <img
+                                    src="../images/screenshots/3_Scan_view_Tag-with-top-banner.jpg"
+                                    alt=""
+                                    data-i18n="..."
+                                >
+                            </div>
+                        </details>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         STEP 03
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">03</span>
+                                <h3 data-i18n="usecase.tag.step3.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
+                                src="../images/icons/circles-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step3.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step3.content">(Describe the step with more informations)</p>
+                        </div>
+
+                        <!-- TIP TOPIC WITH INFO-BOX -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/tip-orange.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="info-box-content">
+                                <span data-i18n="usecase.tag.step3.info-box-title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.step3.info-box-content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- OPTIONAL IMAGE (hidden or visible)-->
+                        <details class="usecase-step-screenshot">
+                            <summary>
+                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
+                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
+                                <span class="usecase-step-screenshot-icon"></span>
+                            </summary>
+
+                            <div class="usecase-step-image">
+                                <img
+                                    src="../images/screenshots/4_Tracking_view_far-with-top-banner.jpg"
+                                    alt=""
+                                    data-i18n="..."
+                                >
+                            </div>
+                        </details>
+                        
+                    </article>
+
+                    <!-- =====================================
+                         STEP 04
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">04</span>
+                                <h3 data-i18n="usecase.tag.step4.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
+                                src="../images/icons/circles-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step4.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step4.content">(Describe the step with more informations)</p>
+                        </div>
+
+                        <!-- OPTIONAL IMAGE (hidden or visible)-->
+                        <details class="usecase-step-screenshot">
+                            <summary>
+                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
+                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
+                                <span class="usecase-step-screenshot-icon"></span>
+                            </summary>
+
+                            <div class="usecase-step-image">
+                                <img
+                                    src="../images/screenshots/5_Tracking_view_close.jpg"
+                                    alt=""
+                                    data-i18n="..."
+                                >
+                            </div>
+                        </details>
+                        
+                    </article>
+
+                    <!-- =====================================
+                         STEP 5
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">05</span>
+                                <h3 data-i18n="usecase.tag.step5.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
+                                src="../images/icons/circles-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step5.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step5.content">(Describe the step with more informations)</p>
+                        </div>
+
+                        <!-- CHECK TOPIC WITH INFO-BOX -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/check-green.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="info-box-content">
+                                <span data-i18n="usecase.tag.step5.info-box-title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.step5.info-box-content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- OPTIONAL IMAGE (hidden or visible)-->
+                        <details class="usecase-step-screenshot">
+                            <summary>
+                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
+                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
+                                <span class="usecase-step-screenshot-icon"></span>
+                            </summary>
+
+                            <div class="usecase-step-image">
+                                <img
+                                    src="../images/screenshots/6_Tracking_view_found.jpg"
+                                    alt=""
+                                    data-i18n="..."
+                                >
+                            </div>
+                        </details>
+                        
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             LIMITATIONS
+             ================================================= -->
+        <section class="section dark-section reveal" id="limitations">
+            <div class="section-inner narrow">
+
+                <!-- HEADING WITHOUT AN ICON -->
+                <div class="section-heading">
+                <!-- HEADING WITH AN ICON -->
+                <!--div class="section-heading--with-icon"-->
+                
+                    <div class="section-heading-text">
+
+                        <p class="eyebrow" data-i18n="usecase.tag.limitations.eyebrow">
+                            LIMITATION(S)
+                        </p>
+
+                        <h2 data-i18n="usecase.tag.limitations.title">
+                            Title of the limitation(s)
+                        </h2>
+                        
+                    </div>
+
+                </div>
+
+                <div class="usecase-limitations-content">
+
+                    <p class="lead" data-i18n="usecase.tag.limitations.lead">
+                        (Short descritpion of the step)
+                    </p>
+
+                    <p data-i18n="usecase.tag.limitations.content">
+                        (Describe the limitation(s) with more informations)
+                    </p>
+
+                    <div class="highlight-box">
+                        <span data-i18n="usecase.tag.limitations.quote-box.title">QUOTE BOX TITLE</span>
+                        <strong data-i18n="usecase.tag.limitations.quote-box.lead">Description of the quote-box</strong>
+                    </div>
+                
+                    <div class="usecase-topic">
+                        
+                        <!-- BLUETOOTH TOPIC -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/bluetooth-blue.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="usecase-topic-content">
+                                <span data-i18n="usecase.tag.limitations.bluetooth.title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.limitations.bluetooth.content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BATTERY TOPIC -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/battery-low-red.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="usecase-topic-content">
+                                <span data-i18n="usecase.tag.limitations.battery.title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.limitations.battery.content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- ROTATING INDENTIFIERS TOPIC -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/identification-blue.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="usecase-topic-content">
+                                <span data-i18n="usecase.tag.limitations.rotating-identifiers.title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.limitations.rotating-identifiers.content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- OPTIONAL IMAGE (USE THE CLASS "section-heading--with-icon") -->
+                    <!--div class="section-title-icon section-title-icon--large section-title-icon--bluetooth">
+                        <img
+                            src="../images/icons/bluetooth-blue.png"
+                            alt=""
+                        >
+                    </div-->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             FAQ
+             ================================================= -->
+        <section class="section tinted reveal" id="faq">
+            <div class="section-inner narrow">
+
+                <div class="section-heading--with-icon">
+                    <div class="section-heading-text">
+                        <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+                        <h2 data-i18n="faq.title">Questions, answered.</h2>
+                    </div>
+
+                    <div class="section-title-icon section-title-icon--large">
+                        <!-- "images/problem-location.svg" -->
+                        <img
+                            src="../images/icons/conversation-blue.png"
+                            alt=""
+                        >
+                    </div>
+                </div>
+                
+                <div class="usecase-faq">
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question1.question">Q1</summary>
+                        <p data-i18n="usecase.tag.faq.question1.answer">R1</p>
+                    </details>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question2.question">Q2</summary>
+                        <p data-i18n="usecase.tag.faq.question2.answer">R2</p>
+                    </details>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question3.question">Q3</summary>
+                        <p data-i18n="usecase.tag.faq.question3.answer">R3</p>
+                    </details>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question4.question">Q4</summary>
+                        <p data-i18n="usecase.tag.faq.question4.answer">R4</p>
+                    </details>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question5.question">Q5</summary>
+                        <p data-i18n="usecase.tag.faq.question5.answer">R5</p>
+                    </details>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question6.question">Q6</summary>
+                        <p data-i18n="usecase.tag.faq.question6.answer">R6</p>
+                    </details>
+
+                    <details>
+                        <summary data-i18n="usecase.tag.faq.question7.question">Q7</summary>
+                        <p data-i18n="usecase.tag.faq.question7.answer">R7</p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CTA
+             ================================================= -->
+
+        <section class="section usecase-final-cta">
+            <div class="section-inner narrow">
+
+                <p class="eyebrow" data-i18n="usecase.tag.finalCTA.eyebrow">OBJECTRADAR</p>
+
+                <h2 data-i18n="usecase.tag.finalCTA.title">Ready to start searching?</h2>
+
+                <p data-i18n="usecase.tag.finalCTA.lead">Open ObjectRadar and start your search</p>
+
+                <a
+                    class="primary-button"
+                    href="https://apps.apple.com/app/objectradar/id6796338464" data-i18n="usecase.tag.finalCTA.buttonCTA">
+                    Download on the App Store
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CREDITS & LICENCES
+             ================================================= -->        
+        <section class="section usecase-credits tinted" id="credits">
+            <div class="section-inner narrow">
+                
+                <div class="section-heading--with-icon">
+                    <div class="section-heading-text">
+                        <p class="eyebrow" data-i18n="credits.eyebrow">CREDITS & LICENCES</p>
+                        <h3 data-i18n="credits.title">Resources and attributions.</h3>
+                    </div>
+
+                    <div class="section-title-icon section-title-icon--small">
+                        <img
+                            src="../images/icons/credits-blue.png"
+                            alt=""
+                        >
+                    </div>
+                </div>
+
+                <div class="usecase-credits-footer">
+                    <p class="lead">
+                        <span data-i18n="credits.usecase-page.view_on_main">
+                            View image and icon credits on the main page
+                        </span>
+                    </p>
+
+                    <a
+                        href="index.html#credits"
+                        class="official-source"
+                        data-i18n="credits.usecase-page.link_to_main_page"
+                    >
+                        Go to main page
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+        <div class="section-inner">
+            <span data-site="site.copyright">© 2026 eLab Software</span>
+            <span> - </span>
+            <span data-i18n="site.copyright">All rights reserved</span>
+        </div>
+    </footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/site.js"></script>
+<script src="../js/goatcounter.js"></script>
+<script>
+
+/* ************************************************************
+ * ObjectRadar website interactions
+ *
+ * This script provides two lightweight UI behaviours:
+ *
+ * 1. Scroll reveal:
+ *    Sections using the "reveal" class become visible when
+ *    they enter the viewport.
+ *
+ * 2. Navigation reveal:
+ *    The main navigation is initially hidden and becomes visible
+ *    after the user has scrolled down the page.
+ *
+ * No framework or external dependency is required.
+ * ************************************************************ */
+
+
+/* ============================================================
+   1. SCROLL REVEAL
+   ============================================================ */
+
+/* ************************************************************
+ * Select all elements that should appear progressively
+ * when they enter the viewport.
+ *
+ * Example:
+ * <section class="section reveal">
+ * ************************************************************ */
+const items = document.querySelectorAll(".reveal");
+
+/* ------------------------------------------------------------
+ * Use IntersectionObserver when supported by the browser.
+ *
+ * IntersectionObserver allows us to detect when an element
+ * enters the visible area without continuously calculating
+ * its position during scrolling.
+ * ------------------------------------------------------------ */
+if ("IntersectionObserver" in window) {
+
+    /* ------------------------------------------------------------
+     * Create an observer responsible for detecting when
+     * a .reveal element becomes visible.
+     * ------------------------------------------------------------ */
+    const observer = new IntersectionObserver((entries) => {
+
+        /* ------------------------------------------------------------
+         * Several elements may enter the viewport at the same time,
+         * so process every observed entry.
+         * ------------------------------------------------------------ */
+        entries.forEach((entry) => {
+
+            /* ------------------------------------------------------------
+             * The element is sufficiently visible in the viewport.
+             * ------------------------------------------------------------ */
+            if (entry.isIntersecting) {
+
+                /* ------------------------------------------------------------
+                 * Add the CSS class that triggers the visible state.
+                 *
+                 * The CSS handles the actual animation:
+                 * opacity + vertical movement.
+                 * ------------------------------------------------------------ */
+                entry.target.classList.add("visible");
+
+                /* ------------------------------------------------------------
+                 * Stop observing this element.
+                 *
+                 * Once revealed, the section does not need to be
+                 * observed again when the user scrolls back.
+                 * ------------------------------------------------------------ */
+                observer.unobserve(entry.target);
+            }
+        });
+
+    /* ------------------------------------------------------------
+     * Trigger the reveal when approximately 12% of the element
+     * enters the viewport.
+     * ------------------------------------------------------------ */
+    }, {
+        threshold: 0.12
+    });
+
+    /* ------------------------------------------------------------
+     * Start observing every element using the .reveal class.
+     * ------------------------------------------------------------ */
+    items.forEach((item) => observer.observe(item));
+
+} else {
+
+    /* ------------------------------------------------------------
+     * Fallback for browsers that do not support IntersectionObserver.
+     *
+     * In that case, all sections are immediately made visible
+     * instead of remaining hidden.
+     * ------------------------------------------------------------ */
+    items.forEach((item) => item.classList.add("visible"));
+}
+
+
+/* ============================================================
+   2. NAVIGATION REVEAL
+   ============================================================ */
+
+/* ------------------------------------------------------------
+ * Select the main site header.
+ *
+ * Expected HTML:
+ * <header class="site-header">
+ * ------------------------------------------------------------ */
+const header = document.querySelector(".site-header");
+
+/* ------------------------------------------------------------
+ * Update the visibility state of the navigation.
+ *
+ * The "is-visible" CSS class is added after the user has
+ * scrolled more than 80 pixels down the page.
+ * ------------------------------------------------------------ */
+const updateHeader = () => {
+
+    header.classList.toggle(
+        "is-visible",
+        window.scrollY > 80
+    );
+};
+
+/* ------------------------------------------------------------
+ * Set the correct initial state when the page loads.
+ *
+ * This is important if the page is refreshed while the browser
+ * is already positioned below the top of the page.
+ * ------------------------------------------------------------ */
+updateHeader();
+
+/* ------------------------------------------------------------
+ * Re-evaluate the navigation visibility whenever the user scrolls.
+ *
+ * "passive: true" tells the browser that this listener will not
+ * cancel the scroll event, allowing scrolling to remain efficient.
+ * ------------------------------------------------------------ */
+window.addEventListener(
+    "scroll",
+    updateHeader,
+    { passive: true }
+);
+
+</script>
+
+</body>
+</html>

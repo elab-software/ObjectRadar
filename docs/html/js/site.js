@@ -9,7 +9,7 @@
    "site.title"
    
    becomes:
-   value.problem.title
+   value.site.title
    --------------------------------------------------------- */
 function getSiteValue(common, key) {
 
@@ -55,7 +55,11 @@ function applySiteData(common) {
         }
 
         /* innerHTML allows HTML elements such as <br> to be preserved. */
-        element.innerHTML = value;
+        if (element.tagName === "META") {
+            element.setAttribute("content", value);
+        } else {
+            element.innerHTML = value;
+        }
     });
 }
 

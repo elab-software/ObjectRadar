@@ -2,11 +2,29 @@
 
    style_usecase.css
     │
+    ├── usecase-eyebrow
+    │
+    ├── usecase-eyebrow-icon
+    │
     ├── usecase-intro
+    │
+    ├── usecase-intro-icon
     │
     ├── usecase-intro h1
     │
     ├── usecase-intro .lead
+    │
+    ├── usecase-compatible-trackers
+    │   └── usecase-compatible-tracker
+    │       ├── usecase-compatible-tracker-header
+    │       │   ├── usecase-compatible-tracker-name
+    │       │   └── official-source + usecase-compatible-tracker-link
+    │       │    
+    │       └── usecase-compatible-tracker-models
+    │           └── usecase-compatible-tracker-model
+    │               └── usecase-compatible-tracker-status
+    │
+    ├── usecase-topic   
     │
     ├── usecase-steps
     │
@@ -31,6 +49,18 @@
 /* =========================================================
    USE CASE PAGES
    ========================================================= */
+.usecase-eyebrow {
+    display: flex; /* fill the parent container and allows space between the title and icon (see justify-content) */
+    align-items: first baseline;
+    justify-content: space-between; /* title one the left and icon on the right */
+    gap: 10px;
+}
+
+.usecase-eyebrow-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
 
 /* ============================================================
    Use case introduction
@@ -54,7 +84,6 @@
 /* ============================================================
 SECTION: USE CASE INTRODUCTION
 ============================================================ */
-
 .usecase-intro {
     text-align: center;
 
@@ -69,22 +98,17 @@ SECTION: USE CASE INTRODUCTION
         
 }
 
+.usecase-intro-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 32px auto 0;
+}
+
 .usecase-intro .section-inner {
     max-width: 860px;
     margin-inline: auto;
-}
-
-.usecase-eyebrow {
-    display: flex; /* fill the parent container and allows space between the title and icon (see justify-content) */
-    align-items: first baseline;
-    justify-content: space-between; /* title one the left and icon on the right */
-    gap: 10px;
-}
-
-.usecase-eyebrow-icon {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
 }
 
 .usecase-intro h1 {
@@ -109,6 +133,209 @@ SECTION: USE CASE INTRODUCTION
 /* Primary button is a common component - juste change the margin */
 .usecase-intro .primary-button {
     margin-top: 32px;
+}
+
+/* ============================================================
+   Use case compatible trackers
+   ============================================================ */
+.usecase-compatible-trackers {
+    display: grid;
+    gap: 16px;    
+    margin-top: 32px;
+}
+
+/* Define one card with one brand and one or more models */
+.usecase-compatible-tracker {
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+}
+
+.usecase-compatible-tracker p {
+    margin: 4px 0 0;
+}
+
+/* Brand and the website's link on one line */
+.usecase-compatible-tracker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+/* Not used because of rights */
+.usecase-compatible-tracker-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Name of the brand */
+.usecase-compatible-tracker-name {
+    font-weight: 600;
+}
+
+/* Link to the brand's website */
+.usecase-compatible-tracker-link {
+    flex-shrink: 0;
+}
+
+/* Model(s) of the brand */
+.usecase-compatible-tracker-models {
+    margin-top: 16px;
+}
+
+/* Model of the brand */
+.usecase-compatible-tracker-model {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* First column width fixed (200px) makes a good alignement for the text of the status */
+    column-gap: 24px;
+    align-items: center;
+    padding: 6px 0;
+}
+
+/* Status of the model: tested or not tested */
+.usecase-compatible-tracker-status {
+    text-align: left; /* Do not use min-width in this class, adjust the size of the model on 'grid-template-columns' */
+    font-size: .82rem;
+    color: var(--muted);
+}
+
+/* Status of the model: tested */
+.usecase-compatible-tracker-status--tested {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* Status of the model: not tested */
+.usecase-compatible-tracker-status--not-tested {
+    color: var(--muted);
+}
+
+/* ============================================================
+   Use case topic (grid)
+   ============================================================ */
+.usecase-topic {
+    margin-top: 32px;
+}
+
+.usecase-topic-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+    align-items: start;
+}
+
+.usecase-topic-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-top: 2px; /* To lower the icon */
+}
+
+.usecase-topic-header span {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.usecase-topic-header p {
+    margin: 0;
+}
+
+.usecase-topic-content span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.usecase-topic-content p {
+    margin: 0;
+}
+
+/* One image */
+.usecase-topic-illustrations {
+    display: grid;
+    gap: 24px;
+    width: calc(100% - 44px);
+    margin: 32px 0 0 44px;
+}
+
+/* Max width when only one image */
+/*.usecase-topic-illustrations:not(.usecase-topic-illustrations--two) */ 
+.usecase-topic-illustrations--single {
+}
+
+/* Two images */
+.usecase-topic-illustrations--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Three images */
+.usecase-topic-illustrations--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.usecase-topic-illustration {
+    min-width: 0;
+    text-align: center;
+    /*padding: 8px;*/
+}
+
+.usecase-topic-illustration-caption {
+    margin-top: 12px;
+}
+
+.usecase-topic-illustration-caption strong {
+    display: block;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.usecase-topic-illustration-caption p {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.usecase-topic-illustration img {
+    display: block;
+    width: auto;  /* Change the size of the image (SVG) instead of modifing this parameter */
+    /*max-width: 360px;*/
+    height: auto; /* Change the size of the image (SVG) instead of modifing this parameter */
+    margin-inline: auto;
+    border-radius: 16px;
+    /*background-color: var(--surface-alt);*/
+    box-shadow:
+        8px 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* See ".usecase-topic details" below */
+/* See ".usecase-topic summary" below */
+.usecase-topic details {
+    margin-top: 14px;
+    margin-left: 44px; /* align the text with the header (compensate the width of the icon) : 28px (icon) + 16px (column-gap) */
+}
+
+.usecase-topic details summary {
+    padding: 6px 0;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.08rem;
+    /*font-weight: 600;*/
+    color: var(--muted);
+}
+
+.usecase-topic details p {
+    /*margin: 4px 0 0;*/
+    /*padding: 0 0 4px;*/
+    color: var(--blue)
 }
 
 /* ============================================================
@@ -282,7 +509,7 @@ SECTION: USE CASE INTRODUCTION
     display: none;
 }
 
-.usecase-step-screenshot .screenshot-toggle::after {
+.usecase-step-screenshot summary::after {
     content: "+";
     /* float: right; */ /* set the button to the right */
     color: var(--blue);
@@ -290,8 +517,20 @@ SECTION: USE CASE INTRODUCTION
     font-weight: 400;
 }
 
-.usecase-step-screenshot[open] .screenshot-toggle::after { 
+.usecase-step-screenshot[open] summary::after { 
     content: "−"; 
+}
+
+.hide-label {
+    display: none;
+}
+
+.usecase-step-screenshot[open] .show-label {
+    display: none;
+}
+
+.usecase-step-screenshot[open] .hide-label {
+    display: inline;
 }
 
 /* ============================================================
@@ -306,21 +545,35 @@ SECTION: USE CASE INTRODUCTION
     max-width: 700px;
 }
 
+.usecase-limitations-content .usecase-topic-content {
+    margin-bottom: 20px;
+}
+
 /* ============================================================
-   Final call to action
+   Call To Action (CTA)
    ============================================================ */
-.usecase-cta {
+.usecase-final-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 24px 170px;
     text-align: center;
+    background:
+        /* Halo from bottom to top */
+        radial-gradient(circle at 50% 100%,
+            rgba(79,140,255,.32) 0,
+            rgba(79,140,255,.17) 18%,
+            rgba(79,140,255,.07) 38%,
+            transparent 66%),
+        var(--surface); /* v2 #fff; */
 }
 
-.usecase-cta p {
-    max-width: 700px;
-    margin-inline: auto;
-}
+.usecase-final-cta .section-inner { position: relative; z-index: 1; }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+.usecase-final-cta h2 {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* ============================================================
    SECTION: FAQ AND CREDITS
@@ -344,14 +597,87 @@ SECTION: USE CASE INTRODUCTION
     color: var(--muted);
 }
 
+.usecase-compatible-trackers .official-source,
+.usecase-topic .official-source,
 .usecase-credits .official-source {
     flex: 0 0 auto;
-
     font-size: .82rem;
     font-weight: 600;
     color: var(--blue);
     text-decoration: none;
 }
+
+.usecase-info,
+.usecase-faq {
+    border-top: 1px solid var(--line); 
+}
+
+.usecase-info details,
+.usecase-faq details { 
+    border-bottom: 1px solid var(--line);
+}
+
+.usecase-info details p,
+.usecase-faq details p { 
+    color: var(--blue);
+}
+
+.usecase-diagrams summary,
+.usecase-compatible-trackers-details summary,
+.usecase-info summary,
+.usecase-faq summary {
+    padding: 25px 0;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.08rem;
+    /*font-weight: 600;*/
+    color: var(--muted);
+}
+
+.usecase-diagrams summary::-webkit-details-marker,
+.usecase-compatible-trackers-details summary::-webkit-details-marker,
+.usecase-topic summary::-webkit-details-marker,
+.usecase-info summary::-webkit-details-marker,
+.usecase-faq summary::-webkit-details-marker { 
+    display: none;
+}
+
+.usecase-diagrams summary::after,
+.usecase-compatible-trackers-details summary::after,
+.usecase-topic summary::after,
+.usecase-info summary::after,
+.usecase-faq summary::after{
+    content: "+";
+    float: right;
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.usecase-diagrams details[open] summary::after,
+.usecase-topic details[open] summary::after,
+.usecase-info details[open] summary::after,
+.usecase-faq details[open] summary::after { 
+    content: "−"; 
+}
+
+.hide-label {
+    display: none;
+}
+
+.usecase-diagrams[open] .show-label,
+.usecase-compatible-trackers-details[open] .show-label {
+    display: none;
+}
+
+.usecase-diagrams[open] .hide-label,
+.usecase-compatible-trackers-details[open] .hide-label {
+    display: inline;
+}
+
+/* =========================================================
+   RESPONSIVE @media
+   ========================================================= */
 
 /* ============================================================
    Tablet / small desktop
@@ -369,6 +695,13 @@ SECTION: USE CASE INTRODUCTION
    Mobile
    ============================================================ */
 @media (max-width: 600px) {
+    .usecase-topic-illustrations--two {
+        grid-template-columns: 1fr;
+    }
+
+    .usecase-topic-illustrations--three {
+        grid-template-columns: 1fr;
+    }
 
     .usecase-step {
         padding: 1.5rem;
@@ -391,6 +724,12 @@ SECTION: USE CASE INTRODUCTION
 
     .usecase-step-image {
         width: 100%;
+    }
+
+    .usecase-compatible-tracker {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
     }
 
 }

@@ -62,7 +62,7 @@
     "lead": "",
     "card1": {
       "title": "Scan BLE",
-      "lead": "Analysez les publicités Bluetooth Low Energy à proximité et observez leur niveau de signal."
+      "lead": "Analysez les annonces Bluetooth Low Energy à proximité et observez leur niveau de signal."
     },
     "card2": {
       "title": "Identification des appareils",
@@ -87,7 +87,7 @@
   },
 
   "limitations": {
-    "eyebrow": "LIMITATIONS",
+    "eyebrow": "LIMITES",
     "title": "Le Bluetooth a des limites physiques.",
     "lead": "La puissance du signal Bluetooth peut aider à estimer la proximité, mais les murs, les meubles, l'orientation de l'appareil et d'autres facteurs environnementaux peuvent influencer le résultat.",
     "quote-box": {
@@ -108,7 +108,7 @@
     "lead": "",
     "question1": {
       "question": "Que peut détecter l'application ?",
-      "answer": "ObjectRadar analyse les publicités Bluetooth Low Energy à proximité et les informations rendues disponibles par les appareils. La détection dépend de l'appareil, de son comportement publicitaire et des informations exposées par son protocole Bluetooth."
+      "answer": "ObjectRadar analyse les annonces Bluetooth Low Energy à proximité et les informations rendues disponibles par les appareils. La détection dépend de l'appareil, de son comportement publicitaire et des informations exposées par son protocole Bluetooth."
     },
     "question2": {
       "question": "Comment fonctionne le guidage de proximité ?",
@@ -293,51 +293,250 @@
   "usecase": {
     "tag": {
       "navigation": {
+        "overview":"Présentation",
+        "compatible-trackers":"Tags",
+        "prerequisites":"Avant de commencer",
+        "associations":"Associations",
+        "steps":"Etapes",
+        "faq":"FAQ",
         "home": "Maison"
       },
       "eyebrow":"CAS D'UTILISATION",
-      "title":"",
-      "lead":"",
+      "title":"Trouvez votre tag Bluetooth",
+      "lead":"Vous savez que votre tag est à proximité, mais vous avez besoin d'aide pour localiser plus précisicément où il se trouve.",
       "quote-box": {
-        "title": "",
-        "lead":""
+        "title": "LES LIMITES DU PROTOCOLE FIND MY",
+        "lead":"Le réseau Localiser (Find My) peut montrer où un tag a été détecté mais il ne peut pas vous dire exactement où est le tag à l'intérieur de votre zone de recherche lorsque la localisation précise n'est pas prise en charge."
       },
+      "origin":"ObjetRadar a été conçu pour aider à transformer ces informations approximatives en une recherche locale pratique.",
       "button":{
-        "steps":""
+        "steps":"Voir les étapes"
       },
+
+      "compatibletrackers": {
+        "eyebrow":"TAGS COMPATIBLES",
+        "title":"Quels tags puis-je utiliser ?",
+        "lead":"ObjectRadar est conçu pour détecter des tags Bluetooth compatibles avec le réseau Localiser et visible pour iOS. ",
+        
+        "info-box-title": "A PROPOS DE LA LISTE SUIVANTE",
+        "info-box-content":"Un modèle non testé ne signifie pas qu'il est incompatible avec ObjetRadar.<br/>Cette liste n'est pas exhaustive et n'implique aucun partenariat avec les fabricants ou produits listés.<br/>Les retours des utilisateurs concernant la compatibilité des produits sont grandement appréciés et nous aident à garder cette liste à jour.",
+      
+        "toggleShow": "Voir les tags compatibles",
+        "toggleHide": "Cacher les  tags compatibles",
+        "link": "Source officielle",
+
+        "Apple":{
+          "AirTag":"Pas testé avec ObjectRadar"
+        },
+        "FnR":{
+          "SmartFinder":"Testé avec ObjectRadar"
+        },
+        "MiLi":{
+          "MiTag":"Testé avec ObjectRadar",
+          "LiTag":"Pas testé avec ObjectRadar",
+          "MiCard":"Pas testé avec ObjectRadar",
+          "MiBell":"Pas testé avec ObjectRadar",
+          "MiLock":"Pas testé avec ObjectRadar"
+        },
+        "Chipolo":{
+          "Pop":"Pas testé avec ObjectRadar",
+          "Loop":"Pas testé avec ObjectRadar",
+          "Card":"Pas testé avec ObjectRadar"
+        }
+      },
+
+      "prerequisites": {
+        "eyebrow":"AVANT DE COMMENCER",
+        "title":"Comprendre ce que les indicateurs signifient",
+        "lead":"Quelques points simples vous permettrons de comprendre les résultats d'une recherche.",
+        "position":{
+          "title":"POSITION",
+          "content":"La localisation affichée par l'application Localiser correspond à la position de l'appareil qui a détecté le tag. Elle ne correspond pas nécessairement à la position exacte du tag",
+          "question":"Pourquoi la position affichée peut-être différente ?",
+          "answer":"Un tag peut être détecté par un périphérique Apple à proximité. La localisation signalée vous donne par conséquent une position de départ utile plutôt qu'une position exacte.",
+          "approximate":{
+            "title":"Position approximative",
+            "content":"L'iPhone de détection ne donne pas une position exacte du tag"
+          },
+          "detections":{
+            "title":"Plusieurs détections",
+            "content":"Les détections multiples peuvent réduire la zone de recherche, mais ne prouvent pas une position exacte"
+          }
+        },
+
+        "rssi":{
+          "title":"PUISSANCE DU SIGNAL (RSSI)",
+          "content":"La valeur RSSI indique la puissance relative du signal Bluetooth. Un signal plus élevé peut aider à déterminer si vous êtes dans la bonne direction, mais ne permet pas d'estimer une distance de manière fiable.",
+          "question":"Pourquoi un signal peut changer de manière inattendue ?",
+          "answer":"Les murs, les meubles, les véhicules et autres objets peuvent affecter le signal Bluetooth. Comparer plusieurs mesures au lieu de s'appuyer sur une seule lecture.",
+          "move":{
+            "title":"Détection de votre tag",
+            "content":"Bouger doucement — Attendre — Comparer — Répéter — Prendre votre temps"
+          }
+        },
+
+        "timeinterval":{
+          "title":"INTERVALLE DE TEMPS (TRAMES DE COMMUNICATION)",
+          "content":"Un tag peut ne pas transmettre continuellement. L'intervalle entre deux trames d'annonce reçues peut varier.",
+          "question":"Que signifient le point et les anneaux autour de la cible ?",
+          "answer":"Le point indique l'intervalle entre les trames d'annonce reçues.<br/>Les anneaux bleus représentent les niveaux de recherche, tandis que les deux niveaux verts indiquent une très grande proximité. La couleur d'un anneau ne représente pas une distance."
+        },
+        
+        "compatibility":{
+          "title":"COMPATIBILITE",
+          "content":"ObjectRadar a été conçu pour détecter des tags Bluetooth compatibles avec le protocole Find My et visible pour iOS.",
+          "question":"Pourquoi un tag pourrait-il ne pas être détecté ?",
+          "answer":"ObjectRadar ne peut pas détecter ou afficher un périphérique qui n'est pas compatible avec le protocole Find My, qui n'est pas autorisé à l'utiliser ou est filtré par iOS. ObjectRadar ne contourne pas la compatibilité des périphériques Apple ou les restrictions d'accès."
+        }
+      },
+
+      "association": {
+        "eyebrow":"ASSOCIATION",
+        "title":"Chercher un objet, pas un numéro",
+        "lead":"ObjectRadar associe un tag détecté avec un objet que vous connaissez.",
+        "learnMore":"En apprendre plus sur les associations des tags (lien)",
+
+        "objectassociation":{
+          "title":"ASSOCIATIONS D'OBJETS AVEC DES PERIPHERIQUES",
+          "content":"Au lieu de rechercher un périphérique Bluetooth inconnu, vous pouvez chercher un objet tel que vos clés, un sac ou tout autre objet personnel.",
+          "question":"Pourquoi est-ce utile ?",
+          "answer":"Un tag détecté n’est pas automatiquement associé à un objet. Vous pouvez l’associer à l’objet auquel vous pensez qu’il appartient. Si l'association est incorrecte, vous pouvez à tout moment associer l’objet à un autre périphérique — avant de continuer la recherche ou après avoir découvert que vous avez trouvé le mauvais objet. ObjectRadar met automatiquement à jour l’association.",
+          "diagrams":{
+            "show":"Montrer les diagrammes : comment créer une association ?",
+            "hide":"Masquer les diagrammes : comment créer une association ?"
+          },
+          "objects":{
+            "title":"Créer votre objet",
+            "content":"Ajouter vos objets en avance afin d'être prêt à les trouver quand vous en aurez besoin ou les créer directement depuis la carte d'un périphérique."
+          },
+          "association":{
+            "title":"Associer un objet avec un périphérique et vice-versa",
+            "content":"Créer une association entre un objet et un périphérique"
+          },
+          "scan":{
+            "title":"Scanner et associer un périphérique avec un objet",
+            "content":"Ajouter une association et regarder si l'association actuelle est à jour"
+          }
+        },
+
+        "rotatingidentifiers":{
+          "title":"IDENTIFIANTS TOURNANTS",
+          "content":"Des tags peuvent périodiquement changer leur identifiant Bluetooth utilisé pour les annonces.",
+          "question":"Pourquoi un tag peut disparaître temporairement du scan ?",
+          "answer":"Un tag pourrait changer son identifiant d'annonce durant une longue recherche. Redémarrer un scan ne vous oblige pas à associer de nouveau l'objet. Quand le même identifiant UUID est encore détecté, son association existante avec un objet est conservée."
+        }
+      
+      },
+
       "steps":{
-        "eyebrow":"",
-        "title":""
+        "eyebrow":"ETAPES",
+        "title":"Comment trouver un tag",
+        "screenshot":{
+          "show":"Afficher la capture d'écran",
+          "hide":"Masquer la capture d'écran"
+        }
       },
       "step1":{
-        "title":"",
-        "lead":"",
+        "title":"DEMARRER LE SCAN",
+        "lead":"Presser le bouton de démarrage pour découvrir les périphériques autour de vous.",
         "content":""
       },
       "step2":{
-        "title":"",
-        "lead":"",
+        "title":"SELECTIONNER VOTRE PERIPHERIQUE",
+        "lead":"Sélectionner le périphérique que vous recherchez parmi son identifiant ou objet associé.",
         "content":""
       },
       "step3":{
-        "title":"",
-        "lead":"",
+        "title":"COMMENCER LA RECHERCHE",
+        "lead":"Bouger doucement dans la zone et comparer les détections successives. ",
+        "content":"",
+        "info-box-title":"DETECTION SONORE",
+        "info-box-content":"Activer le son vous aidera à trouver l'objet et éviter de regarder constamment votre iPhone quand vous êtes proche de lui."
+      },
+      "step4":{
+        "title":"REDUIRE LA ZONE DE RECHERCHE",
+        "lead":"Utiliser des détections successives et les variations de signal pour réduire progressivement la zone de recherche.",
         "content":""
       },
-      "limitations":{
-        "eyebrow":"LIMITATION(S)",
-        "title":"",
-        "lead":"",
+      "step5":{
+        "title":"OBJET TROUVE",
+        "lead":"Quand vous serez proche de l'objet, le cercle vert oscillera.",
         "content":"",
+        "info-box-title":"Félicitations!",
+        "info-box-content":"Vous avez trouvé l'objet.<br/>Vous pouvez cliquer sur le bouton « Objet trouvé ? » pour arrêter la recherche et vérifier combien de temps il vous a fallu pour trouver l'objet."
+      },
+
+      "limitations":{
+        "eyebrow":"LIMITES",
+        "title":"Ce qu'ObjectRadar ne vous dira pas",
+        "lead":"Les performances du Bluetooth dépendent de l’environnement et peuvent influencer les résultats de la recherche.",
+        "content":"",
+
+        "bluetooth":{
+          "title":"BLUETOOTH",
+          "content":"Les signaux Bluetooth sont affectés par leur environnement. La valeur RSSI devrait par conséquent être interprétée comme une indication relative de la puissance du signal, pas comme une distance exacte.",
+          "question":"",
+          "answer":""
+        },
+
+        "battery":{
+          "title":"BATTERIE",
+          "content":"Un tag avec une batterie très basse pourrait arrêter de transmettre. S'il n'envoie plus de trames d'annonce, ObjectRadar ne peut pas le détecter.",
+          "question":"",
+          "answer":""
+        },
+
+        "rotating-identifiers":{
+          "title":"IDENTIFIANTS TOURNANTS",
+          "content":"Un tag pourrait temporairement disparaître de la recherche quand son identifiant d'annonce change.",
+          "question":"",
+          "answer":""
+        },
+
         "quote-box": {
-          "title": "",
-          "lead":""
+          "title": "PRECISIONS",
+          "lead":"ObjectRadar aide à réduire la zone de recherche. Il ne fournit pas une position GPS ou une distance exacte du tag."
         }
       },
+
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Question demandées fréquemment",
+        "lead": "",
+        "question1": {
+          "question":"Est-ce qu'ObjectRader peut trouver n'importe quel périphérique Bluetooth ?",
+          "answer":"ObjectRadar peut détecter des périphériques Bluetooth à proximité qui sont visibles par iOS. La détection et l'identification dépendent des informations disponibles par le périphérique et par iOS."
+        },
+        "question2": {
+          "question":"Est-ce qu'ObjectRadar peut localiser un tag avec exactitude ?",
+          "answer":"Non. ObjectRadar aide à réduire la recherche en utilisant les détections Bluetooth et les variations du signal. Il ne fournit pas une position physique exacte du tag."
+        },
+        "question3": {
+          "question":"Pourquoi la valeur RSSI change ?",
+          "answer":"Les signaux Bluetooth sont affectés par la distance, les obstacles, les réflexions et les environnements proches. Comparer plusieurs mesures au lieu de prendre en compte qu'une seule valeur RSSI."
+        },
+        "question4": {
+          "question":"Pourquoi devrais-je bouger doucement ?",
+          "answer":"Bouger doucement permet au tag le temps de transmettre de nouvelles trames d'annonce et vous donne plus de mesures à comparer."
+        },
+        "question5": {
+          "question":"Pourquoi un tag peut disparaître durant une recherche ?",
+          "answer":"Un tag pourrait temporairement changer son identifiant ou seulement ne pas être détecté durant un intervalle de scan ou devenir hors de porté. Redémarrer le scan pourrait aider à le retrouver."
+        },
+        "question6": {
+          "question":"Est-ce qu'ObjectRadar peut décrypter les données Find My ?",
+          "answer":"Non. ObjectRadar ne décrypte pas ou n'accède pas aux données cryptées Find My. Il fonctionne avec les informations Bluetooth disponibles pour l'application à travers iOS."
+        },
+        "question7": {
+          "question":"Puis-je modifier l'association d'un objet ?",
+          "answer":"Oui. Vous pouvez corriger une association n'importe quand, y compris après avoir découvert que le périphérique détecté était associé avec le mauvais objet."
+        }
+      },
+
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Prêt pour démarrer une recherche ?",
-        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche",
         "buttonCTA":"Télécharger sur l'App Store"
       }
     },
@@ -376,7 +575,7 @@
         "content":""
       },
       "limitations":{
-        "eyebrow":"LIMITATION(S)",
+        "eyebrow":"LIMITE(S)",
         "title":"",
         "lead":"",
         "content":"",
@@ -388,7 +587,7 @@
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Prêt pour démarrer une recherche ?",
-        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche",
         "buttonCTA":"Télécharger sur l'App Store"
       }
     },
@@ -427,7 +626,7 @@
         "content":""
       },
       "limitations":{
-        "eyebrow":"LIMITATION(S)",
+        "eyebrow":"LIMITE(S)",
         "title":"",
         "lead":"",
         "content":"",
@@ -439,7 +638,7 @@
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Prêt pour démarrer une recherche ?",
-        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche",
         "buttonCTA":"Télécharger sur l'App Store"
       }
     },
@@ -490,7 +689,7 @@
         "content":""
       },
       "limitations":{
-        "eyebrow":"LIMITATION(S)",
+        "eyebrow":"LIMITE(S)",
         "title":"",
         "lead":"",
         "content":"",
@@ -502,7 +701,7 @@
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Prêt pour démarrer une recherche ?",
-        "lead": "Ouvrir ObjectRadar et démarrer votre recherche.",
+        "lead": "Ouvrir ObjectRadar et démarrer votre recherche",
         "buttonCTA":"Télécharger sur l'App Store"
       }
     }
