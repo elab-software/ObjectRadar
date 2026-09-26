@@ -43,8 +43,8 @@
     "title": "Conçu pour des situations réelles",
     "lead": "Découvrez comment ObjectRadar peut vous aider à retrouver différents types d'appareils Bluetooth à proximité et à comprendre les étapes de chaque recherche.",
     "card1": {
-      "title": "Traceurs Bluetooth",
-      "lead": "Retrouvez un traceur à proximité lorsque les informations de localisation classiques ne suffisent pas."
+      "title": "Trags Bluetooth",
+      "lead": "Retrouvez un tag à proximité lorsque les informations de localisation classiques ne suffisent pas."
     },
     "card2": {
       "title": "Appareils associés",
@@ -301,12 +301,12 @@
         "faq":"FAQ",
         "home": "Maison"
       },
-      "eyebrow":"CAS D'UTILISATION",
+      "eyebrow":"INTRODUCTION CAS D'UTILISATION",
       "title":"Trouvez votre tag Bluetooth",
       "lead":"Vous savez que votre tag est à proximité, mais vous avez besoin d'aide pour localiser plus précisicément où il se trouve.",
       "quote-box": {
         "title": "LES LIMITES DU PROTOCOLE FIND MY",
-        "lead":"Le réseau Localiser (Find My) peut montrer où un tag a été détecté mais il ne peut pas vous dire exactement où est le tag à l'intérieur de votre zone de recherche lorsque la localisation précise n'est pas prise en charge."
+        "lead":"Le réseau Localiser (Find My) peut montrer une position approximative où un tag a été détecté par un périphérique Apple à proximité, mais il ne peut pas vous dire exactement où est le tag à l'intérieur de votre zone de recherche lorsque la localisation précise n'est pas prise en charge."
       },
       "origin":"ObjetRadar a été conçu pour aider à transformer ces informations approximatives en une recherche locale pratique.",
       "button":{
@@ -382,6 +382,17 @@
           "answer":"Le point indique l'intervalle entre les trames d'annonce reçues.<br/>Les anneaux bleus représentent les niveaux de recherche, tandis que les deux niveaux verts indiquent une très grande proximité. La couleur d'un anneau ne représente pas une distance."
         },
         
+        "search":{
+          "tip":{
+            "title":"RECHERCHER PARMI PLUSIEURS TAGS",
+            "content":"Si vous avez plusieurs tags, bougez temporairement les tags connus hors de la zone de recherche quand c'est possible. Cela réduit le nombre de tags à proximité et rend l'identification plus facile de votre tag."
+          },
+          "warning":{
+            "title":"TAGS A PROXIMITE",
+            "content":"ObjectRadar peut détecter des tags compatibles Find My qui ne vous appartiennent pas. Un tag détecté n'est pas nécessairement le votre."
+          }
+        },
+
         "compatibility":{
           "title":"COMPATIBILITE",
           "content":"ObjectRadar a été conçu pour détecter des tags Bluetooth compatibles avec le protocole Find My et visible pour iOS.",
@@ -437,28 +448,35 @@
         }
       },
       "step1":{
+        "title":"VERIFIER LA DERNIERE POSITION CONNUE",
+        "lead":"Avant de démarrer une recherche locale, vérifiez la dernière position connue de votre tag dans l'application Localiser. Cela peut vous aider à identifier la zone où vous devriez commencer la recherche.",
+        "content":"",
+        "info-box-title":"NIVEAU DE BATTERIE",
+        "info-box-content":"Vous pouvez également vérifier si le tag signale une batterie faible."
+      },
+      "step2":{
         "title":"DEMARRER LE SCAN",
         "lead":"Presser le bouton de démarrage pour découvrir les périphériques autour de vous.",
         "content":""
       },
-      "step2":{
+      "step3":{
         "title":"SELECTIONNER VOTRE PERIPHERIQUE",
         "lead":"Sélectionner le périphérique que vous recherchez parmi son identifiant ou objet associé.",
         "content":""
       },
-      "step3":{
+      "step4":{
         "title":"COMMENCER LA RECHERCHE",
         "lead":"Bouger doucement dans la zone et comparer les détections successives. ",
         "content":"",
         "info-box-title":"DETECTION SONORE",
         "info-box-content":"Activer le son vous aidera à trouver l'objet et éviter de regarder constamment votre iPhone quand vous êtes proche de lui."
       },
-      "step4":{
+      "step5":{
         "title":"REDUIRE LA ZONE DE RECHERCHE",
         "lead":"Utiliser des détections successives et les variations de signal pour réduire progressivement la zone de recherche.",
         "content":""
       },
-      "step5":{
+      "step6":{
         "title":"OBJET TROUVE",
         "lead":"Quand vous serez proche de l'objet, le cercle vert oscillera.",
         "content":"",
@@ -472,6 +490,11 @@
         "lead":"Les performances du Bluetooth dépendent de l’environnement et peuvent influencer les résultats de la recherche.",
         "content":"",
 
+        "quote-box": {
+          "title": "PRECISIONS",
+          "lead":"ObjectRadar aide à réduire la zone de recherche. Il ne fournit pas une position GPS ou une distance exacte du tag."
+        },
+        
         "bluetooth":{
           "title":"BLUETOOTH",
           "content":"Les signaux Bluetooth sont affectés par leur environnement. La valeur RSSI devrait par conséquent être interprétée comme une indication relative de la puissance du signal, pas comme une distance exacte.",
@@ -491,12 +514,8 @@
           "content":"Un tag pourrait temporairement disparaître de la recherche quand son identifiant d'annonce change.",
           "question":"",
           "answer":""
-        },
-
-        "quote-box": {
-          "title": "PRECISIONS",
-          "lead":"ObjectRadar aide à réduire la zone de recherche. Il ne fournit pas une position GPS ou une distance exacte du tag."
         }
+      
       },
 
       "faq": {
@@ -541,49 +560,215 @@
       }
     },
 
-    "hearingAid": {
+    "hearing": {
       "navigation": {
-        "home": "Maison"
+        "overview":"Présentation",
+        "compatible-hearings":"Aides auditives",
+        "prerequisites":"Avant de commencer",
+        "associations":"Associations",
+        "steps":"Etapes",
+        "faq":"FAQ",
+        "home":"Maison"
       },
-      "eyebrow":"CAS D'UTILISATION",
-      "title":"",
-      "lead":"",
+      "eyebrow":"INTRODUCTION CAS D'UTILISATION",
+      "title":"Trouver une prothèse auditive égarée",
+      "lead":"ObjectRadar aide à retrouver une prothèse auditive Bluetooth à proximité quand vous ne pouvez pas la trouver immédiatement.",
       "quote-box": {
-        "title": "",
-        "lead":""
+        "title": "LA LIMITE D'UNE PROTHESE AUDITIVE",
+        "lead":"Contrairement à un tag Bluetooth conçu pour être détecté par des périphériques à proximité, une prothèse auditive est normalement associée avec l'iPhone de son utilisateur. ObjectRadar utilise la connexion Bluetooth disponible de cet iPhone pour vous aider à rechercher la prothèse localement."
       },
+      
       "button":{
-        "steps":""
+        "steps":"Voir les étapes"
       },
+      
+      "compatiblehearings": {
+        "eyebrow":"PROTHESES AUDITIVES COMPATIBLES",
+        "title":"Quelles prothèses auditives puis-je chercher ?",
+        "lead":"ObjectRadar est conçu pour des prothèses auditives avec connectivité Bluetooth qui peuvent être découvertes par iOS.",
+        "content":"La compatibilité dépend du modèle de prothèse auditive, de ses capacités Bluetooth et des informations fournies par iOS. La liste des modèles testés n'est pas exhaustive.",
+
+        "info-box-title": "A PROPOS DE LA LISTE SUIVANTE",
+        "info-box-content":"La compatibilité dépend du modèle de prothèse auditive, de ses capacités Bluetooth et des informations fournies par iOS.<br/>Cette liste n'est pas exhaustive et n'implique aucun partenariat avec les fabricants ou produits listés.<br/>Les retours des utilisateurs concernant la compatibilité des produits sont grandement appréciés et nous aident à garder cette liste à jour.",
+      
+        "toggleShow": "Voir les prothèses auditives compatibles",
+        "toggleHide": "Cacher les prothèses auditives compatibles",
+        "link": "Source officielle",
+
+        "Signia":{
+          "PureC&G":"En cours de test avec ObjectRadar"
+        }
+      },
+
+      "prerequisites": {
+        "eyebrow":"AVANT DE COMMENCER",
+        "title":"Vérifier la connexion Bluetooth",
+        "lead":"La recherche repose sur la connexion Bluetooth entre votre téléphone et prothèse auditive.",
+        "pairing":{
+          "title":"APPAIRAGE",
+          "content":"Votre prothèse auditive devrait être associée avec votre téléphone que vous utilisez pour la recherche. Une prothèse auditive appairée avec un autre périphérique ne sera pas disponible pour ObjectRadar.",
+          "discovery":{
+            "title":"Recherche avec des prothèses auditives déjà appairées",
+            "content":"Pour voir vos prothèses auditives dans ObjectRadar, elles doivent déjà être appairées avec votre téléphone et connectées"
+          },
+          "question":"Pourquoi l'appairage avec un iPhone a de l'importance ?",
+          "answer":"L'iPhone est le périphérique qui communique avec vos prothèses auditives et les découvre. C'est différent d'un tag Bluetooth qui peut être détecté par des périphériques à proximité."
+        },
+
+        "bluetooth":{
+          "title":"BLUETOOTH",
+          "content":"ObjectRadar utilise les informations Bluetooth disponibles par iOS pour identifier et rechercher vos prothèses auditives.",
+          "question":"Comment le signal m'aide à les trouver ?",
+          "answer":"Comme avec les tags Bluetooth, la valeur RSSI vous aide à déterminer si le signal devient fort ou faible quand vous bougez. Il ne fournit pas une distance exacte."
+        }
+      },
+
+      "association": {
+        "eyebrow":"ASSOCIATION",
+        "title":"Chercher un objet, pas un numéro",
+        "lead":"ObjectRadar associe une prothèse auditive détectée avec un objet que vous connaissez.",
+        "learnMore":"En apprendre plus sur les associations des prothèses auditives (lien)",
+
+        "objectassociation":{
+          "title":"ASSOCIATIONS D'OBJETS AVEC DES PERIPHERIQUES",
+          "content":"Vous pouvez associer chaque prothèse auditive (droite et gauche) avec un objet personnel et une étiquette personnalisée.",
+          "question":"Pourquoi est-ce utile ?",
+          "answer":"Une prothèse auditive détecté n’est pas automatiquement associé à un objet. Vous pouvez l’associer à l’objet auquel vous pensez qu’il appartient. Si l'association est incorrecte, vous pouvez à tout moment associer l’objet à un autre périphérique — avant de continuer la recherche ou après avoir découvert que vous avez trouvé le mauvais objet. ObjectRadar met automatiquement à jour l’association.",
+          "diagrams":{
+            "show":"Montrer les diagrammes : comment créer une association ?",
+            "hide":"Masquer les diagrammes : comment créer une association ?"
+          },
+          "objects":{
+            "title":"Créer votre objet",
+            "content":"Ajouter vos objets en avance afin d'être prêt à les trouver quand vous en aurez besoin ou les créer directement depuis la carte d'un périphérique."
+          },
+          "association":{
+            "title":"Associer un objet avec un périphérique et vice-versa",
+            "content":"Créer une association entre un objet et un périphérique"
+          },
+          "scan":{
+            "title":"Scanner et associer un périphérique avec un objet",
+            "content":"Ajouter une association et regarder si l'association actuelle est à jour"
+          }
+        },
+
+        "rotatingidentifiers":{
+          "title":"IDENTIFIANTS TOURNANTS",
+          "content":"Une prothèse auditive appairée pourrait garder le même UUID Bluetooth sur une longue période, mais iOS pourrait assigner un UUID différent dans certaines situations.",
+          "question":"Pourquoi une prothèse auditive peut disparaître temporairement du scan ?",
+          "answer":"Si l'identifiant UUID change, ObjectRadar détectera une prothèse auditive comme un nouveau périphérique. Dans ce cas, l'objet associé devra être modifié manuellement. Quand le même identifiant UUID est encore détecté, son association existante avec un objet est conservée."
+        }
+      
+      },
+
       "steps":{
-        "eyebrow":"",
-        "title":""
+        "eyebrow":"ETAPES",
+        "title":"Comment trouver une prothèse auditive",
+        "lead":"Suivre ces étapes pour réduire progressivement sa localisation.",
+        "screenshot":{
+          "show":"Voir la capture d'écran",
+          "hide":"Masquer la capture d'écran"
+        }
       },
       "step1":{
-        "title":"",
-        "lead":"",
-        "content":""
+        "title":"VERIFIER LA CONNEXION BLUETOOTH",
+        "lead":"S'assurer que le Bluetooth est activé et que la prothèse auditive est associée avec le téléphone que vous utilisez.",
+        "content":"",
+        "info-box-title":"APPAIRE VS CONNECTE",
+        "info-box-content":"<b>Appairé :</b> signifie que votre téléphone connaît et est autorisé à communiquer avec la prothèse auditive<br/><b>Connecté :</b> signifie que la prothèse auditive est actuellement en communication avec votre iPhone.",
+        "content-paired-connected":"Avant de démarrer une recherche locale avec ObjectRadar, la prothèse auditive doit déjà être appairée avec votre téléphone et actuellement connectée avec ce dernier.",
+        "quote-box":{
+          "title":"TAG VS PROTHESE AUDITIVE",
+          "lead":"Avec un tag Find My, l'application Localiser peut fournir une localisation approximative basée sur le réseau Find My.<br/>Avec une prothèse auditive, ObjectRadar repose sur la connexion Bluetooth actuelle avec votre téléphone qui confirme que la prothèse auditive est disponible pour une recherche locale."
+        }
       },
       "step2":{
-        "title":"",
-        "lead":"",
+        "title":"DEMARRER LE SCAN",
+        "lead":"Presser le bouton de démarrage pour découvrir les périphériques autour de vous.",
         "content":""
       },
       "step3":{
-        "title":"",
-        "lead":"",
+        "title":"SELECTIONNER VOTRE PROTHESE AUDITIVE",
+        "lead":"Sélectionner la prothèse auditive détectée que vous recherchez parmi son identifiant ou objet associé.",
         "content":""
       },
-      "limitations":{
-        "eyebrow":"LIMITE(S)",
-        "title":"",
-        "lead":"",
+      "step4":{
+        "title":"DEMARRER LE GUIDAGE",
+        "lead":"Bouger doucement dans la zone et comparer les détections successives.",
         "content":"",
-        "quote-box": {
-          "title": "",
-          "lead":""
-        }
+        "info-box-title":"DETECTION SONORE",
+        "info-box-content":"Activer le son vous aidera à trouver l'objet et éviter de regarder constamment votre iPhone quand vous êtes proche de lui."
       },
+      "step5":{
+        "title":"REDUIRE LA ZONE DE RECHERCHE",
+        "lead":"Utiliser des détections successives et les variations de signal pour réduire progressivement la zone de recherche.",
+        "content":""
+      },
+      "step6":{
+        "title":"OBJET TROUVE",
+        "lead":"Quand vous serez proche de l'objet, le cercle vert oscillera.",
+        "content":"",
+        "info-box-title":"Félicitations!",
+        "info-box-content":"Vous avez trouvé votre prothèse auditive.<br/>Vous pouvez cliquer sur le bouton « Objet trouvé ? » pour arrêter la recherche et vérifier combien de temps il vous a fallu pour trouver l'objet."
+      },
+      
+      "limitations":{
+        "eyebrow":"LIMITES",
+        "title":"Qu'est-ce qui peut affecter la recherche ?",
+        "lead":"La détection Bluetooth dépend de la prothèse auditive, de son état et de son environnement proche.",
+        "content":"",
+
+        "quote-box": {
+          "title": "PRECISIONS",
+          "lead":"ObjectRadar aide à réduire la zone de recherche. Il ne fournit pas une position GPS ou une distance exacte du tag."
+        },
+
+        "bluetooth":{
+          "title":"BLUETOOTH",
+          "content":"La distance Bluetooth dépend de la prothèse auditive, de l'iPhone, des obstacles et conditions radio. Une prothèse auditive pourrait temporairement devenir difficile à détecter, même quand elle est proche.",
+          "question":"",
+          "answer":""
+        },
+
+        "battery":{
+          "title":"BATTERIE",
+          "content":"La prothèse auditive doit avoir suffisamment de batterie pour maintenir ses fonctionnalités Bluetooth. Une prothèse auditive éteinte ou déchargée ne pourra pas être localisée avec le Bluetooth.",
+          "question":"",
+          "answer":""
+        },
+
+        "rotating-identifiers":{
+          "title":"IDENTIFIANTS TOURNANTS",
+          "content":"Durant nos tests, l'identifiant UUID Bluetooth d'une prothèse auditive reste stable sur une longue période. Cependant, ce comportement pourrait dépendre du modèle, de son état et de sa configuration. Par conséquent, ObjectRadar ne prétend pas que toutes les prothèses auditives utilisent des identifiants fixes permanents.",
+          "question":"",
+          "answer":""
+        }
+      
+      },
+
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Vos questions, nos réponses.",
+        "lead": "",
+        "question1": {
+          "question":"Pourquoi un signal peut changer de manière inattendue ?",
+          "answer":"Les murs, les meubles, un corps humain et autres conditions radio peuvent affecter le signal Bluetooth."
+        },
+        "question2": {
+          "question":"Puis-je chercher une prothèse auditive avec un autre iPhone ?",
+          "answer":"La recherche est prévue pour utiliser l'iPhone associé avec la prothèse auditive. Un iPhone différent, pourrait ne pas être capable de le découvrir ou l'identifier de la même manière."
+        },
+        "question3": {
+          "question":"Pourquoi ma prothèse auditive n'est pas détectée ?",
+          "answer":"La prothèse auditive pourrait ne pas être compatible avec les informations Bluetooth disponibles pour ObjectRadar, pourrait ne pas être associé avec l'iPhone, pourrait être éteinte, ou pourrait être temporairement indisponible, par exemple parce ce qu'elle est hors de portée."
+        },
+        "question4": {
+          "question":"Est-ce qu'ObjectRadar peut me montrer la distance exacte avec ma prothèse auditive ?",
+          "answer":"Non. La force du signal Bluetooth peut aider à chercher progressivement, mais la valeur RSSI ne devrait pas être interprétée comme une exacte distance."
+        }
+        
+      },
+      
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Prêt pour démarrer une recherche ?",
@@ -591,7 +776,7 @@
         "buttonCTA":"Télécharger sur l'App Store"
       }
     },
-
+    
     "otherDevice": {
       "navigation": {
         "home": "Maison"

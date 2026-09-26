@@ -14,15 +14,15 @@
     │
     ├── usecase-intro .lead
     │
-    ├── usecase-compatible-trackers
-    │   └── usecase-compatible-tracker
-    │       ├── usecase-compatible-tracker-header
-    │       │   ├── usecase-compatible-tracker-name
-    │       │   └── official-source + usecase-compatible-tracker-link
+    ├── usecase-compatible-trackers (or usecase-compatible--devices)
+    │   └── usecase-compatible-tracker (or usecase-compatible--device)
+    │       ├── usecase-compatible-tracker-header (or usecase-compatible-device-header)
+    │       │   ├── usecase-compatible-tracker-name (or usecase-compatible-device-name)
+    │       │   └── official-source + usecase-compatible-tracker-link (or usecase-compatible-device-link)
     │       │    
-    │       └── usecase-compatible-tracker-models
-    │           └── usecase-compatible-tracker-model
-    │               └── usecase-compatible-tracker-status
+    │       └── usecase-compatible-tracker-models (or usecase-compatible-device-models)
+    │           └── usecase-compatible-tracker-model (or usecase-compatible-device-model)
+    │               └── usecase-compatible-tracker-status (or usecase-compatible-device-status)
     │
     ├── usecase-topic   
     │
@@ -136,8 +136,10 @@ SECTION: USE CASE INTRODUCTION
 }
 
 /* ============================================================
-   Use case compatible trackers
+   Use case compatible trackers / device (generic: tag, hearing,
+   etc.)
    ============================================================ */
+.usecase-compatible-devices,
 .usecase-compatible-trackers {
     display: grid;
     gap: 16px;    
@@ -145,6 +147,7 @@ SECTION: USE CASE INTRODUCTION
 }
 
 /* Define one card with one brand and one or more models */
+.usecase-compatible-device,
 .usecase-compatible-tracker {
     padding: 20px 24px;
     border: 1px solid var(--border);
@@ -152,11 +155,13 @@ SECTION: USE CASE INTRODUCTION
     background: var(--surface);
 }
 
+.usecase-compatible-device p,
 .usecase-compatible-tracker p {
     margin: 4px 0 0;
 }
 
 /* Brand and the website's link on one line */
+.usecase-compatible-device-header,
 .usecase-compatible-tracker-header {
     display: flex;
     align-items: center;
@@ -164,6 +169,7 @@ SECTION: USE CASE INTRODUCTION
     gap: 24px;
 }
 /* Not used because of rights */
+.usecase-compatible-device-logo,
 .usecase-compatible-tracker-logo {
     width: 28px;
     height: 28px;
@@ -171,21 +177,25 @@ SECTION: USE CASE INTRODUCTION
 }
 
 /* Name of the brand */
+.usecase-compatible-device-name,
 .usecase-compatible-tracker-name {
     font-weight: 600;
 }
 
 /* Link to the brand's website */
+.usecase-compatible-device-link,
 .usecase-compatible-tracker-link {
     flex-shrink: 0;
 }
 
 /* Model(s) of the brand */
+.usecase-compatible-device-models,
 .usecase-compatible-tracker-models {
     margin-top: 16px;
 }
 
 /* Model of the brand */
+.usecase-compatible-device-model,
 .usecase-compatible-tracker-model {
     display: grid;
     grid-template-columns: 200px 1fr; /* First column width fixed (200px) makes a good alignement for the text of the status */
@@ -195,6 +205,7 @@ SECTION: USE CASE INTRODUCTION
 }
 
 /* Status of the model: tested or not tested */
+.usecase-compatible-device-status,
 .usecase-compatible-tracker-status {
     text-align: left; /* Do not use min-width in this class, adjust the size of the model on 'grid-template-columns' */
     font-size: .82rem;
@@ -202,12 +213,14 @@ SECTION: USE CASE INTRODUCTION
 }
 
 /* Status of the model: tested */
+.usecase-compatible-device-status--tested,
 .usecase-compatible-tracker-status--tested {
     color: var(--muted);
     font-weight: 600;
 }
 
 /* Status of the model: not tested */
+.usecase-compatible-device-status--not-tested,
 .usecase-compatible-tracker-status--not-tested {
     color: var(--muted);
 }
@@ -597,6 +610,7 @@ SECTION: USE CASE INTRODUCTION
     color: var(--muted);
 }
 
+.usecase-compatible-devices .official-source,
 .usecase-compatible-trackers .official-source,
 .usecase-topic .official-source,
 .usecase-credits .official-source {
@@ -623,6 +637,7 @@ SECTION: USE CASE INTRODUCTION
 }
 
 .usecase-diagrams summary,
+.usecase-compatible-devices-details summary,
 .usecase-compatible-trackers-details summary,
 .usecase-info summary,
 .usecase-faq summary {
@@ -635,6 +650,7 @@ SECTION: USE CASE INTRODUCTION
 }
 
 .usecase-diagrams summary::-webkit-details-marker,
+.usecase-compatible-devices-details summary::-webkit-details-marker,
 .usecase-compatible-trackers-details summary::-webkit-details-marker,
 .usecase-topic summary::-webkit-details-marker,
 .usecase-info summary::-webkit-details-marker,
@@ -643,6 +659,7 @@ SECTION: USE CASE INTRODUCTION
 }
 
 .usecase-diagrams summary::after,
+.usecase-compatible-devices-details summary::after,
 .usecase-compatible-trackers-details summary::after,
 .usecase-topic summary::after,
 .usecase-info summary::after,
@@ -666,11 +683,13 @@ SECTION: USE CASE INTRODUCTION
 }
 
 .usecase-diagrams[open] .show-label,
+.usecase-compatible-devices-details[open] .show-label,
 .usecase-compatible-trackers-details[open] .show-label {
     display: none;
 }
 
 .usecase-diagrams[open] .hide-label,
+.usecase-compatible-devices-details[open] .hide-label,
 .usecase-compatible-trackers-details[open] .hide-label {
     display: inline;
 }
@@ -726,6 +745,7 @@ SECTION: USE CASE INTRODUCTION
         width: 100%;
     }
 
+    .usecase-compatible-device,
     .usecase-compatible-tracker {
         align-items: flex-start;
         flex-direction: column;

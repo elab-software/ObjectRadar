@@ -309,7 +309,7 @@
       "lead":"You know your tracker is nearby, but you need help narrowing down where it is.",
       "quote-box": {
         "title": "THE LIMIT OF FIND MY PROTOCOL",
-        "lead":"Find My network can show where a tracker was detected, but it cannot tell you exactly where the tracker is inside your search area when precise finding is not supported."
+        "lead":"Find My network can show the approximate location where a tracker was detected by a nearby Apple device, but it cannot tell you exactly where the tracker is inside your search area when precise finding is not supported."
       },
       "origin":"ObjectRadar was created to help turn this approximate information into a practical local search.",
       "button":{
@@ -384,7 +384,18 @@
           "question":"What does the dot and the ring around the target mean?",
           "answer":"The dot indicates the interval between received advertising frames.<br/>Blue rings represent the search levels, while the two green levels indicate very close proximity. The ring color does not represent distance."
         },
-        
+
+        "search":{
+          "tip":{
+            "title":"SEARCHING AMONG SEVERAL TAGS",
+            "content":"If you own several tags, temporarily move the known tags away from the search area when possible. This reduces the number of nearby devices and makes it easier to identify the tag you are looking for"
+          },
+          "warning":{
+            "title":"NEARBY TAGS",
+            "content":"ObjectRadar may detect a Find My-compatible tag that does not belong to you. A detected tag is not necessarily your tag."
+          }
+        },
+
         "compatibility":{
           "title":"COMPATIBILITY",
           "content":"ObjectRadar is designed to detect Bluetooth trackers compatible with the Find My protocol and visible to iOS.",
@@ -440,28 +451,35 @@
         }
       },
       "step1":{
+        "title":"CHECK THE LAST KNOWN LOCATION",
+        "lead":"Before starting the local search, check the last known location of your tracker in Find My application. This can help you identify the area where you should start searching.",
+        "content":"",
+        "info-box-title":"BATTERY LEVEL",
+        "info-box-content":"You can also check whether the tracker reports a low battery."
+      },
+      "step2":{
         "title":"START SCAN",
         "lead":"Press start button to discover devices around you.",
         "content":""
       },
-      "step2":{
+      "step3":{
         "title":"SELECT YOUR DEVICE",
         "lead":"Select the device you are looking for from its identifier or its associated object.",
         "content":""
       },
-      "step3":{
+      "step4":{
         "title":"START THE TRACKING",
         "lead":"Move slowly through the area and compare successive detections.",
         "content":"",
         "info-box-title":"SOUND DETECTION",
         "info-box-content":"Activating the sound will help you find the object without constantly looking at your iPhone when you are close to it."
       },
-      "step4":{
+      "step5":{
         "title":"NARROW THE SEARCH AREA",
         "lead":"Use successive detections and signal changes to progressively narrow the search area.",
         "content":""
       },
-      "step5":{
+      "step6":{
         "title":"OBJECT FOUND",
         "lead":"When you are very close to the object the green circle will oscillate.",
         "content":"",
@@ -474,6 +492,11 @@
         "title":"What ObjectRadar cannot tell you",
         "lead":"Bluetooth performance depends on the environment and can affect the results of a search.",
         "content":"",
+
+        "quote-box": {
+          "title": "PRECISIONS",
+          "lead":"ObjectRadar helps narrow the search area. It does not provide an exact GPS position or an exact distance to the tracker."
+        },
 
         "bluetooth":{
           "title":"BLUETOOTH",
@@ -494,12 +517,8 @@
           "content":"A tracker may temporarily disappear from the scan when its advertising identifier changes.",
           "question":"",
           "answer":""
-        },
-
-        "quote-box": {
-          "title": "PRECISIONS",
-          "lead":"ObjectRadar helps narrow the search area. It does not provide an exact GPS position or an exact distance to the tracker."
         }
+
       },
 
       "faq": {
@@ -544,49 +563,214 @@
       }
     },
 
-    "hearingAid": {
+    "hearing": {
       "navigation": {
-        "home": "Home"
+        "overview":"Overview",
+        "compatible-hearings":"Hearings",
+        "prerequisites":"Before you start",
+        "associations":"Associations",
+        "steps":"Steps",
+        "faq":"FAQ",
+        "home":"Home"
       },
-      "eyebrow":"USE CASE",
-      "title":"",
-      "lead":"",
+      "eyebrow":"USE CASE INTRODUCTION",
+      "title":"Find a misplaced hearing aid",
+      "lead":"ObjectRadar helps you locate a Bluetooth hearing aid nearby when you cannot immediately find it.",
       "quote-box": {
-        "title": "",
-        "lead":""
+        "title": "THE LIMIT OF HEARING AID",
+        "lead":"Unlike a Bluetooth tracker designed to be detected by nearby devices, a hearing aid is normally associated with its user's iPhone. ObjectRadar uses the Bluetooth connection available from that iPhone to help you search for the hearing aid locally."
       },
+      
       "button":{
-        "steps":""
+        "steps":"See the steps"
       },
+      
+      "compatiblehearings": {
+        "eyebrow":"COMPATIBLE HEARING AIDS",
+        "title":"Which hearing aids can be searched?",
+        "lead":"ObjectRadar is designed for hearing aids with Bluetooth connectivity that can be discovered by iOS.",
+        "content":"Compatibility depends on the hearing aid model, its Bluetooth capabilities and the information made available to iOS. The list of tested models is not exhaustive.",
+
+        "info-box-title": "ABOUT THE FOLLOWING LIST",
+        "info-box-content":"Compatibility depends on the hearing aid model, its Bluetooth capabilities and the information made available to iOS.<br/>An untested model does not mean that it is incompatible with ObjectRadar.<br/>This list is not exhaustive and does not imply any partnership with the manufacturers or products listed.<br/>User feedback about product compatibility is greatly appreciated and helps us keep this list up to date.",
+      
+        "toggleShow": "View compatible hearings",
+        "toggleHide": "Hide compatible hearings",
+        "link": "Official source",
+
+        "Signia":{
+          "PureC&G":"On going test with ObjectRadar"
+        }
+      },
+
+      "prerequisites": {
+        "eyebrow":"BEFORE YOU START",
+        "title":"Check the Bluetooth connection",
+        "lead":"The search relies on the Bluetooth connection between your iPhone and your hearing aid.",
+        "pairing":{
+          "title":"PAIRING",
+          "content":"Your hearing aid should already be associated with the iPhone you are using for the search. A hearing aid paired with another device may not be available to ObjectRadar.",
+          "discovery":{
+            "title":"Searching for already paired hearing aids",
+            "content":"To see your hearing aids in ObjectRadar, they must first be paired with your iPhone and connected"
+          },
+          "question":"Why does the paired iPhone matter?",
+          "answer":"The iPhone is the device that communicates with and discovers the hearing aid. This is different from a Bluetooth tracker that can be detected by nearby devices."
+        },
+
+        "bluetooth":{
+          "title":"BLUETOOTH",
+          "content":"ObjectRadar uses the Bluetooth information available to iOS to identify and search for the hearing aid.",
+          "question":"How does the signal help me find it?",
+          "answer":"As with Bluetooth trackers, the RSSI value can help you determine whether the signal is getting stronger or weaker as you move. It does not provide a reliable distance."
+        }
+      },
+
+      "association": {
+        "eyebrow":"ASSOCIATION",
+        "title":"Search for an object, not a number",
+        "lead":"ObjectRadar associates a detected hearing with an object you know.",
+        "learnMore":"Learn more about hearing aids association (link)",
+
+        "objectassociation":{
+          "title":"OBJECTS ASSOCIATION WITH DEVICES",
+          "content":"You can associate each hearing aid (left and right) with a personnal object with a custum label",
+          "question":"Why is this useful?",
+          "answer":"A detected hearing aid is not automatically associated with an object. You can associate it with the object you believe it belongs to. If the association is incorrect, you can assign the object to another hearing at any time — before continuing the search or after discovering that you found the wrong item. ObjectRadar automatically updates the association.",
+          "diagrams":{
+            "show":"Show diagrams: how to create an association ?",
+            "hide":"Hide diagrams: how to create an association ?"
+          },
+          "objects":{
+            "title":"Create your object",
+            "content":"Add your objects in advance so you are ready to find them when needed or create them directly into a device card"
+          },
+          "association":{
+            "title":"Associate an object with a device and vice-versa",
+            "content":"Create an association between an object and a device"
+          },
+          "scan":{
+            "title":"Scan and associate a device with an object",
+            "content":"Add an association and see whether the current association is up to date"
+          }
+        },
+
+        "rotatingidentifiers":{
+          "title":"ROTATING IDENTIFIERS",
+          "content":"A paired hearing aid may keep the same Bluetooth UUID for a long period, but iOS may assign a different UUID in some situations.",
+          "question":"Why can a hearing aid temporarily disappear from the scan?",
+          "answer":"If the UUID changes, ObjectRadar will detect the hearing aid as a new device. In this case, the object association should be modified manually. When the same device UUID is detected again, its existing object association is retained."
+        }
+      
+      },
+
       "steps":{
-        "eyebrow":"",
-        "title":""
+        "eyebrow":"STEPS",
+        "title":"How to find your hearing aid",
+        "screenshot":{
+          "show":"Show screenshot",
+          "hide":"Show screenshot"
+        }
       },
       "step1":{
-        "title":"",
-        "lead":"",
-        "content":""
+        "title":"CHECK THE BLUETOOTH CONNECTION",
+        "lead":"Make sure Bluetooth is enabled and that the hearing aid is associated with the iPhone you are using.",
+        "content":"",
+        "info-box-title":"PAIRED VS CONNECTED",
+        "info-box-content":"<b>Paired:</b> means that your iPhone knows and is authorized to communicate with the hearing aid.<br/><b>Connected:</b> means that the hearing aid is currently communicating with your iPhone.",
+        "content-paired-connected":"Before starting a local search with ObjectRadar, the hearing aid must already be paired with your iPhone and currently connected to it.",
+        "quote-box":{
+          "title":"TAG VS HEARING AID",
+          "lead":"With a Find My tracker, Find My app can provide an approximate location based on the Find My network.<br/>With a hearing aid, ObjectRadar relies on the current Bluetooth connection with your iPhone to confirm that the hearing aid is available for a local search."
+        }
       },
       "step2":{
-        "title":"",
-        "lead":"",
+        "title":"START SCAN",
+        "lead":"Press start button to discover hearing aid around you.",
         "content":""
       },
       "step3":{
-        "title":"",
-        "lead":"",
+        "title":"SELECT YOUR HEARING AID",
+        "lead":"Select the detected hearing aid you are looking for from its identifier or its associated object.",
         "content":""
       },
-      "limitations":{
-        "eyebrow":"LIMITATION(S)",
-        "title":"",
-        "lead":"",
+      "step4":{
+        "title":"START THE TRACKING",
+        "lead":"Move slowly through the area and compare successive detections.",
         "content":"",
-        "quote-box": {
-          "title": "",
-          "lead":""
-        }
+        "info-box-title":"SOUND DETECTION",
+        "info-box-content":"Activating the sound will help you find the object without constantly looking at your iPhone when you are close to it."
       },
+      "step5":{
+        "title":"NARROW THE SEARCH AREA",
+        "lead":"Use successive detections and signal changes to progressively narrow the search area.",
+        "content":""
+      },
+      "step6":{
+        "title":"OBJECT FOUND",
+        "lead":"When you are very close to the object the green circle will oscillate.",
+        "content":"",
+        "info-box-title":"Congratulations!",
+        "info-box-content":"You found your hearing.<br/>You can click the « Object found ? » button to stop the search and check how long it took to find the object."
+      },
+      
+      "limitations":{
+        "eyebrow":"LIMITATIONS",
+        "title":"What can affect the search?",
+        "lead":"Bluetooth detection depends on the hearing aid, its state and the surrounding environment.",
+        "content":"",
+
+        "quote-box": {
+          "title": "PRECISIONS",
+          "lead":"ObjectRadar helps narrow the search area. It does not provide an exact GPS position or an exact distance to the hearing aid."
+        },
+
+        "bluetooth":{
+          "title":"BLUETOOTH",
+          "content":"Bluetooth range depends on the hearing aid, the iPhone, obstacles and radio conditions. A hearing aid may temporarily become difficult to detect even when it is nearby.",
+          "question":"",
+          "answer":""
+        },
+
+        "battery":{
+          "title":"BATTERY",
+          "content":"The hearing aid must have enough battery power to maintain its Bluetooth functionality. A switched-off or discharged hearing aid cannot be located through Bluetooth.",
+          "question":"",
+          "answer":""
+        },
+
+        "rotating-identifiers":{
+          "title":"ROTATING IDENTIFIERS",
+          "content":"During our tests, the Bluetooth UUID of a hearing aid remained stable for a long period. However, this behavior may vary depending on the model, its state and its configuration. ObjectRadar therefore does not assume that all hearing aids use a permanently fixed identifier.",
+          "question":"",
+          "answer":""
+        }
+      
+      },
+
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Frequently asked questions",
+        "lead": "",
+        "question1": {
+          "question":"Why can the signal change unexpectedly?",
+          "answer":"Walls, furniture, the human body and other radio conditions can affect Bluetooth signal strength."
+        },
+        "question2": {
+          "question":"Can I search for a hearing aid with another iPhone?",
+          "answer":"The search is intended to use the iPhone associated with the hearing aid. A different iPhone may not be able to discover or identify it in the same way."
+        },
+        "question3": {
+          "question":"Why is my hearing aid not detected?",
+          "answer":"The hearing aid may not be compatible with the Bluetooth information available to ObjectRadar, may not be associated with the iPhone, may be switched off, or may be temporarily unavailable, for example because it is out of range."
+        },
+        "question4": {
+          "question":"Does ObjectRadar show the exact distance to my hearing aid?",
+          "answer":"No. Bluetooth signal strength can help you search progressively, but RSSI should not be interpreted as an exact distance."
+        }
+        
+      },
+      
       "finalCTA": {
         "eyebrow": "OBJECTRADAR",
         "title": "Ready to start searching?",

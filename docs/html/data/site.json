@@ -15,7 +15,7 @@
     "pages": {
         "index": {
             "version": "2.0",
-            "lastUpdated": "2026-09-24"
+            "lastUpdated": "2026-09-26"
         },
         "use-case-generic": {
             "version": "1.0",
@@ -23,7 +23,11 @@
         },
         "use-case-ble-trackers": {
             "version": "1.0",
-            "lastUpdated": "2026-09-24"
+            "lastUpdated": "2026-09-26"
+        },
+        "use-case-hearing": {
+            "version": "1.0",
+            "lastUpdated": "2026-09-26"
         }
     }
 }

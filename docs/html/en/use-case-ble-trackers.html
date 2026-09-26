@@ -84,7 +84,7 @@
                 <div class="highlight-box">
                     <span data-i18n="usecase.tag.quote-box.title">THE PROBLEM</span>
                     <strong data-i18n="usecase.tag.quote-box.lead">
-                        Find My can show where a tracker was detected, but it does not provide a precise direction to the tracker.
+                        Find My can show the approximate location where a tracker was detected by a nearby Apple device, but it does not provide a precise direction to the tracker.
                     </strong>
                 </div>
 
@@ -325,7 +325,7 @@
 
                         <div class="usecase-topic-illustration">
                             <img
-                                src="../images/diagrams/tag-position-approximate-v2.svg"
+                                src="../images/diagrams/tag_position_approximate-objectradar-v2.svg"
                                 alt="">
                             <div class="usecase-topic-illustration-caption">
                                 <strong data-i18n="usecase.tag.prerequisites.position.approximate.title">
@@ -339,7 +339,7 @@
 
                         <div class="usecase-topic-illustration">
                             <img
-                                src="../images/diagrams/tag-position-multiple-detections-v2.svg"
+                                src="../images/diagrams/tag_position_multiple_detections-objectradar-v2.svg"
                                 alt="">
                             <div class="usecase-topic-illustration-caption">
                                 <strong data-i18n="usecase.tag.prerequisites.position.detections.title">
@@ -390,7 +390,7 @@
 
                         <div class="usecase-topic-illustration">
                             <img
-                                src="../images/diagrams/tag-rssi-search-v2.svg"
+                                src="../images/diagrams/tag_rssi_search-objectradar-v2.svg"
                                 alt="">
                             <div class="usecase-topic-illustration-caption">
                                 <strong data-i18n="usecase.tag.prerequisites.rssi.move.title">
@@ -450,6 +450,52 @@
 
                 </div>
 
+                <!-- PREREQUISITES: TIPS SEARCH TAGS -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/tip-orange.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.prerequisites.search.tip.title">
+                                SEARCHING AMONG SEVERAL TAGS
+                            </span>
+
+                            <p data-i18n="usecase.tag.prerequisites.search.tip.content">
+                                If you own several tags, temporarily move the known tags away from the search area when possible. This reduces the number of nearby devices and makes it easier to identify the tag you are looking for.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- PREREQUISITES: WARNING SEARCH TAGS -->
+                <div class="usecase-topic">
+
+                    <!-- PERSONALISED TOPIC -->
+                    <div class="usecase-topic-header">
+                        <img
+                            src="../images/icons/warning-red.png"
+                            alt=""
+                            class="usecase-topic-icon">
+
+                        <div class="usecase-topic-content">
+                            <span data-i18n="usecase.tag.prerequisites.search.warning.title">
+                                NEARBY TAGS
+                            </span>
+
+                            <p data-i18n="usecase.tag.prerequisites.search.warning.content">
+                                ObjectRadar may detect a Find My-compatible tag that does not belong to you. A detected tag is not necessarily your tag.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
                 <!-- PREREQUISITES: COMPATIBILITY -->
                 <div class="usecase-topic">
 
@@ -482,7 +528,7 @@
                     </details>
                     
                 </div>
-
+                
             </div>
         </section>
 
@@ -561,7 +607,7 @@
 
                                 <div class="usecase-topic-illustration">
                                     <img
-                                        src="../images/diagrams/objectradar_object_creation-v2.svg"
+                                        src="../images/diagrams/tag_object_creation-objectradar-v2.svg"
                                         alt="">
                                     <div class="usecase-topic-illustration-caption">
                                             <strong data-i18n="usecase.tag.association.objectassociation.objects.title">
@@ -575,7 +621,7 @@
 
                             <div class="usecase-topic-illustration">
                                     <img
-                                        src="../images/diagrams/objectradar_association_object_and_device-v3.svg"
+                                        src="../images/diagrams/tag_association_object_and_device-objectradar-v3.svg"
                                         alt="">
                                     <div class="usecase-topic-illustration-caption">
                                         <strong data-i18n="usecase.tag.association.objectassociation.association.title">
@@ -589,7 +635,7 @@
 
                                 <div class="usecase-topic-illustration">
                                     <img
-                                        src="../images/diagrams/objectradar-scan_association-with-objects-v4.svg"
+                                        src="../images/diagrams/tag_scan_association_with_objects-objectradar-v4.svg"
                                         alt="">
                                     <div class="usecase-topic-illustration-caption">
                                         <strong data-i18n="usecase.tag.association.objectassociation.scan.title">
@@ -681,6 +727,56 @@
                             <!-- ICON -->
                             <img
                                 class="usecase-step-icon"
+                                src="../images/icons/tip-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step1.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step1.content">(Describe the step with more informations)</p>
+                        </div>
+
+                        <!-- TIP TOPIC WITH INFO-BOX -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/tip-orange.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="info-box-content">
+                                <span data-i18n="usecase.tag.step1.info-box-title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.step1.info-box-content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- =====================================
+                         STEP 02
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">02</span>
+                                <h3 data-i18n="usecase.tag.step2.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
                                 src="../images/icons/radar-blue.png"
                                 alt="">
 
@@ -759,7 +855,7 @@
 
 
                     <!-- =====================================
-                         STEP 02
+                         STEP 03
                          ===================================== -->
 
                     <article class="usecase-step reveal">
@@ -768,8 +864,8 @@
 
                             
                             <div class="usecase-step-heading">
-                                <span class="usecase-step-number">02</span>
-                                <h3 data-i18n="usecase.tag.step2.title">Title</h3>
+                                <span class="usecase-step-number">03</span>
+                                <h3 data-i18n="usecase.tag.step3.title">Title</h3>
                             </div>
                             
                             <!-- ICON -->
@@ -780,12 +876,12 @@
 
                         </div>
 
-                        <p class="lead" data-i18n="usecase.tag.step2.lead">
+                        <p class="lead" data-i18n="usecase.tag.step3.lead">
                             (Short descritpion of the step)
                         </p>
 
                         <div class="usecase-step-content">
-                            <p data-i18n="usecase.tag.step2.content">(Describe the step with more informations)</p>
+                            <p data-i18n="usecase.tag.step3.content">(Describe the step with more informations)</p>
                         </div>
 
                         <!-- OPTIONAL IMAGE (hidden or visible)-->
@@ -807,73 +903,6 @@
 
                     </article>
 
-
-                    <!-- =====================================
-                         STEP 03
-                         ===================================== -->
-
-                    <article class="usecase-step reveal">
-
-                        <div class="usecase-step-header">
-
-                            
-                            <div class="usecase-step-heading">
-                                <span class="usecase-step-number">03</span>
-                                <h3 data-i18n="usecase.tag.step3.title">Title</h3>
-                            </div>
-                            
-                            <!-- ICON -->
-                            <img
-                                class="usecase-step-icon"
-                                src="../images/icons/circles-blue.png"
-                                alt="">
-
-                        </div>
-
-                        <p class="lead" data-i18n="usecase.tag.step3.lead">
-                            (Short descritpion of the step)
-                        </p>
-
-                        <div class="usecase-step-content">
-                            <p data-i18n="usecase.tag.step3.content">(Describe the step with more informations)</p>
-                        </div>
-
-                        <!-- TIP TOPIC WITH INFO-BOX -->
-                        <div class="usecase-topic-header">
-                            <img
-                                src="../images/icons/tip-orange.png"
-                                alt=""
-                                class="usecase-topic-icon">
-
-                            <div class="info-box-content">
-                                <span data-i18n="usecase.tag.step3.info-box-title">
-                                    xxx
-                                </span>
-
-                                <p data-i18n="usecase.tag.step3.info-box-content">
-                                    xxx
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- OPTIONAL IMAGE (hidden or visible)-->
-                        <details class="usecase-step-screenshot">
-                            <summary>
-                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
-                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
-                                <span class="usecase-step-screenshot-icon"></span>
-                            </summary>
-
-                            <div class="usecase-step-image">
-                                <img
-                                    src="../images/screenshots/4_Tracking_view_far-with-top-banner.jpg"
-                                    alt=""
-                                    data-i18n="..."
-                                >
-                            </div>
-                        </details>
-                        
-                    </article>
 
                     <!-- =====================================
                          STEP 04
@@ -905,6 +934,24 @@
                             <p data-i18n="usecase.tag.step4.content">(Describe the step with more informations)</p>
                         </div>
 
+                        <!-- TIP TOPIC WITH INFO-BOX -->
+                        <div class="usecase-topic-header">
+                            <img
+                                src="../images/icons/tip-orange.png"
+                                alt=""
+                                class="usecase-topic-icon">
+
+                            <div class="info-box-content">
+                                <span data-i18n="usecase.tag.step4.info-box-title">
+                                    xxx
+                                </span>
+
+                                <p data-i18n="usecase.tag.step4.info-box-content">
+                                    xxx
+                                </p>
+                            </div>
+                        </div>
+
                         <!-- OPTIONAL IMAGE (hidden or visible)-->
                         <details class="usecase-step-screenshot">
                             <summary>
@@ -915,7 +962,7 @@
 
                             <div class="usecase-step-image">
                                 <img
-                                    src="../images/screenshots/5_Tracking_view_close.jpg"
+                                    src="../images/screenshots/4_Tracking_view_far-with-top-banner.jpg"
                                     alt=""
                                     data-i18n="..."
                                 >
@@ -925,7 +972,7 @@
                     </article>
 
                     <!-- =====================================
-                         STEP 5
+                         STEP 05
                          ===================================== -->
 
                     <article class="usecase-step reveal">
@@ -954,6 +1001,55 @@
                             <p data-i18n="usecase.tag.step5.content">(Describe the step with more informations)</p>
                         </div>
 
+                        <!-- OPTIONAL IMAGE (hidden or visible)-->
+                        <details class="usecase-step-screenshot">
+                            <summary>
+                                <span class="show-label" data-i18n="usecase.tag.steps.screenshot.show">Show screenshot</span>
+                                <span class="hide-label" data-i18n="usecase.tag.steps.screenshot.hide">Hide screenshot</span>
+                                <span class="usecase-step-screenshot-icon"></span>
+                            </summary>
+
+                            <div class="usecase-step-image">
+                                <img
+                                    src="../images/screenshots/5_Tracking_view_close.jpg"
+                                    alt=""
+                                    data-i18n="..."
+                                >
+                            </div>
+                        </details>
+                        
+                    </article>
+
+                    <!-- =====================================
+                         STEP 06
+                         ===================================== -->
+
+                    <article class="usecase-step reveal">
+
+                        <div class="usecase-step-header">
+
+                            
+                            <div class="usecase-step-heading">
+                                <span class="usecase-step-number">06</span>
+                                <h3 data-i18n="usecase.tag.step6.title">Title</h3>
+                            </div>
+                            
+                            <!-- ICON -->
+                            <img
+                                class="usecase-step-icon"
+                                src="../images/icons/circles-blue.png"
+                                alt="">
+
+                        </div>
+
+                        <p class="lead" data-i18n="usecase.tag.step6.lead">
+                            (Short descritpion of the step)
+                        </p>
+
+                        <div class="usecase-step-content">
+                            <p data-i18n="usecase.tag.step6.content">(Describe the step with more informations)</p>
+                        </div>
+
                         <!-- CHECK TOPIC WITH INFO-BOX -->
                         <div class="usecase-topic-header">
                             <img
@@ -962,11 +1058,11 @@
                                 class="usecase-topic-icon">
 
                             <div class="info-box-content">
-                                <span data-i18n="usecase.tag.step5.info-box-title">
+                                <span data-i18n="usecase.tag.step6.info-box-title">
                                     xxx
                                 </span>
 
-                                <p data-i18n="usecase.tag.step5.info-box-content">
+                                <p data-i18n="usecase.tag.step6.info-box-content">
                                     xxx
                                 </p>
                             </div>
