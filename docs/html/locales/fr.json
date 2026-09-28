@@ -43,14 +43,18 @@
     "title": "Conçu pour des situations réelles",
     "lead": "Découvrez comment ObjectRadar peut vous aider à retrouver différents types d'appareils Bluetooth à proximité et à comprendre les étapes de chaque recherche.",
     "card1": {
-      "title": "Trags Bluetooth",
+      "title": "Tags Bluetooth",
       "lead": "Retrouvez un tag à proximité lorsque les informations de localisation classiques ne suffisent pas."
     },
     "card2": {
-      "title": "Appareils associés",
-      "lead": "Recherchez des appareils Bluetooth déjà associés à votre iPhone."
+      "title": "Prothèses auditives",
+      "lead": "Recherchez des prothèses auditives Bluetooth déjà associés à votre iPhone."
     },
     "card3": {
+      "title": "Tags Bluetooth non désirés",
+      "lead":"Rrechercher un tag Bluetooth inconnu ou potentiellement non désiré autour de votre iPhone."
+    },
+    "card4": {
       "title": "Autres appareils BLE",
       "lead": "Explorez les appareils BLE à proximité au-delà des traceurs dédiés."
     }
@@ -209,6 +213,20 @@
       "description": "Association entre un appareil détecté et un objet identifié."
     },
 
+    "objectAssociation-with-circle": {
+      "title":"Icône Association Objet avec cercle",
+      "author": "Link icons created by Uniconlabs - Flaticon",
+      "link": "Source officielle",
+      "description": "Association non mise à jour entre un appareil détecté et un objet identifié."
+    },
+
+    "objectAssociation-with-circle-filled": {
+      "title":"Icône Association Objet avec cercle rempli",
+      "author": "Link icons created by Uniconlabs - Flaticon",
+      "link": "Source officielle",
+      "description": "Association mise à jour entre un appareil détecté et un objet identifié."
+    },
+
     "localProcessing": {
       "title":"Icône Traitement Local",
       "author": "Automation icons created by Magnific - Flaticon",
@@ -228,6 +246,13 @@
       "author": "Bluetooth icons created by Katerine Melina - Flaticon",
       "link": "Source officielle",
       "description": "Fonctionnalité Bluetooth et détection des appareils Bluetooth à proximité."
+    },
+
+    "timer": {
+      "title":"Icône Minuteur",
+      "author": "Timer icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Estimer un intervalle de temps."
     },
 
     "conversation": {
@@ -271,10 +296,102 @@
       "link": "Source officielle",
       "description": "Utilisé pour mettre en avant un warning, une limite ou un problème particulier."
     },
+    
+    "key": {
+      "title":"Icône Clé",
+      "author": "Key icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "bag": {
+      "title":"Icône Sac",
+      "author": "Shopping bag icons created by gungyoga04 - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "vehicle": {
+      "title":"Icône Véhicule",
+      "author": "Pickup-car icons created by Icon Mela - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "motorcycle": {
+      "title":"Icône Motocyclette",
+      "author": "Motorcycle icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "bike": {
+      "title":"Icône Vélo",
+      "author": "Bike icons created by Good Ware - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "mailbox": {
+      "title":"Icône Boite aux lettres",
+      "author": "Email icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "iPhone": {
+      "title":"Icône iPhone",
+      "author": "Iphone 8 icons created by improstudio - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "laptop": {
+      "title":"Icône Ordinateur",
+      "author": "Computer icons created by Maxim Basinski Premium - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "tablet": {
+      "title":"Icône Tablette",
+      "author": "Gadget icons created by BomSymbols - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "headphones": {
+      "title":" Icône Casque audio",
+      "author": "Headphones icons created by SeyfDesigner - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "watch": {
+      "title":"Icône Montre",
+      "author": "Handwatch icons created by Assetwave - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "wallet": {
+      "title":"Icône Portefeuille",
+      "author": "Credit card icons created by bqlqn - Flaticon",
+      "link": "Source officielle",
+      "description": "Catégorie d'objet utilisée dans ObjectRadar"
+    },
+
+    "questionmark": {
+      "title":"Icône Point d'Interrogation",
+      "author": "Question icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "Undefined object category or unknown purpose used in ObjectRadar"
+    },
+
     "donation": {
       "title":"Icône Dons",
       "author": "Donate icons created by Magnific - Flaticon",
-      "link": "Official source",
+      "link": "Source officielle",
       "description": "Utilisé pour les dons destinés à soutenir le projet."
     }
   },
@@ -379,7 +496,7 @@
           "title":"INTERVALLE DE TEMPS (TRAMES DE COMMUNICATION)",
           "content":"Un tag peut ne pas transmettre continuellement. L'intervalle entre deux trames d'annonce reçues peut varier.",
           "question":"Que signifient le point et les anneaux autour de la cible ?",
-          "answer":"Le point indique l'intervalle entre les trames d'annonce reçues.<br/>Les anneaux bleus représentent les niveaux de recherche, tandis que les deux niveaux verts indiquent une très grande proximité. La couleur d'un anneau ne représente pas une distance."
+          "answer":"<b>Point au centre de la cible :</b> il indique l'intervalle entre les trames d'annonce reçues<br/><b>Anneaux bleus :</b> ils représentent les niveaux de recherche<br/><b>Anneaux verts :</b> ils indiquent une très grande proximité<br/><br/><b>A noter : </b> la couleur d'un anneau ne représente pas une distance"
         },
         
         "search":{
@@ -404,7 +521,7 @@
       "association": {
         "eyebrow":"ASSOCIATION",
         "title":"Chercher un objet, pas un numéro",
-        "lead":"ObjectRadar associe un tag détecté avec un objet que vous connaissez.",
+        "lead":"ObjectRadar vous permet d'associer un périphérique détecté avec un objet.",
         "learnMore":"En apprendre plus sur les associations des tags (lien)",
 
         "objectassociation":{
@@ -596,14 +713,14 @@
         "link": "Source officielle",
 
         "Signia":{
-          "PureC&G":"En cours de test avec ObjectRadar"
+          "Pure Charge & Go":"En cours de test avec ObjectRadar"
         }
       },
 
       "prerequisites": {
         "eyebrow":"AVANT DE COMMENCER",
         "title":"Vérifier la connexion Bluetooth",
-        "lead":"La recherche repose sur la connexion Bluetooth entre votre téléphone et prothèse auditive.",
+        "lead":"La recherche repose sur la connexion Bluetooth entre votre téléphone et votre prothèse auditive.",
         "pairing":{
           "title":"APPAIRAGE",
           "content":"Votre prothèse auditive devrait être associée avec votre téléphone que vous utilisez pour la recherche. Une prothèse auditive appairée avec un autre périphérique ne sera pas disponible pour ObjectRadar.",
@@ -626,7 +743,7 @@
       "association": {
         "eyebrow":"ASSOCIATION",
         "title":"Chercher un objet, pas un numéro",
-        "lead":"ObjectRadar associe une prothèse auditive détectée avec un objet que vous connaissez.",
+        "lead":"ObjectRadar vous permet d'associer une prothèse auditive détectée avec un objet.",
         "learnMore":"En apprendre plus sur les associations des prothèses auditives (lien)",
 
         "objectassociation":{
@@ -675,7 +792,7 @@
         "lead":"S'assurer que le Bluetooth est activé et que la prothèse auditive est associée avec le téléphone que vous utilisez.",
         "content":"",
         "info-box-title":"APPAIRE VS CONNECTE",
-        "info-box-content":"<b>Appairé :</b> signifie que votre téléphone connaît et est autorisé à communiquer avec la prothèse auditive<br/><b>Connecté :</b> signifie que la prothèse auditive est actuellement en communication avec votre iPhone.",
+        "info-box-content":"<b>Appairé :</b> signifie que votre téléphone connaît votre prothèse auditive et est autorisé à communiquer avec<br/><b>Connecté :</b> signifie que votre prothèse auditive est actuellement en communication avec votre iPhone",
         "content-paired-connected":"Avant de démarrer une recherche locale avec ObjectRadar, la prothèse auditive doit déjà être appairée avec votre téléphone et actuellement connectée avec ce dernier.",
         "quote-box":{
           "title":"TAG VS PROTHESE AUDITIVE",
@@ -697,7 +814,7 @@
         "lead":"Bouger doucement dans la zone et comparer les détections successives.",
         "content":"",
         "info-box-title":"DETECTION SONORE",
-        "info-box-content":"Activer le son vous aidera à trouver l'objet et éviter de regarder constamment votre iPhone quand vous êtes proche de lui."
+        "info-box-content":"Activer le son vous aidera à trouver l'objet et éviter de regarder constamment votre iPhone quand vous êtes proche de lui.<br/><b>Attention :</b> sélectionnez comme sortie audio le haut-parleur de l’iPhone ou l’une de vos prothèses auditives que vous pouvez entendre. Lorsque les prothèses sont connectées, l’iPhone peut rediriger automatiquement le son vers celles-ci selon vos réglages audio."
       },
       "step5":{
         "title":"REDUIRE LA ZONE DE RECHERCHE",
@@ -756,11 +873,11 @@
         },
         "question2": {
           "question":"Puis-je chercher une prothèse auditive avec un autre iPhone ?",
-          "answer":"La recherche est prévue pour utiliser l'iPhone associé avec la prothèse auditive. Un iPhone différent, pourrait ne pas être capable de le découvrir ou l'identifier de la même manière."
+          "answer":"La recherche est prévue pour utiliser l'iPhone associé avec la prothèse auditive. Un autre iPhone peut ne pas être capable de la découvrir ou l'identifier de la même manière."
         },
         "question3": {
           "question":"Pourquoi ma prothèse auditive n'est pas détectée ?",
-          "answer":"La prothèse auditive pourrait ne pas être compatible avec les informations Bluetooth disponibles pour ObjectRadar, pourrait ne pas être associé avec l'iPhone, pourrait être éteinte, ou pourrait être temporairement indisponible, par exemple parce ce qu'elle est hors de portée."
+          "answer":"La prothèse auditive pourrait ne pas être compatible avec les informations Bluetooth disponibles pour ObjectRadar, pourrait ne pas être associé avec l'iPhone, pourrait être éteinte, ou pourrait être temporairement indisponible - par exemple parce ce qu'elle est hors de portée."
         },
         "question4": {
           "question":"Est-ce qu'ObjectRadar peut me montrer la distance exacte avec ma prothèse auditive ?",

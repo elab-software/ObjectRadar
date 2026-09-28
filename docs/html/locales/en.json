@@ -49,10 +49,14 @@
       "lead":"Find a nearby tracker when conventional location information is not enough."
     },
     "card2": {
-      "title": "Paired devices",
-      "lead":"Search for Bluetooth devices already associated with your iPhone."
+      "title": "Hearing aids",
+      "lead":"Search for Bluetooth hearing aids already associated with your iPhone."
     },
     "card3": {
+      "title": "Unwanted Bluetooth trackers",
+      "lead":"Search for unknown or potentially unwanted Bluetooth trackers around your iPhone."
+    },
+    "card4": {
       "title": "Other BLE devices",
       "lead":"Explore nearby BLE devices beyond dedicated tracking tags."
     }
@@ -212,6 +216,20 @@
       "description": "Association between a detected device and an identified object."
     },
 
+    "objectAssociation-with-circle": {
+      "title":"Object Association with circle Icon",
+      "author": "Link icons created by Uniconlabs - Flaticon",
+      "link": "Official source",
+      "description": "Association not updated between a detected device and an identified object"
+    },
+
+    "objectAssociation-with-circle-filled": {
+      "title":"Object Association with circle filled Icon",
+      "author": "Link icons created by Uniconlabs - Flaticon",
+      "link": "Official source",
+      "description": "Association updated between a detected device and an identified object"
+    },
+
     "localProcessing": {
       "title":"Local Processing Icon",
       "author": "Automation icons created by Magnific - Flaticon",
@@ -233,6 +251,13 @@
       "description": "Bluetooth functionality and nearby Bluetooth device detection."
     },
 
+    "timer": {
+      "title":"Timer Icon",
+      "author": "Timer icons created by Magnific - Flaticon",
+      "link": "Source officielle",
+      "description": "To estimate time interval."
+    },
+    
     "conversation": {
       "title":"FAQ Icon",
       "author": "Question icons created by Magnific - Flaticon",
@@ -274,6 +299,98 @@
       "link": "Official source",
       "description": "Used to highlight a warning, limitation, or potential issue."
     },
+
+    "key": {
+      "title":"Key Icon",
+      "author": "Key icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "bag": {
+      "title":"Bag Icon",
+      "author": "Shopping bag icons created by gungyoga04 - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "vehicle": {
+      "title":"Vehicle Icon",
+      "author": "Pickup-car icons created by Icon Mela - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "motorcycle": {
+      "title":"Motorcycle Icon",
+      "author": "Motorcycle icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "bike": {
+      "title":"Bike Icon",
+      "author": "Bike icons created by Good Ware - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "mailbox": {
+      "title":"Mailbox",
+      "author": "Email icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "iPhone": {
+      "title":"iPhone Icon",
+      "author": "Iphone 8 icons created by improstudio - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "laptop": {
+      "title":"Laptop Icon",
+      "author": "Computer icons created by Maxim Basinski Premium - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "tablet": {
+      "title":"Tablet Icon",
+      "author": "Gadget icons created by BomSymbols - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "headphones": {
+      "title":"Headphones Icon",
+      "author": "Headphones icons created by SeyfDesigner - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "watch": {
+      "title":"Watch Icon",
+      "author": "Handwatch icons created by Assetwave - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "wallet": {
+      "title":"Wallet Icon",
+      "author": "Credit card icons created by bqlqn - Flaticon",
+      "link": "Official source",
+      "description": "Object category used in ObjectRadar"
+    },
+
+    "questionmark": {
+      "title":"Question mark Icon",
+      "author": "Question icons created by Magnific - Flaticon",
+      "link": "Official source",
+      "description": "Undefined object category or unknown purpose used in ObjectRadar"
+    },
+
     "donation": {
       "title":"Donation Icon",
       "author": "Donate icons created by Magnific - Flaticon",
@@ -382,7 +499,7 @@
           "title":"TIME INTERVAL (FRAMES COMMUNICATION)",
           "content":"The tracker may not transmit continuously. The interval between two received advertising frames can vary.",
           "question":"What does the dot and the ring around the target mean?",
-          "answer":"The dot indicates the interval between received advertising frames.<br/>Blue rings represent the search levels, while the two green levels indicate very close proximity. The ring color does not represent distance."
+          "answer":"<b>Dot in the center of the target:</b> indicates the interval between received advertising frames<br/><b>Blue rings:</b> represent the search levels<br/><b>Green circles:</b> indicate a very close proximity<br/><br/><b>Note:</b> the ring color does not represent a distance"
         },
 
         "search":{
@@ -407,7 +524,7 @@
       "association": {
         "eyebrow":"ASSOCIATION",
         "title":"Search for an object, not a number",
-        "lead":"ObjectRadar associates a detected tracker with an object you know.",
+        "lead":"ObjectRadar allows you to associate a detected device with an object.",
         "learnMore":"Learn more about tracker association (link)",
 
         "objectassociation":{
@@ -472,7 +589,7 @@
         "lead":"Move slowly through the area and compare successive detections.",
         "content":"",
         "info-box-title":"SOUND DETECTION",
-        "info-box-content":"Activating the sound will help you find the object without constantly looking at your iPhone when you are close to it."
+        "info-box-content":"Enabling sound can help you find the object without constantly looking at your iPhone when you are close to it."
       },
       "step5":{
         "title":"NARROW THE SEARCH AREA",
@@ -599,7 +716,7 @@
         "link": "Official source",
 
         "Signia":{
-          "PureC&G":"On going test with ObjectRadar"
+          "Pure Charge & Go":"On going test with ObjectRadar"
         }
       },
 
@@ -629,7 +746,7 @@
       "association": {
         "eyebrow":"ASSOCIATION",
         "title":"Search for an object, not a number",
-        "lead":"ObjectRadar associates a detected hearing with an object you know.",
+        "lead":"ObjectRadar allows you to associate a detected hearing with an object.",
         "learnMore":"Learn more about hearing aids association (link)",
 
         "objectassociation":{
@@ -677,7 +794,7 @@
         "lead":"Make sure Bluetooth is enabled and that the hearing aid is associated with the iPhone you are using.",
         "content":"",
         "info-box-title":"PAIRED VS CONNECTED",
-        "info-box-content":"<b>Paired:</b> means that your iPhone knows and is authorized to communicate with the hearing aid.<br/><b>Connected:</b> means that the hearing aid is currently communicating with your iPhone.",
+        "info-box-content":"<b>Paired:</b> means that your iPhone knows your hearing aid and is authorized to communicate with<br/><b>Connected:</b> means that your hearing aid is currently communicating with your iPhone",
         "content-paired-connected":"Before starting a local search with ObjectRadar, the hearing aid must already be paired with your iPhone and currently connected to it.",
         "quote-box":{
           "title":"TAG VS HEARING AID",
@@ -699,7 +816,7 @@
         "lead":"Move slowly through the area and compare successive detections.",
         "content":"",
         "info-box-title":"SOUND DETECTION",
-        "info-box-content":"Activating the sound will help you find the object without constantly looking at your iPhone when you are close to it."
+        "info-box-content":"Enabling sound can help you find the object without constantly looking at your iPhone when you are close to it.<br/><b>Warning:</b> select the iPhone speaker or one of your hearing aids that you can hear as the audio output. When your hearing aids are connected, iPhone may automatically route audio to them depending on your audio settings."
       },
       "step5":{
         "title":"NARROW THE SEARCH AREA",
@@ -758,11 +875,11 @@
         },
         "question2": {
           "question":"Can I search for a hearing aid with another iPhone?",
-          "answer":"The search is intended to use the iPhone associated with the hearing aid. A different iPhone may not be able to discover or identify it in the same way."
+          "answer":"The search is intended to use the iPhone associated with the hearing aid. Another iPhone may not be able to discover or identify it in the same way."
         },
         "question3": {
           "question":"Why is my hearing aid not detected?",
-          "answer":"The hearing aid may not be compatible with the Bluetooth information available to ObjectRadar, may not be associated with the iPhone, may be switched off, or may be temporarily unavailable, for example because it is out of range."
+          "answer":"The hearing aid may not be compatible with the Bluetooth information available to ObjectRadar, may not be associated with the iPhone, may be switched off, or may be temporarily unavailable — for example because it is out of range."
         },
         "question4": {
           "question":"Does ObjectRadar show the exact distance to my hearing aid?",
