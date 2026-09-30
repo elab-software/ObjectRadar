@@ -1,0 +1,40 @@
+{
+  "default": {
+    "site": {
+      "fr": "../html/fr/index.html",
+      "en": "../html/en/index.html"
+    },
+    "use-cases": {
+      "tag": {
+        "fr": "../html/fr/use-case-ble-trackers.html",
+        "en": "../html/en/use-case-ble-trackers.html"
+      },
+      "hearing": {
+        "fr": "../html/fr/use-case-hearing.html",
+        "en": "../html/en/use-case-hearing.html"
+      }
+    }
+  },
+  "qr": {
+    "fr-hearing-seller-1": {
+      "campaign": "hearing",
+      "source": "seller-1",
+      "active": true
+    },
+    "fr-tag-seller-1": {
+      "campaign": "tag",
+      "source": "seller-1",
+      "active": true
+    },
+    "en-tag-seller-2": {
+      "campaign": "tag",
+      "source": "seller-2",
+      "active": true
+    },
+    "fr-hearing-seller-2": {
+      "campaign": "hearing",
+      "source": "seller-2",
+      "active": true
+    }
+  }
+}
