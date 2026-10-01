@@ -59,7 +59,7 @@
         console.log("ObjectRadar : validUseCase");
         console.log({validUseCase});
         */
-       
+        
         // --------------------------------------------------
         // 3. Invalid use case
         //    → site default for the selected language
@@ -71,7 +71,7 @@
         }
 
         // --------------------------------------------------
-        // 4. Valid use case
+        // 4. Valid use case destination
         //    → use-case default destination
         // --------------------------------------------------
         // Gets the use-case into the URL and get the value into default "use-case" key
@@ -80,8 +80,10 @@
         // Assign the destination with an redirected URL with default "use-case" AND "language"
         const destination = useCaseConfig[validLanguage] || siteDefaults[validLanguage];
         
+        /*
         console.log("ObjectRadar : destination");
         console.log({destination});
+        */
 
         // --------------------------------------------------
         // 5. Build QR campaign key
@@ -114,9 +116,10 @@
             // --------------------------------------------------
         }
 
+        // --------------------------------------------------
+        // Debug information (temporary)
+        // --------------------------------------------------
         /*
-        // Temporary debug information
-        console.log("ObjectRadar QR redirect");
         console.log("ObjectRadar QR redirect");
         console.log("language:", validLanguage);
         console.log("useCase:", useCase);
@@ -127,16 +130,119 @@
         */
 
         // --------------------------------------------------
-        // 8. Redirect
+        // 8. Redirect (before implementing GoatCounter temporary redirection)
         // --------------------------------------------------
         // Call the function to redirect the user to the new URL
-        redirect(destination);
+        // redirect(destination);
+
+        // --------------------------------------------------
+        // 6. Track and redirect
+        // --------------------------------------------------
+
+        await trackAndRedirect(destination, campaign, source);
 
     } catch (error) {
         console.error("QR redirect error:", error);
 
         // Safe fallback
         redirect("../html/en/index.html");
+    }
+
+    // ------------------------------------------------------
+    // GoatCounter + redirect
+    // ------------------------------------------------------
+
+    async function trackAndRedirect(destination, campaign, source)
+        {
+        try {
+            // Campaign tracking only for active QR campaigns
+            if (campaign && source) {
+
+                // Add GoatCounter-compatible parameters
+                // to the current URL temporarily.
+                // tracking URL https://www.ealb...io.com/r/index.html?langauge=fr/en&use-case=xxxxx&seller=xxxxx&campaign=xxxx&source=xxxxx
+                const trackingURL = new URL(window.location.href);
+
+                trackingURL.searchParams.set(
+                    "campaign",
+                    campaign
+                );
+
+                trackingURL.searchParams.set(
+                    "source",
+                    source
+                );
+                
+                // Change temporarily the current URL in the toolbar without charging it and display it
+                // wihtout website history, just to allow GoatCounter to receive the parameters in the URL
+                window.history.replaceState(
+                    {},
+                    "",
+                    trackingURL
+                );
+
+                // console.log("trackingURL:", trackingURL);
+            }
+
+            // Wait until GoatCounter is available
+            await waitForGoatCounter();
+
+            // Explicit pageview recording when receiving the parameters in the temporary URL even the page is not displayed
+            // This is necessary because automatic counting is disabled ("no_onload" parameter) in the "index" page script code
+            // A "pageview" is every time a page is loaded, it is counted instead of "visit" when the first time someone loads a page
+            window.goatcounter.count({
+                path: destination
+            });
+
+            // console.log("GoatCounter pageview sent");
+            
+        } catch (error) {
+            // Tracking must never block navigation
+            console.warn(
+                "GoatCounter tracking failed:",
+                error
+            );
+        }
+
+        // Short delay to allow the request to start
+        setTimeout(function () {
+            redirect(destination);
+        }, 300);
+    }
+
+    // ------------------------------------------------------
+    // Wait for GoatCounter
+    // ------------------------------------------------------
+
+    function waitForGoatCounter() {
+        // Avoid to redirect while counting is not done
+        return new Promise(function (resolve, reject) {
+            const timeout = 2000;
+            const interval = 50;
+            let elapsed = 0;
+
+            const timer = setInterval(function () {
+
+                if (
+                    window.goatcounter &&                           // check whether the object exists
+                    typeof window.goatcounter.count === "function"  // check whether the count function exists
+                ) {
+                    clearInterval(timer);
+                    resolve();
+                    return;
+                }
+
+                elapsed += interval;
+
+                if (elapsed >= timeout) {
+                    clearInterval(timer);
+                    reject(
+                        new Error("GoatCounter timeout")
+                    );
+                }
+
+            }, interval);
+        });
     }
 
     // ------------------------------------------------------
