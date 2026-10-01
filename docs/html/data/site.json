@@ -1,8 +1,8 @@
 {
     "site": {
         "name": "ObjectRadar",
-        "version": "2.0",
-        "lastUpdated": "2026-09-24",
+        "version": "2.1",
+        "lastUpdated": "2026-10-01",
         "copyright": "© 2026 eLab Software"
     },
     
@@ -14,20 +14,20 @@
 
     "pages": {
         "index": {
-            "version": "2.0",
-            "lastUpdated": "2026-09-28"
+            "version": "2.1",
+            "lastUpdated": "2026-10-01"
         },
         "use-case-generic": {
-            "version": "1.0",
-            "lastUpdated": "2026-09-09"
+            "version": "1.1",
+            "lastUpdated": "2026-10-01"
         },
         "use-case-ble-trackers": {
-            "version": "1.1",
-            "lastUpdated": "2026-09-28"
+            "version": "1.2",
+            "lastUpdated": "2026-10-01"
         },
         "use-case-hearing": {
-            "version": "1.1",
-            "lastUpdated": "2026-09-28"
+            "version": "1.2",
+            "lastUpdated": "2026-10-01"
         },
         "use-case-unwanted-ble-trackers": {
             "version": "0.0",

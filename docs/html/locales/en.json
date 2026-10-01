@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "iOS APPLICATION",
     "title": "OBJECTRADAR",
-    "lead": "Find nearby Bluetooth objects with intelligent BLE guidance",
+    "lead": "Find nearby Bluetooth objects with intelligent guidance",
     "buttonCTA": "Explore the app"
   },
 
@@ -57,7 +57,7 @@
       "lead":"Search for unknown or potentially unwanted Bluetooth trackers around your iPhone."
     },
     "card4": {
-      "title": "Other BLE devices",
+      "title": "Other Bluetooth devices",
       "lead":"Explore nearby BLE devices beyond dedicated tracking tags."
     }
   },
@@ -412,6 +412,8 @@
   
   "usecase": {
     "tag": {
+      "tab-title": "Tracker - ObjectRadar",
+
       "navigation": {
         "overview":"Overview",
         "compatible-trackers":"Trackers",
@@ -681,6 +683,8 @@
     },
 
     "hearing": {
+      "tab-title": "Hearing aids - ObjectRadar",
+
       "navigation": {
         "overview":"Overview",
         "compatible-hearings":"Hearings",
@@ -897,6 +901,8 @@
     },
 
     "otherDevice": {
+      "tab-title": "Tab title - ObjectRadar",
+
       "navigation": {
         "home": "Home"
       },
@@ -948,6 +954,8 @@
     },
 
     "emptyCase": {
+      "tab-title": "tab title - ObjectRadar",
+
       "navigation": {
         "home": "Home"
       },

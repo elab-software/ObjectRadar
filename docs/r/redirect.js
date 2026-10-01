@@ -19,6 +19,36 @@
     console.log({seller});
     */
 
+    // --------------------------------------------------
+    // 0. Change some element with the language in the URL
+    // - Title
+    // - Redirection message
+    // --------------------------------------------------
+    const titleTranslation = {
+        en: "ObjectRadar – Redirecting",
+        fr: "ObjectRadar – Redirection"
+    }
+
+    // Change the tab text according to the current language
+    document.title = titleTranslation[language] || titleTranslation["en"];
+
+    // Change the redirection message according to the current language
+    const message = document.getElementById("redirect-message");
+
+    const redirectionTranslation = {
+        en: "Redirecting…",
+        fr: "Redirection en cours…"
+    }
+
+    if (message) { 
+        message.textContent = redirectionTranslation[language] || redirectionTranslation["en"];
+    }
+    
+    /*
+    console.log(document.title);
+    console.log(message.textContent);
+    */
+    
     try {
         // Load redirect configuration
         const response = await fetch("./redirect.json", {
@@ -39,7 +69,7 @@
         const siteDefaults = defaultConfig.site;  // Gets the "site" keys into "default" key
         const useCaseDefaults = defaultConfig["use-cases"]; // Gets "uses-cases" keys (don't use '.use-case because of the hyphen')
         const qrCampaigns = config.qr;
-        
+
         // --------------------------------------------------
         // 1. Validate language
         // --------------------------------------------------

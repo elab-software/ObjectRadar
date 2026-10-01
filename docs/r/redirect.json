@@ -6,8 +6,8 @@
     },
     "use-cases": {
       "tag": {
-        "fr": "../html/fr/use-case-ble-trackers.html",
-        "en": "../html/en/use-case-ble-trackers.html"
+        "fr": "../html/fr/use-case-ble-tracker.html",
+        "en": "../html/en/use-case-ble-tracker.html"
       },
       "hearing": {
         "fr": "../html/fr/use-case-hearing.html",

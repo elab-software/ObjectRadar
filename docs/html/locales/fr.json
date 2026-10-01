@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "iOS APPLICATION",
     "title": "OBJECTRADAR",
-    "lead": "Trouvez les objets Bluetooth à proximité grâce à une assistance BLE intelligente",
+    "lead": "Trouvez les objets Bluetooth à proximité grâce à une assistance intelligente",
     "buttonCTA": "Découvrir l'application"
   },
 
@@ -55,7 +55,7 @@
       "lead":"Rrechercher un tag Bluetooth inconnu ou potentiellement non désiré autour de votre iPhone."
     },
     "card4": {
-      "title": "Autres appareils BLE",
+      "title": "Autres appareils Bluetooth",
       "lead": "Explorez les appareils BLE à proximité au-delà des traceurs dédiés."
     }
   },
@@ -409,6 +409,8 @@
   
   "usecase": {
     "tag": {
+      "tab-title": "Tag - ObjectRadar",
+
       "navigation": {
         "overview":"Présentation",
         "compatible-trackers":"Tags",
@@ -678,6 +680,8 @@
     },
 
     "hearing": {
+      "tab-title": "Prothèse - ObjectRadar",
+
       "navigation": {
         "overview":"Présentation",
         "compatible-hearings":"Aides auditives",
@@ -895,6 +899,8 @@
     },
     
     "otherDevice": {
+      "tab-title": "Titre onglet - ObjectRadar",
+
       "navigation": {
         "home": "Maison"
       },
@@ -946,6 +952,8 @@
     },
 
     "emptyCase": {
+      "tab-title": "Titre onglet - ObjectRadar",
+      
       "navigation": {
         "home": "Maison"
       },
