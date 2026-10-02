@@ -1,0 +1,54 @@
+/* Object Radar — Distributor banner V1.0
+
+*/
+
+/* ============================================================
+   COMMON
+   ============================================================ */
+.distributor-banner {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    width: min(600px, calc(100vw - 40px));
+    padding: 18px 20px;
+    background: #f5f6f8; /*white;*/
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+}
+
+.distributor-banner-content {
+    padding-right: 20px;
+}
+
+.distributor-banner-header a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.distributor-banner-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.distributor-banner-name {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.distributor-banner-message,
+.distributor-banner-catchphrase {
+    margin: 12px 0 0;
+}
+
+.distributor-banner-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: 0;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

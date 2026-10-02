@@ -16,13 +16,23 @@
     }
   },
   "qr": {
-    "fr-hearing-seller-1": {
+    "fr-tag-seller-1": {
+      "campaign": "tag",
+      "source": "seller-1",
+      "active": true
+    },
+    "en-tag-seller-1": {
+      "campaign": "tag",
+      "source": "seller-1",
+      "active": true
+    },
+    "en-hearing-seller-1": {
       "campaign": "hearing",
       "source": "seller-1",
       "active": true
     },
-    "fr-tag-seller-1": {
-      "campaign": "tag",
+    "fr-hearing-seller-1": {
+      "campaign": "hearing",
       "source": "seller-1",
       "active": true
     },

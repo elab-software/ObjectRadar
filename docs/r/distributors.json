@@ -1,0 +1,22 @@
+{
+  "seller-1": {
+      "name": {
+          "fr": "Nom du distributeur",
+          "en": "Distributor name"
+      },
+      "logo": "../../html/images/distributors/seller-1.png",
+      "website": {
+          "fr": "https://elab-software.github.io/ObjectRadar/docs/html/fr/index.html",
+          "en": "https://elab-software.github.io/ObjectRadar/docs/html/en/index.html"
+      },
+      "message": {
+          "fr": "Merci de découvrir ObjectRadar avec nous.",
+          "en": "Thank you for discovering ObjectRadar with us."
+      },
+      "catchphrase": {
+          "fr": "Une solution simple pour vous accompagner au quotidien.",
+          "en": "A simple solution to help you every day."
+      }
+      
+   }
+}

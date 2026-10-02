@@ -1,9 +1,35 @@
+// --------------------------------------------------
 // V1 - Website redirections
 // 30/09/2026
+// --------------------------------------------------
+// Data flow
 //
-// /r/redirect.js
-// URL https://www.ealb...io.com/r/index.html?langauge=fr/en&use-case=xxxxx&seller=xxxxx
-// ------------------------------------------------------------
+// QR code (ex. URL https://www.ealb...io.com/r/index.html?langauge=fr/en&use-case=xxxxx&seller=xxxxx)
+//     ↓
+// redirect.js
+//     ↓
+// redirect.json
+//     ↓
+// Session variables
+//     ↓
+// Page redirection
+//
+// QR code parameters:
+//     language  → requested language
+//     use-case  → requested use case
+//     seller    → distributor identifier
+//
+// Session variables:
+//     language  → language used for the QR redirection
+//     seller    → distributor identifier
+//     campaign  → campaign identifier
+//     source    → campaign source
+//
+// redirect.json:
+//     - resolves the destination according to language and use case
+//     - resolves the QR campaign according to language, use case and seller
+//     - provides the campaign and source values
+// --------------------------------------------------
 
 (async function () {
     const params = new URLSearchParams(window.location.search);
@@ -124,6 +150,7 @@
 
         let campaign = null;
         let source = null;
+        
 
         // The URL gets "seller" paramater
         if (seller) {
@@ -144,6 +171,28 @@
             //    → keep use-case destination
             //    → no commercial attribution
             // --------------------------------------------------
+
+            // --------------------------------------------------
+            // 8. Create a session context in order to keep
+            // these parameters through the redirection and
+            // display some informations into a commerical banner
+            // --------------------------------------------------
+
+            const sessionPrefix = "objectradar.";
+
+            /* Delete previous session */
+            sessionStorage.removeItem(`${sessionPrefix}langue`);
+            sessionStorage.removeItem(`${sessionPrefix}seller`);
+            sessionStorage.removeItem(`${sessionPrefix}campaign`);
+            sessionStorage.removeItem(`${sessionPrefix}source`);
+
+            /* Set new session context */
+            if (seller && campaign && source) {
+                sessionStorage.setItem(`${sessionPrefix}langue`, validLanguage);
+                sessionStorage.setItem(`${sessionPrefix}seller`, seller);
+                sessionStorage.setItem(`${sessionPrefix}campaign`, campaign);
+                sessionStorage.setItem(`${sessionPrefix}source`, source);
+            }
         }
 
         // --------------------------------------------------
@@ -160,13 +209,13 @@
         */
 
         // --------------------------------------------------
-        // 8. Redirect (before implementing GoatCounter temporary redirection)
+        // 9. Redirect (before implementing GoatCounter temporary redirection)
         // --------------------------------------------------
         // Call the function to redirect the user to the new URL
         // redirect(destination);
 
         // --------------------------------------------------
-        // 6. Track and redirect
+        // 10. Track and redirect
         // --------------------------------------------------
 
         await trackAndRedirect(destination, campaign, source);
