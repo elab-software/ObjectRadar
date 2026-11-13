@@ -14,7 +14,8 @@
     padding: 18px 20px;
     background: #f5f6f8; /*white;*/
     border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 6px 24px rgba(110, 110, 115, 0.60);
+    border: 1px solid  rgba(110, 110, 115, 0.20); /*var(--dark-muted);*/
 }
 
 .distributor-banner-content {

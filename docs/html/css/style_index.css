@@ -115,8 +115,8 @@
 
     step-card
     └── identify-switcher
-        ├── input #identify-tags
-        ├── input #identify-favorites
+        ├── input #identify-tags (favorite)
+        ├── input #identify-hearing-aids (favorite)
         ├── step-card-header
         │   ├── step-number-icon
         │   └── identify-tabs-control
@@ -278,22 +278,22 @@
 
 /* Active filter - The activated switch is blue */
 #identify-tags:checked ~ .step-card-header .identify-tabs-control label[for="identify-tags"],
-#identify-favorites:checked ~ .step-card-header .identify-tabs-control label[for="identify-favorites"] {
+#identify-hearing-aids:checked ~ .step-card-header .identify-tabs-control label[for="identify-hearing-aids"] {
     background: #fff;
     color: var(--blue);
     box-shadow: 0 1px 4px rgba(16,17,20,.10);
 }
 
 /* Only one screenshot is visible */
-.identify-screen--favorites {
+.identify-screen--hearing-aids {
     display: none;
 }
 
-#identify-favorites:checked ~ .identify-screen--tags {
+#identify-hearing-aids:checked ~ .identify-screen--tags {
     display: none;
 }
 
-#identify-favorites:checked ~ .identify-screen--favorites {
+#identify-hearing-aids:checked ~ .identify-screen--hearing-aids {
     display: grid;
 }
 

@@ -48,11 +48,11 @@
     },
     "card2": {
       "title": "Prothèses auditives",
-      "lead": "Recherchez des prothèses auditives Bluetooth déjà associés à votre iPhone."
+      "lead": "Recherchez des prothèses auditives Bluetooth déjà associées à votre iPhone."
     },
     "card3": {
       "title": "Tags Bluetooth non désirés",
-      "lead":"Rrechercher un tag Bluetooth inconnu ou potentiellement non désiré autour de votre iPhone."
+      "lead":"Rechercher un tag Bluetooth inconnu ou potentiellement non désiré autour de votre iPhone."
     },
     "card4": {
       "title": "Autres appareils Bluetooth",
@@ -841,7 +841,7 @@
 
         "quote-box": {
           "title": "PRECISIONS",
-          "lead":"ObjectRadar aide à réduire la zone de recherche. Il ne fournit pas une position GPS ou une distance exacte du tag."
+          "lead":"ObjectRadar aide à réduire la zone de recherche. Il ne fournit pas une position GPS ou une distance exacte d'une prothèse auditive."
         },
 
         "bluetooth":{

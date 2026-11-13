@@ -45,6 +45,16 @@
       "campaign": "hearing",
       "source": "seller-2",
       "active": true
+    },
+    "fr-hearing-optical-center-france-32": {
+      "campaign": "hearing",
+      "source": "optical-center",
+      "active": true
+    },
+    "en-hearing-optical-center-france-32": {
+      "campaign": "hearing",
+      "source": "optical-center",
+      "active": true
     }
   }
 }
