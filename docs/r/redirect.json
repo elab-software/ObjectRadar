@@ -12,6 +12,10 @@
       "hearing": {
         "fr": "../html/fr/use-case-hearing.html",
         "en": "../html/en/use-case-hearing.html"
+      },
+      "all": {
+      "fr": "../html/fr/index.html",
+      "en": "../html/en/index.html"
       }
     }
   },
@@ -54,6 +58,16 @@
     "en-hearing-optical-center-france-32": {
       "campaign": "hearing",
       "source": "optical-center",
+      "active": true
+    },
+    "fr-hearing-audition-merlet-32": {
+      "campaign": "hearing",
+      "source": "audition-merlet",
+      "active": true
+    },
+    "fr-all-maaf-32": {
+      "campaign": "all",
+      "source": "maaf",
       "active": true
     }
   }

@@ -120,7 +120,6 @@
         // 3. Invalid use case
         //    → site default for the selected language
         // --------------------------------------------------
-
         if (!validUseCase) {
             redirect(siteDefaults[validLanguage]); // return the default page + language
             return;

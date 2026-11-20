@@ -200,8 +200,8 @@
 
     /* with capture */
     /* Border to give an appearance of a phone without being an iPhone or other model / brand */
-    aspect-ratio: 9/16;
-
+    /*aspect-ratio: 9/16;*/ /* 20261120 - ratio commented to let the picture to adpat with the size  */
+    
     border: 5px solid #dfe2e7;
     /* other style : */ 
     /* border: 2px solid #1c1c1e; */
@@ -226,8 +226,8 @@
 /* To keep the ration of a picture */
 .device-screen img {
     display: block;
-    width: 100%; /* <-- test : repemettre a auto; */
-    height: auto;
+    width: 100%; /* <-- test : set auto; */
+    height: 100%;
     /*max-width: 100%;*/
     /*max-height: 95%;*/
     object-fit: contain; /* can be deleted with height to auto */
